@@ -4,12 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
+
 public class type_attempt_3 : MonoBehaviour
 {
     
+    Dictionary<char,string> colordex = new Dictionary<char,string>()
+    {
+        {'R',"red"},
+        {'G',"green"},
+        {'B',"blue"},
+        {'Y',"yellow"}
+    };
+
     public float typeSpeed = 0.05f;
     public float timeDivisor = 30;
-    public GameObject next;
+
+    public dialogue_interp dialoguemaster = null;
     
     [SerializeField]
     int pos;
@@ -25,6 +36,7 @@ public class type_attempt_3 : MonoBehaviour
         textmesh = GetComponent<TextMeshProUGUI>();
         StartCoroutine(typeLoop());
     }
+
 
     int seeknext(string a,int start,string tok)
     {
@@ -70,19 +82,7 @@ public class type_attempt_3 : MonoBehaviour
                 offset += 2;
                 rawShown += "<color=\"";
                 string cs = "white";
-                switch (color)
-                {
-                    case 'R':
-                        cs = "red";
-                        break;
-                    case 'G':
-                        cs = "green";
-                        break;
-                    case 'Y':
-                        cs = "yellow";
-                        break;
-
-                }
+                cs = colordex[color];
 
                 rawShown += cs;
                 rawShown += "\">";
@@ -136,14 +136,16 @@ public class type_attempt_3 : MonoBehaviour
             if(c=='/')
             {
                 if(curPut[combo+1]=='%')
-                {
-                    yield return new WaitForSeconds(1.0f);
-                    Destroy(gameObject);
-                    if(next != null)
+                {   
+                    if(dialoguemaster != null)
                     {
-                        next.SetActive(true);
+                    curPut = "";
+                    rawShown = "";
+                    pos = 0;
+                    offset = 0;
+                    dialoguemaster.askNext();
+                    continue;
                     }
-                    break;
                 }
             }
 
@@ -202,10 +204,4 @@ public class type_attempt_3 : MonoBehaviour
         }
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
