@@ -3,18 +3,16 @@ Flingus
 Scrolonodingus
 Wangus
 Pangus
-Mondoflangus  {i0} 
-/%
+Mondoflangus  {i0}/%
 I am the Schwimby
 And I ate your toast
 Nothing is ready
-To make its own boast {i0} /%
+To make its own boast {i0}/%
 
-Who are \R we? What are you? OH NO
+Who are \R we? What are you? \W OH NO
 
 show enchantess_crossed
 
-{i0}
-/%
+{i0}/%
 
 Whenever you are there.

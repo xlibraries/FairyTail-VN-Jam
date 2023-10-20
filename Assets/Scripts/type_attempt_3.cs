@@ -140,7 +140,6 @@ public class type_attempt_3 : MonoBehaviour
                     if(dialoguemaster != null)
                     {
                     curPut = "";
-                    rawShown = "";
                     pos = 0;
                     offset = 0;
                     dialoguemaster.askNext();
