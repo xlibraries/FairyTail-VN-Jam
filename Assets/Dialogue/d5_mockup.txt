@@ -1,0 +1,15 @@
+[Location]: 'Study'
+[Speaker]: 'Lena'
+"
+So..
+Why is this place empty?"
+[Speaker]: 'Enchantress' 
+"...^6...^6...^6..." 
+[Speaker]: 'Lena'
+"I've agreed to work with you. You need to tell me what's going on!
+There's no way that you're the only person who lives here."
+[Speaker]: ''
+"The enchantress picks up a set of bowls with strange instruments in them, staring at them deeply.
+She's lost in thought."
+[Speaker]: 'Enchantress' 
+"The last person to live here with me was my grandmother^6, who left this earth a couple nights ago."

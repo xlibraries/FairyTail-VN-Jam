@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
-
+using System.Text.RegularExpressions;
 
 public class dialogue_interp : MonoBehaviour
 
@@ -19,48 +19,66 @@ public class dialogue_interp : MonoBehaviour
     string[] dialogueChunks;
     int d_pos = 0;
 
+
     void Start()
     {
           pairedDialogueBox = dialogueDestination.GetComponent<type_attempt_3>();
           pairedDialogueBox.dialoguemaster = this;
-          dialogueChunks = dialogueFile.text.Split("/%");
+          pairedDialogueBox.curPut = "";
+          dialogueChunks = dialogueFile.text.Split("\"");
+          //Debug.Log(dialogueChunks[0]);
           askNext();
     }
+
 
     public void askNext()
     {
       if(d_pos < dialogueChunks.Length) //While there are chunks left , add a chunk one at a time to the dialogue box.
       {
-      string next = dialogueChunks[d_pos] + "/%";
+      string next = dialogueChunks[d_pos];
       Debug.Log(next);
-      if(next.StartsWith("SCENE")) // If this is a SCENE chunk, parse it as such.
+      if(next.Contains("[")) // If this is a token chunk, parse it as such.
       {
         Debug.Log("Parsing scene");
         parseScene(next);
         d_pos += 1;
         askNext();
-        return;
       }
+      else
+      {
       next = next.Replace("\n","{i0}\n");
+      next += "{i0}/%";
+      next = "{i0}" + next;
       pairedDialogueBox.curPut = next;
       d_pos += 1;
+      }
       }
     }
 
 
     private void parseScene(string Scene)
     {
-      Scene = Scene.Replace("/%","");
-      string[] tokens = Scene.Split(" ");
-      for(int i = 0; i < tokens.Length; i++)
+      // Gathers [Key]: 'Value' from the token chunk.
+      var tokens = Regex.Matches(Scene,@"\[(\w+)\]:\s*'([^']+)'");
+      Debug.Log(tokens.Count);
+      foreach(Match g in tokens)
       {
-        //Debug.Log(tokens[i]);
-        switch(tokens[i])
-        {
-          case "speaking":
-            changeSpeakerName(tokens[i+1]);
-            break;
-        }
+        //Unwraps regex matches
+      string key = g.Groups[1].Value;
+      string value = g.Groups[2].Value;
+      //Debug.Log(key + " " + value);
+
+      // Do something based on the key.
+      switch(key)
+      {
+        case "Speaker":
+         changeSpeakerName(value);
+         break;
+        case "Location":
+         setLocation(value);
+         break;
+      }
+
       }
     }
 
@@ -69,5 +87,12 @@ public class dialogue_interp : MonoBehaviour
       /*Rewrite this code later to actually change the outcome in the UI. */
       Debug.Log($"The speaker's name is changed to {Name}");
     }
+
+    private void setLocation(string Name)
+    {
+      /*Rewrite this code later to actually change the outcome in the game. */
+      Debug.Log($"The speaker's name is changed to {Name}");
+    }
+
 
 }
