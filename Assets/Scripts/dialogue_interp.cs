@@ -16,6 +16,8 @@ public class dialogue_interp : MonoBehaviour
 
     private type_attempt_3 pairedDialogueBox;
 
+    private ActorManager actorManager;
+
     string[] dialogueChunks;
     int d_pos = 0;
 
@@ -26,6 +28,7 @@ public class dialogue_interp : MonoBehaviour
           pairedDialogueBox.dialoguemaster = this;
           pairedDialogueBox.curPut = "";
           dialogueChunks = dialogueFile.text.Split("\"");
+          actorManager= this.GetComponent<ActorManager>();
           //Debug.Log(dialogueChunks[0]);
           askNext();
     }
@@ -77,6 +80,9 @@ public class dialogue_interp : MonoBehaviour
         case "Location":
          setLocation(value);
          break;
+        case "Transform":
+          actorManager.DoTransform(value);
+          break;
       }
 
       }
