@@ -7,12 +7,13 @@ public class ActorManager : MonoBehaviour
 
     Dictionary<string,TweenTest> actorDict;
 
-    void Start()
+    public void GatherActors()
     {
         actorDict = new Dictionary<string, TweenTest>();
 
         Debug.Log("Finding all actors");
         var ActorList = GameObject.FindGameObjectsWithTag("Actor");
+        Debug.Assert(ActorList.Length > 0);
         foreach (var actorGameObject in ActorList)
         {
             var TT = actorGameObject.GetComponent<TweenTest>();
@@ -25,8 +26,19 @@ public class ActorManager : MonoBehaviour
     public void DoTransform(string command)
     {
         //var bandaid = DummyActor.GetComponent<TweenTest>();
-        var bandaid = actorDict["Lena"];
-        var transformMethod = bandaid.GetType().GetMethod("TR_" + command);
+        string[] args = command.Split(",");
+        Debug.Assert(args.Length > 1);
+        var bandaid = actorDict[args[0]];
+        var transformMethod = bandaid.GetType().GetMethod("TR_" + args[1]);
         transformMethod.Invoke(bandaid,null);
+    }
+
+    public void SwitchImage(string command)
+    {
+        string[] args = command.Split(",");
+        Debug.Assert(args.Length > 1);
+        TweenTest bandaid = actorDict[args[0]];
+        bandaid.SetImage(args[1]);
+        
     }
 }

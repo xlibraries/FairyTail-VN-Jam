@@ -1,12 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Zigurous.Tweening;
+
+[System.Serializable]
+public struct EmotionPair
+{
+    public string name;
+    public Sprite value;
+}
+
 
 public class TweenTest : MonoBehaviour
 {
     
     public string actorName;
+
+    public List<EmotionPair> emotions;
 
     private void TR_Basic(float x, float y)
     {
@@ -33,6 +44,12 @@ public class TweenTest : MonoBehaviour
     public void TR_RightCenterDown()
     {
         TR_Basic(0.8f,0.4f);
+    }
+
+    public void SetImage(string command)
+    {
+        var img = emotions.Find(emotion => emotion.name == command);
+        this.gameObject.GetComponent<Image>().sprite = img.value;
     }
 
 

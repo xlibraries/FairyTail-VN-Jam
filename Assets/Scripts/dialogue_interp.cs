@@ -29,7 +29,8 @@ public class dialogue_interp : MonoBehaviour
           pairedDialogueBox.curPut = "";
           dialogueChunks = dialogueFile.text.Split("\"");
           actorManager= this.GetComponent<ActorManager>();
-          //Debug.Log(dialogueChunks[0]);
+        //Debug.Log(dialogueChunks[0]);
+          actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
           askNext();
     }
 
@@ -83,6 +84,9 @@ public class dialogue_interp : MonoBehaviour
         case "Transform":
           actorManager.DoTransform(value);
           break;
+        case "Image":
+          actorManager.SwitchImage(value);
+          break;
       }
 
       }
@@ -99,6 +103,8 @@ public class dialogue_interp : MonoBehaviour
       /*Rewrite this code later to actually change the outcome in the game. */
       Debug.Log($"The speaker's name is changed to {Name}");
     }
+
+
 
 
 }
