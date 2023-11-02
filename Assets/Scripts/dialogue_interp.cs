@@ -16,6 +16,8 @@ public class dialogue_interp : MonoBehaviour
 
     private type_attempt_3 pairedDialogueBox;
 
+    private ActorManager actorManager;
+
     string[] dialogueChunks;
     int d_pos = 0;
 
@@ -26,7 +28,9 @@ public class dialogue_interp : MonoBehaviour
           pairedDialogueBox.dialoguemaster = this;
           pairedDialogueBox.curPut = "";
           dialogueChunks = dialogueFile.text.Split("\"");
-          //Debug.Log(dialogueChunks[0]);
+          actorManager= this.GetComponent<ActorManager>();
+        //Debug.Log(dialogueChunks[0]);
+          actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
           askNext();
     }
 
@@ -77,6 +81,12 @@ public class dialogue_interp : MonoBehaviour
         case "Location":
          setLocation(value);
          break;
+        case "Transform":
+          actorManager.DoTransform(value);
+          break;
+        case "Image":
+          actorManager.SwitchImage(value);
+          break;
       }
 
       }
@@ -93,6 +103,8 @@ public class dialogue_interp : MonoBehaviour
       /*Rewrite this code later to actually change the outcome in the game. */
       Debug.Log($"The speaker's name is changed to {Name}");
     }
+
+
 
 
 }
