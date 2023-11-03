@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Actor
+  - Background
   layers:
   - Default
   - TransparentFX

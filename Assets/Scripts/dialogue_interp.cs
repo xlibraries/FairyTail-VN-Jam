@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Text.RegularExpressions;
+using TMPro;
 
 public class dialogue_interp : MonoBehaviour
 
@@ -13,6 +14,8 @@ public class dialogue_interp : MonoBehaviour
     public TextAsset dialogueFile;
 
     public GameObject dialogueDestination;
+
+    public GameObject speakerIndicator;
 
     private type_attempt_3 pairedDialogueBox;
 
@@ -87,6 +90,9 @@ public class dialogue_interp : MonoBehaviour
         case "Image":
           actorManager.SwitchImage(value);
           break;
+        case "Background":
+          setBackground(value);
+          break;
       }
 
       }
@@ -96,12 +102,20 @@ public class dialogue_interp : MonoBehaviour
     {
       /*Rewrite this code later to actually change the outcome in the UI. */
       Debug.Log($"The speaker's name is changed to {Name}");
+      speakerIndicator.GetComponent<TextMeshProUGUI>().text = Name;
     }
 
     private void setLocation(string Name)
     {
       /*Rewrite this code later to actually change the outcome in the game. */
       Debug.Log($"The speaker's name is changed to {Name}");
+    }
+
+    private void setBackground(string Name)
+    {
+      Debug.Log($"The background is changed to {Name}");
+      var BG = GameObject.FindGameObjectsWithTag("Background")[0].GetComponent<background_basic>();
+      BG.FadeColorSwitch(Color.black,2.0f,Name);
     }
 
 

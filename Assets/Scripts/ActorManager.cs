@@ -19,26 +19,23 @@ public class ActorManager : MonoBehaviour
             var TT = actorGameObject.GetComponent<TweenTest>();
             actorDict[TT.actorName] = TT;
         }
-
-
     }
 
     public void DoTransform(string command)
     {
-        //var bandaid = DummyActor.GetComponent<TweenTest>();
         string[] args = command.Split(",");
         Debug.Assert(args.Length > 1);
-        var bandaid = actorDict[args[0]];
-        var transformMethod = bandaid.GetType().GetMethod("TR_" + args[1]);
-        transformMethod.Invoke(bandaid,null);
+        var grabbedActor = actorDict[args[0]];
+        var transformMethod = grabbedActor.GetType().GetMethod("TR_" + args[1]);
+        transformMethod.Invoke(grabbedActor,null);
     }
 
     public void SwitchImage(string command)
     {
         string[] args = command.Split(",");
         Debug.Assert(args.Length > 1);
-        TweenTest bandaid = actorDict[args[0]];
-        bandaid.SetImage(args[1]);
+        TweenTest grabbedActor = actorDict[args[0]];
+        grabbedActor.SetImage(args[1]);
         
     }
 }

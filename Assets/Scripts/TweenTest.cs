@@ -12,6 +12,12 @@ public struct EmotionPair
 }
 
 
+/*
+Default actor class. Every actor will use a "dictionary" of name-sprite pairs to determine what emotion to use.
+Will include transforms for flipping horizontally if needed, as well as moving and bobbing around on screen.
+
+*/
+
 public class TweenTest : MonoBehaviour
 {
     

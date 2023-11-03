@@ -2,6 +2,7 @@
 [Speaker]: 'Lena'
 [Transform]: 'Lena,LeftCenter'
 [Transform]: 'Enchantress,RightCenterDown'
+[Background]: 'beans'
 "
 So..
 Why is this place empty?"
@@ -13,7 +14,7 @@ Why is this place empty?"
 [Speaker]: 'Lena'
 "I've agreed to work with you. You need to tell me what's going on!
 There's no way that you're the only person who lives here."
-[Speaker]: ''
+[Speaker]: '*'
 [Transform]: 'Enchantress,RightCenterDown'
 [Transform]: 'Lena,LeftCenterDown'
 [Image]: 'Enchantress,happy'
