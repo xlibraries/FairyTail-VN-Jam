@@ -1,0 +1,23 @@
+[Speaker]: 'Lena'
+(shaking head).. Nothing...
+[Speaker]: 'None'
+The enchantress sifts through the pile on the table, scooting a book off of another.
+[Speaker]: 'Enchantress'
+"This one's for entrap - UH - {r0.2} woodworking! It should be in the workshop."
+[Speaker]: 'Lena'
+"Speaking of ^6.^6.^6. There's a fairy locked in a cube. With a ring."
+[Speaker]: 'None'
+"The woman's voice teeters to a suspiciously higher pitch as words struggle to leave her mouth."
+[Speaker]: 'Enchantress'
+"Ohhh!
+You met Kombum.
+He's..^6^6 He's good, as fairies go.
+No need to worry~!
+I need to let him out again. Uh.."
+[Speaker]: 'None'
+"Interesting, Lena thought.
+Rules it out of being a bad guy.
+Fairies can be a thorn in your side, after all.
+Suddenly, her eyes caught a book of fair make.."
+[Speaker]: 'Lena'
+"'Magic Abilities for Attack and Defense 101.'"

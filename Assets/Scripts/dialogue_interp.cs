@@ -38,6 +38,7 @@ public class dialogue_interp : MonoBehaviour
     }
 
 
+
     public void askNext()
     {
       if(d_pos < dialogueChunks.Length) //While there are chunks left , add a chunk one at a time to the dialogue box.
@@ -53,6 +54,8 @@ public class dialogue_interp : MonoBehaviour
       }
       else
       {
+      //next = next.Replace("\n","");
+      //next = next.Replace(".",".\n");
       next = next.Replace("\n","{i0}\n");
       next += "{i0}/%";
       next = "{i0}" + next;
@@ -102,6 +105,7 @@ public class dialogue_interp : MonoBehaviour
     {
       /*Rewrite this code later to actually change the outcome in the UI. */
       Debug.Log($"The speaker's name is changed to {Name}");
+      if(Name == "None") {Name = "" ;}
       speakerIndicator.GetComponent<TextMeshProUGUI>().text = Name;
     }
 

@@ -507,9 +507,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgrounds:
-  - name: comet
+  - name: HouseMainHall
     value: {fileID: 21300000, guid: 2b41809b50d5aea4ba0c0d74f2859c14, type: 3}
-  - name: beans
+  - name: Library
     value: {fileID: 21300000, guid: 062774899cebd57469c98471984dad1b, type: 3}
   - name: beans
     value: {fileID: 21300000, guid: f618c5fe13b18994aa5aee8b97d8dca1, type: 3}
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.49056602, g: 0.21982911, b: 0.21982911, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.49411765, g: 0.22352941, b: 0.22352941, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda2e0bab33f6e042a3dc4ccd37dd75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueFile: {fileID: 4900000, guid: e5975dc67604f6f4ca79fa4caf1987ed, type: 3}
+  dialogueFile: {fileID: 4900000, guid: f008213f0e786d74e9e9c33860a2c5f7, type: 3}
   dialogueDestination: {fileID: 56011363}
   speakerIndicator: {fileID: 1194290649}
 --- !u!4 &2032161908
