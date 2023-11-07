@@ -84,9 +84,6 @@ public class dialogue_interp : MonoBehaviour
         case "Speaker":
          changeSpeakerName(value);
          break;
-        case "Location":
-         setLocation(value);
-         break;
         case "Transform":
           actorManager.DoTransform(value);
           break;
@@ -96,7 +93,13 @@ public class dialogue_interp : MonoBehaviour
         case "Background":
           setBackground(value);
           break;
-      }
+        case "Show":
+          actorManager.SpawnActor(value);
+          break;
+        case "Hide":
+        actorManager.KillActor(value);
+         break;
+            }
 
       }
     }
@@ -109,11 +112,7 @@ public class dialogue_interp : MonoBehaviour
       speakerIndicator.GetComponent<TextMeshProUGUI>().text = Name;
     }
 
-    private void setLocation(string Name)
-    {
-      /*Rewrite this code later to actually change the outcome in the game. */
-      Debug.Log($"The speaker's name is changed to {Name}");
-    }
+
 
     private void setBackground(string Name)
     {

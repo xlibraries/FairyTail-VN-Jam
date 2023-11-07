@@ -2,10 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct ActorPair
+{
+    public string name;
+    public GameObject value;
+}
+
+
 public class ActorManager : MonoBehaviour
 {
 
     Dictionary<string,TweenTest> actorDict;
+
+    public List<ActorPair> actorPresets;
+
+    public GameObject ActorStage;
 
     public void GatherActors()
     {
@@ -19,7 +31,32 @@ public class ActorManager : MonoBehaviour
             var TT = actorGameObject.GetComponent<TweenTest>();
             actorDict[TT.actorName] = TT;
         }
+
+        //SpawnActor("Lena,LeftCenter,angry");
     }
+
+    //Replace with more sophisticated "fade in"
+    public void SpawnActor(string command)
+    {
+        string[] args = command.Split(",");
+        string name = args[0];
+        GameObject storedActor = actorPresets.Find(actor => actor.name == name).value;
+        GameObject madeActor = GameObject.Instantiate(storedActor);
+        madeActor.transform.parent = ActorStage.transform;
+        var TT = madeActor.GetComponent<TweenTest>();
+        actorDict[TT.actorName] = TT;
+
+        DoTransform(name + "," + args[1]);
+        SwitchImage(name + "," + args[2]);
+    }
+
+    //Replace with more sophisticated "fade out"
+    public void KillActor(string command)
+    {
+        GameObject actorToKill = actorPresets.Find(actor => actor.name == name).value;
+        GameObject.Destroy(actorToKill);
+    }
+
 
     public void DoTransform(string command)
     {

@@ -1,3 +1,4 @@
+[Show]: 'Lena,LeftCenterDown,angry'
 [Background]: 'HouseMainHall'
 "I should have checked the library first, Lena thought as she paced down the hall.
 A houseplant on a corner stand welcomed her.
@@ -61,7 +62,7 @@ told me which books matter."
 [Speaker]: 'None'
 "Just then, the house's front door slamed shut.
 Multiple voices conferred and one jogged down the hall."
-[Show]: 'Enchantress,LeftCenterDown,Anxious'
+[Show]: 'Enchantress,RightCenterDown,angry'
 [Speaker]: 'Enchantress'
 "I've brought assistance! They may know more about the door. "
 [Speaker]: 'Lena'
