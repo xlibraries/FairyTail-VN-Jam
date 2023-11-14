@@ -1,0 +1,121 @@
+[Show]: 'Lena,LeftCenterDown,angry'
+[Background]: 'HouseMainHall'
+"I should have checked the library first, Lena thought as she paced down the hall.
+A houseplant on a corner stand welcomed her.
+Hanging on the wall opposite was a slab of strong, deep brown scales, reflecting light from a sun roon window.
+Above it, a talon the length of her forearm. She paused."
+[Speaker]: 'Lena'
+"Quite a trophy! Strange choice with roses by the other wall."
+[Speaker]: 'None'
+"She continued down to the library.
+At last she passed by it: {i0} The Forbidden door at the Mezzanine.
+A thick slab of metal accented by a raised edge.
+Stamped at its center was a family crest.
+However, dust and discoloration made seeing it all difficult.
+Lena leaned forward and, risking one check, rapped knuckles against it."
+[Speaker]: 'Lena'
+"Skylan? Are you back there?"
+[Speaker]: 'None'
+"The voice made a distant response.
+Like it was at the very back of the room scared to speak up."
+[Speaker]: 'Lena'
+"Whoever is stuck back there, I'm here to help.
+It won't be long.
+Gotta get you out before the orcs smash this house up."
+[Speaker]: 'None'
+"Whoever was stuck raised their voice an octave higher.
+And sneered."
+[Speaker]: 'Lena'
+"What the?"
+[Speaker]: 'None'
+"Doggonit, she thought.
+Lena planted a fist on the metal."
+[Speaker]: 'Lena'
+"Urrhh!! If you're not Skylan, then & I am beating your arse when I rip this thing off its hinges.
+I hope he is still alive.
+I hope you are still there, my friend. You owe me a drink."
+[Speaker]: 'None'
+"She swallowed a sniffle and sighed.
+It wasn't like she was locked in an endless dungeon with traps and skeletons waiting.
+This place belonged to a grieving granddaughter.
+But^6.^6.^6. was she hiding more?
+She didn't appear that way.
+Really, the enchantress seemed just as interested in the door as she was, Lena thought.
+Maybe she doesn't know what's behind it either...
+An uncomfortable air and the pressure of time pushed her - without thought - into the next room.
+After all, the library door was wide open.
+There was a small cobweb in the corner of the opening..
+That broomstick can handle it, she thought, and stepped right in."
+[Background]: 'Library'
+"Lena got right to work.
+For a house this size, this library was quite expansive.
+All four walls lined with shelves, a couple full armor suits in corners, and a chandeler - relatively small - throwing light all around with its candles.
+Its rope was secured around a wall hook.
+But only five shelves high was every wall stacked; on the top of each shelf was a jumble of tools. 
+M.. magic tools? Maybe.
+An unkempt stack of books sat on a table in the mdist."
+[Speaker]: 'Lena'
+"Alrighty.
+I need the last word or two. And where to start.^6.^6.^6.
+I don't have time to look through all these... Wish I knew an incantation or something that
+told me which books matter."
+[Speaker]: 'None'
+"Just then, the house's front door slamed shut.
+Multiple voices conferred and one jogged down the hall."
+[Show]: 'Enchantress,RightCenterDown,angry'
+[Speaker]: 'Enchantress'
+"I've brought assistance! They may know more about the door. "
+[Speaker]: 'Lena'
+"Oh, good. Maybe they know the phrase to open that door. She received a shake of the head."
+[Speaker]: 'Enchantress'
+"Two are soldiers and one is a&farmer's daughter - an old friend.&"&I brought a few arrows, more&abelith, and red wine.& And a ring&for shooting fire.&
+[Speaker]: 'Lena'
+"Better than no help at all. 
+Well, I need one or two last words. Probably in guidebooks."
+[Speaker]: 'Enchantress'
+"Oh yes. Check the bottom shelves facing you.
+By the way^6.^6.^6. if you go to the far corner^6, try not to scream."
+[Speaker]: 'None'
+While thumbing through books^6, Lena shuddered and froze^6, turning her gaze to the enchantress."
+[Speaker]: 'Lena'
+"Why?"
+[Speaker]: 'Enchantress'
+"It's^6.^6.^6. unusual.
+Lena glares at her, needing more information."
+[Speaker]: 'Enchantress'
+"Its a creature stuck in time.
+By the way, OUR ^6^6 time is growing shorter.
+Let me help."
+[Speaker]: 'None'
+"The best thing she's said this day, Lena thought."
+[Speaker]: 'Lena'
+"Ah, here is one... 'Words for Everyday Use.'"
+[Speaker]: 'None'
+"She rifles through its thick pages.
+Instant cleaning spells^6.^6.^6. 
+Ignite a fire in your fireplace^6.^6.^6.
+Hammer a nail^6.^6.^6. 
+Grab a far branch...
+[Speaker]: 'Lena'
+(shaking head).. Nothing...
+[Speaker]: 'None'
+The enchantress sifts through the pile on the table, scooting a book off of another.
+[Speaker]: 'Enchantress'
+"This one's for entrap - UH - {r0.2} woodworking! It should be in the workshop."
+[Speaker]: 'Lena'
+"Speaking of ^6.^6.^6. There's a fairy locked in a cube. With a ring."
+[Speaker]: 'None'
+"The woman's voice teeters to a suspiciously higher pitch as words struggle to leave her mouth."
+[Speaker]: 'Enchantress'
+"Ohhh!
+You met Kombum.
+He's..^6^6 He's good, as fairies go.
+No need to worry~!
+I need to let him out again. Uh.."
+[Speaker]: 'None'
+"Interesting, Lena thought.
+Rules it out of being a bad guy.
+Fairies can be a thorn in your side, after all.
+Suddenly, her eyes caught a book of fair make.."
+[Speaker]: 'Lena'
+"'Magic Abilities for Attack and Defense 101.'"

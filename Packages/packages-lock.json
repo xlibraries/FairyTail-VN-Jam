@@ -257,6 +257,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.zigurous.tweening": {
+      "version": "https://github.com/zigurous/unity-tweening-system.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "656e269e335cc788ad7ef78a632e543f8ac055d3"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

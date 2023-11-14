@@ -21,6 +21,9 @@ public class type_attempt_3 : MonoBehaviour
     public float timeDivisor = 30;
 
     public dialogue_interp dialoguemaster = null;
+
+
+
     
     [SerializeField]
     int pos;
