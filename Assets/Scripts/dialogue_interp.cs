@@ -6,6 +6,15 @@ using System.IO;
 using System.Text.RegularExpressions;
 using TMPro;
 
+public struct JugglePair
+{
+  public string speakingTransform;
+  public string speakingImg;
+  public string silentTransform;
+  public string silentImg;
+}
+
+
 public class dialogue_interp : MonoBehaviour
 
 {
@@ -24,6 +33,9 @@ public class dialogue_interp : MonoBehaviour
     string[] dialogueChunks;
     int d_pos = 0;
 
+    private Dictionary<string,JugglePair> JuggleData;
+    private string currentSpeaker = "";
+
 
     void Start()
     {
@@ -32,6 +44,7 @@ public class dialogue_interp : MonoBehaviour
           pairedDialogueBox.curPut = "";
           dialogueChunks = dialogueFile.text.Split("\"");
           actorManager= this.GetComponent<ActorManager>();
+          JuggleData = new Dictionary<string,JugglePair>();
         //Debug.Log(dialogueChunks[0]);
           actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
           askNext();
@@ -82,8 +95,32 @@ public class dialogue_interp : MonoBehaviour
       switch(key)
       {
         case "Speaker":
-         changeSpeakerName(value);
-         break;
+
+        if(value != "None")
+        {
+        
+        JugglePair oldSpeakerJugglePair;
+        if(JuggleData.TryGetValue(currentSpeaker, out oldSpeakerJugglePair)) //current speaker name is in juggleData. Have them stop talking
+        {
+          actorManager.DoTransform($"{currentSpeaker},{oldSpeakerJugglePair.silentTransform}");
+          actorManager.SwitchImage($"{currentSpeaker},{oldSpeakerJugglePair.silentImg}");
+        }
+        }
+
+        //Change the speaker name in the UI
+        changeSpeakerName(value);
+        currentSpeaker = value;
+
+        JugglePair newSpeakerJugglePair;
+        if(JuggleData.TryGetValue(value,out newSpeakerJugglePair)) //New speaker name is in juggleData. Have them start talking
+        {
+         // Debug.Log("bingus 2");
+          //JugglePair speakerJugglePair = JuggleData[value];
+          actorManager.DoTransform($"{value},{newSpeakerJugglePair.speakingTransform}");
+          actorManager.SwitchImage($"{value},{newSpeakerJugglePair.speakingImg}");
+        }
+
+         break; //End case for Speaker tag
         case "Transform":
           actorManager.DoTransform(value);
           break;
@@ -99,7 +136,16 @@ public class dialogue_interp : MonoBehaviour
         case "Hide":
         actorManager.KillActor(value);
          break;
-            }
+        case "Juggle":
+          addJuggle(value);
+        break;
+        case "RemoveJuggle":
+          JuggleData.Remove(value); 
+        break;
+        case "UnJuggle":
+          JuggleData.Clear();
+        break;
+      }
 
       }
     }
@@ -121,7 +167,23 @@ public class dialogue_interp : MonoBehaviour
       BG.FadeColorSwitch(Color.black,2.0f,Name);
     }
 
-
+    /*
+    Assigns juggle behavior to an actor.
+    Accepts five arguments - the name, the transform+image when talking, and the transform+image when not talking
+    */
+    private void addJuggle(string Data)
+    {
+      string[] rawData = Data.Split(",");
+      Debug.Assert(rawData.Length > 3);
+      JugglePair newJugglePair;
+      string actorName = rawData[0];
+      Debug.Log(actorName);
+      newJugglePair.speakingTransform = rawData[1];
+      newJugglePair.speakingImg = rawData[2];
+      newJugglePair.silentTransform = rawData[3];
+      newJugglePair.silentImg = rawData[4];
+      JuggleData[actorName] = newJugglePair;
+    }
 
 
 }
