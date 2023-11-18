@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.IO;
 using System.Text.RegularExpressions;
 using TMPro;
+using static Constants;
 
 public struct JugglePair
 {
@@ -34,14 +35,14 @@ public class DialogueInterpreture : MonoBehaviour
     int dPos = 0;
 
     private Dictionary<string,JugglePair> juggleData;
-    private string currentSpeaker = "";
+    private string currentSpeaker = NULL;
 
 
     void Start()
     {
           pairedDialogueBox = dialogueDestination.GetComponent<TypeAttempt3>();
           pairedDialogueBox.dialogueMaster = this;
-          pairedDialogueBox.curPut = "";
+          pairedDialogueBox.curPut = NULL;
           dialogueChunks = dialogueFile.text.Split("\"");
           actorManager= this.GetComponent<ActorManager>();
           juggleData = new Dictionary<string,JugglePair>();
@@ -58,7 +59,7 @@ public class DialogueInterpreture : MonoBehaviour
       {
       string next = dialogueChunks[dPos];
       Debug.Log(next);
-      if(next.Contains("[")) // If this is a token chunk, parse it as such.
+      if(next.Contains(SQUARE_BRACKET_OPEN)) // If this is a token chunk, parse it as such.
       {
         Debug.Log("Parsing scene");
         ParseScene(next);
@@ -69,7 +70,7 @@ public class DialogueInterpreture : MonoBehaviour
       {
       //next = next.Replace("\n","");
       //next = next.Replace(".",".\n");
-      next = next.Replace("\n","{i0}\n");
+      next = next.Replace(NEWLINE,"{i0}" + NEWLINE);
       next += "{i0}/%";
       next = "{i0}" + next;
       pairedDialogueBox.curPut = next;
@@ -94,9 +95,9 @@ public class DialogueInterpreture : MonoBehaviour
       // Do something based on the key.
       switch(key)
       {
-        case "Speaker":
+        case SPEAKER:
 
-        if(value != "None")
+        if(value != NONE)
         {
         
         JugglePair oldSpeakerJugglePair;
@@ -120,29 +121,29 @@ public class DialogueInterpreture : MonoBehaviour
           actorManager.SwitchImage($"{value},{newSpeakerJugglePair.speakingImg}");
         }
 
-         break; //End case for Speaker tag
-        case "Transform":
+         break; //End case for SPEAKER tag
+        case TRANSFORM:
           actorManager.DoTransform(value);
           break;
-        case "Image":
+        case IMAGE:
           actorManager.SwitchImage(value);
           break;
-        case "Background":
+        case BACKGROUND:
           SetBackground(value);
           break;
-        case "Show":
+        case SHOW:
           actorManager.SpawnActor(value);
           break;
-        case "Hide":
+        case HIDE:
         actorManager.KillActor(value);
          break;
-        case "Juggle":
+        case JUGGLE:
           AddJuggle(value);
         break;
-        case "RemoveJuggle":
+        case REMOVE_JUGGLE:
           juggleData.Remove(value); 
         break;
-        case "UnJuggle":
+        case UN_JUGGLE:
           juggleData.Clear();
         break;
       }
@@ -154,7 +155,7 @@ public class DialogueInterpreture : MonoBehaviour
     {
       /*Rewrite this code later to actually change the outcome in the UI. */
       Debug.Log($"The speaker's name is changed to {name}");
-      if(name == "None") {name = "" ;}
+      if(name == NONE) {name = NULL ;}
       speakerIndicator.GetComponent<TextMeshProUGUI>().text = name;
     }
 
@@ -163,7 +164,7 @@ public class DialogueInterpreture : MonoBehaviour
     private void SetBackground(string name)
     {
       Debug.Log($"The background is changed to {name}");
-      var bg = GameObject.FindGameObjectsWithTag("Background")[0].GetComponent<BackgroundBasic>();
+      var bg = GameObject.FindGameObjectsWithTag(BACKGROUND)[0].GetComponent<BackgroundBasic>();
       bg.FadeColorSwitch(Color.black,2.0f,name);
     }
 
@@ -173,7 +174,7 @@ public class DialogueInterpreture : MonoBehaviour
     */
     private void AddJuggle(string Data)
     {
-      string[] rawData = Data.Split(",");
+      string[] rawData = Data.Split(COMMA);
       Debug.Assert(rawData.Length > 3);
       JugglePair newJugglePair;
       string actorName = rawData[0];
