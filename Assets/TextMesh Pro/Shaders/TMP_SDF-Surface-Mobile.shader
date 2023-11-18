@@ -86,7 +86,7 @@ SubShader {
 	// Pass to render object as a shadow caster
 	Pass
 	{
-		Name "Caster"
+		name "Caster"
 		Tags { "LightMode" = "ShadowCaster" }
 		Offset 1, 1
 

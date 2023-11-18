@@ -17,16 +17,16 @@ public class ActorManager : MonoBehaviour
 
     public List<ActorPair> actorPresets;
 
-    public GameObject ActorStage;
+    public GameObject actorStage;
 
     public void GatherActors()
     {
         actorDict = new Dictionary<string, TweenTest>();
 
         Debug.Log("Finding all actors");
-        var ActorList = GameObject.FindGameObjectsWithTag("Actor");
-        Debug.Assert(ActorList.Length > 0);
-        foreach (var actorGameObject in ActorList)
+        var actorList = GameObject.FindGameObjectsWithTag("Actor");
+        Debug.Assert(actorList.Length > 0);
+        foreach (var actorGameObject in actorList)
         {
             var TT = actorGameObject.GetComponent<TweenTest>();
             actorDict[TT.actorName] = TT;
@@ -42,7 +42,7 @@ public class ActorManager : MonoBehaviour
         string name = args[0];
         GameObject storedActor = actorPresets.Find(actor => actor.name == name).value;
         GameObject madeActor = GameObject.Instantiate(storedActor);
-        madeActor.transform.parent = ActorStage.transform;
+        madeActor.transform.parent = actorStage.transform;
         var TT = madeActor.GetComponent<TweenTest>();
         actorDict[TT.actorName] = TT;
 
@@ -63,7 +63,7 @@ public class ActorManager : MonoBehaviour
         string[] args = command.Split(",");
         Debug.Assert(args.Length > 1);
         var grabbedActor = actorDict[args[0]];
-        var transformMethod = grabbedActor.GetType().GetMethod("TR_" + args[1]);
+        var transformMethod = grabbedActor.GetType().GetMethod("TR" + args[1]);
         transformMethod.Invoke(grabbedActor,null);
     }
 

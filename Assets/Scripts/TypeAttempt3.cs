@@ -6,10 +6,10 @@ using TMPro;
 
 
 
-public class type_attempt_3 : MonoBehaviour
+public class TypeAttempt3 : MonoBehaviour
 {
     
-    Dictionary<char,string> colordex = new Dictionary<char,string>()
+    Dictionary<char,string> colorIndex = new Dictionary<char,string>()
     {
         {'R',"red"},
         {'G',"green"},
@@ -19,10 +19,11 @@ public class type_attempt_3 : MonoBehaviour
 
     public float typeSpeed = 0.05f;
     public float timeDivisor = 30;
+    public DialogueInterpreture dialogueMaster = null;
 
-    public dialogue_interp dialoguemaster = null;
-
-
+    private string userCommand = "";
+    private char swivel = '_';
+    string unallowed = "<>\n\b\r";
 
     
     [SerializeField]
@@ -30,25 +31,25 @@ public class type_attempt_3 : MonoBehaviour
 
     [MultilineAttribute]
     public string curPut = "";
-    string rawShown = "";
+    private string rawShown = "";
 
-    TextMeshProUGUI textmesh;
+    TextMeshProUGUI textMesh;
     // Start is called before the first frame update
     void Start()
     {
-        textmesh = GetComponent<TextMeshProUGUI>();
-        StartCoroutine(typeLoop());
+        textMesh = GetComponent<TextMeshProUGUI>();
+        StartCoroutine(TypeLoop());
     }
 
-
-    int seeknext(string a,int start,string tok)
+    // What does tok mean?
+    int SeekNext(string a,int start,string tok)
     {
         int endchar = a.Substring(start).IndexOf(tok);
         return endchar + 1;
     }
 
 
-    IEnumerator typeLoop()
+    IEnumerator TypeLoop()
     {
         pos = 0;
         int offset = 0;
@@ -84,8 +85,8 @@ public class type_attempt_3 : MonoBehaviour
                 char color = curPut[combo + 1];
                 offset += 2;
                 rawShown += "<color=\"";
-                string cs = "white";
-                cs = colordex[color];
+                string cs = "white"; //What is cs?
+                cs = colorIndex[color];
 
                 rawShown += cs;
                 rawShown += "\">";
@@ -95,7 +96,7 @@ public class type_attempt_3 : MonoBehaviour
             //Allows user to add TMPRO tags to the input text.
             if(c == '<')
             {
-                int endchar = seeknext(curPut, combo, ">");
+                int endchar = SeekNext(curPut, combo, ">");
                 string tag = curPut.Substring(combo, endchar);
                 offset += endchar;
                 rawShown += tag;
@@ -105,7 +106,7 @@ public class type_attempt_3 : MonoBehaviour
             //Special tags related to time, returns, and waiting for input from the user.
             if (c == '{')
             {
-                int endchar = seeknext(curPut, combo, "}");
+                int endchar = SeekNext(curPut, combo, "}");
                 float tag = float.Parse(curPut.Substring(combo + 2, endchar - 3));
                 switch(curPut[combo+1])
                 {
@@ -124,8 +125,8 @@ public class type_attempt_3 : MonoBehaviour
                         rawShown = "";
                         break;
                     case 't':
-                        StartCoroutine(swivelCarat());
-                        StartCoroutine(userInput());
+                        StartCoroutine(SwivelCarat());
+                        StartCoroutine(UserInput());
                         yield break;
                         break;
 
@@ -140,12 +141,12 @@ public class type_attempt_3 : MonoBehaviour
             {
                 if(curPut[combo+1]=='%')
                 {   
-                    if(dialoguemaster != null)
+                    if(dialogueMaster != null)
                     {
                     curPut = "";
                     pos = 0;
                     offset = 0;
-                    dialoguemaster.askNext();
+                    dialogueMaster.AskNext();
                     continue;
                     }
                 }
@@ -154,18 +155,14 @@ public class type_attempt_3 : MonoBehaviour
 
             pos++;
             rawShown += c;
-            textmesh.text = rawShown;
+            textMesh.text = rawShown;
             yield return new WaitForSeconds(typeSpeed);
 
         }
 
     }
 
-
-    string userCommand = "";
-    char swivel = '_';
-    string unallowed = "<>\n\b\r";
-    IEnumerator userInput()
+    IEnumerator UserInput()
     {
         while(true)
         {
@@ -187,22 +184,22 @@ public class type_attempt_3 : MonoBehaviour
         {
         userCommand += Input.inputString;
         }
-        textmesh.text = rawShown + userCommand + swivel;
+        textMesh.text = rawShown + userCommand + swivel;
         }
     }
 
 
-    IEnumerator swivelCarat()
+    IEnumerator SwivelCarat()
     {
-        char[] char_ray = {'_','\\','I','/'};
-        int char_at = 0;
+        char[] charRay = {'_','\\','I','/'};
+        int charAt = 0;
         while(true)
         {
             yield return new WaitForSeconds(0.3f);
-            swivel = char_ray[char_at];
-            textmesh.text = rawShown + userCommand + swivel;
-            char_at++;
-            if(char_at >= char_ray.Length){char_at = 0;}
+            swivel = charRay[charAt];
+            textMesh.text = rawShown + userCommand + swivel;
+            charAt++;
+            if(charAt >= charRay.Length){charAt = 0;}
         }
     }
 
