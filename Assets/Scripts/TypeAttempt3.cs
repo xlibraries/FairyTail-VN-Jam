@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using static Constants;
 
 
 public class TypeAttempt3 : MonoBehaviour
@@ -21,17 +21,17 @@ public class TypeAttempt3 : MonoBehaviour
     public float timeDivisor = 30;
     public DialogueInterpreture dialogueMaster = null;
 
-    private string userCommand = "";
-    private char swivel = '_';
-    string unallowed = "<>\n\b\r";
+    private string userCommand = NULL;
+    private char swivel = UNDERSCORE;
+    string unallowed = ANGLE_BRACKET+ NEWLINE + "\b\r";
 
     
     [SerializeField]
     int pos;
 
     [MultilineAttribute]
-    public string curPut = "";
-    private string rawShown = "";
+    public string curPut = NULL;
+    private string rawShown = NULL;
 
     TextMeshProUGUI textMesh;
     // Start is called before the first frame update
@@ -62,7 +62,7 @@ public class TypeAttempt3 : MonoBehaviour
 
 
             //Toby Fox style pause shorthand.
-            if (c == '^')
+            if (c == CARET)
             {
                 float new_speed = float.Parse(curPut[combo + 1].ToString());
                 yield return new WaitForSeconds(new_speed/timeDivisor);
@@ -71,21 +71,21 @@ public class TypeAttempt3 : MonoBehaviour
             }
 
             //Toby Fox style newline shorthand.
-            if (c == '&')
+            if (c == AMPERSAND)
             {
                 offset += 1;
-                rawShown += "\n";
+                rawShown += NEWLINE;
                 continue;
             }
 
             
             // Toby Fox style coloration shorthand.
-            if (c == '\\')
+            if (c == BACKSLASH)
             {
                 char color = curPut[combo + 1];
                 offset += 2;
                 rawShown += "<color=\"";
-                string cs = "white"; //What is cs?
+                string cs = WHITE; //What is cs?
                 cs = colorIndex[color];
 
                 rawShown += cs;
@@ -94,7 +94,7 @@ public class TypeAttempt3 : MonoBehaviour
             }
 
             //Allows user to add TMPRO tags to the input text.
-            if(c == '<')
+            if(c == ANGLE_OPEN)
             {
                 int endchar = SeekNext(curPut, combo, ">");
                 string tag = curPut.Substring(combo, endchar);
@@ -104,9 +104,9 @@ public class TypeAttempt3 : MonoBehaviour
             }
 
             //Special tags related to time, returns, and waiting for input from the user.
-            if (c == '{')
+            if (c == BRACE_OPEN)
             {
-                int endchar = SeekNext(curPut, combo, "}");
+                int endchar = SeekNext(curPut, combo, BRACE_CLOSE.ToString());
                 float tag = float.Parse(curPut.Substring(combo + 2, endchar - 3));
                 switch(curPut[combo+1])
                 {
@@ -118,11 +118,11 @@ public class TypeAttempt3 : MonoBehaviour
                         break;
                     case 'r':
                         yield return new WaitForSeconds(tag);
-                        rawShown = "";
+                        rawShown = NULL;
                         break;
                     case 'i':
-                        yield return new WaitUntil(()=> Input.GetKeyDown("space"));
-                        rawShown = "";
+                        yield return new WaitUntil(()=> Input.GetKeyDown(SPACE_KEY));
+                        rawShown = NULL;
                         break;
                     case 't':
                         StartCoroutine(SwivelCarat());
@@ -137,13 +137,13 @@ public class TypeAttempt3 : MonoBehaviour
 
             }
 
-            if(c=='/')
+            if(c==SLASH)
             {
-                if(curPut[combo+1]=='%')
+                if(curPut[combo+1]==PERCENT)
                 {   
                     if(dialogueMaster != null)
                     {
-                    curPut = "";
+                    curPut = NULL;
                     pos = 0;
                     offset = 0;
                     dialogueMaster.AskNext();
@@ -172,7 +172,7 @@ public class TypeAttempt3 : MonoBehaviour
         {
             userCommand = userCommand.Substring(0,userCommand.Length-1);
             Debug.Log("beef");
-            c ="";
+            c =NULL;
         }
 
         if(c=="\r")
@@ -180,7 +180,7 @@ public class TypeAttempt3 : MonoBehaviour
             Debug.Log("submitting");
         }
 
-        if(c!="" && !unallowed.Contains(c))
+        if(c!=NULL && !unallowed.Contains(c))
         {
         userCommand += Input.inputString;
         }
@@ -191,7 +191,7 @@ public class TypeAttempt3 : MonoBehaviour
 
     IEnumerator SwivelCarat()
     {
-        char[] charRay = {'_','\\','I','/'};
+        char[] charRay = { UNDERSCORE, BACKSLASH, 'I', SLASH };
         int charAt = 0;
         while(true)
         {
