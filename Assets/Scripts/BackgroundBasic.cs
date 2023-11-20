@@ -15,13 +15,13 @@ public struct BackgroundPair
 /*
 Test class for the background system. Very similar to the actor system, but backgrounds may need dedicated transitions and funky effects.
 */
-public class background_basic : MonoBehaviour
+public class BackgroundBasic : MonoBehaviour
 {
 
     public List<BackgroundPair> backgrounds;
 
 
-    public void setBGImage(string newBG)
+    public void SetBGImage(string newBG)
     {
         Sprite nextSprite = backgrounds.Find(bg => bg.name == newBG).value;
         this.GetComponent<Image>().sprite = nextSprite;

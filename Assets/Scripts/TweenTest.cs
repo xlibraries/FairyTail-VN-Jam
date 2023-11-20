@@ -25,31 +25,31 @@ public class TweenTest : MonoBehaviour
 
     public List<EmotionPair> emotions;
 
-    private void TR_Basic(float x, float y)
+    private void TRBasic(float x, float y)
     {
         transform.TweenPosition(new Vector3(x*Screen.width,y*Screen.height,0f),0.2f);
     }
 
-    public void TR_LeftCenter()
+    public void TRLeftCenter()
     {
-        TR_Basic(0.4f,0.5f);
+        TRBasic(0.4f,0.5f);
     }
 
-    public void TR_LeftCenterDown()
+    public void TRLeftCenterDown()
     {
-        TR_Basic(0.2f,0.4f);
+        TRBasic(0.2f,0.4f);
     }
 
 
-    public void TR_RightCenter()
+    public void TRRightCenter()
     {
-        TR_Basic(0.6f,0.5f);
+        TRBasic(0.6f,0.5f);
     }
 
     
-    public void TR_RightCenterDown()
+    public void TRRightCenterDown()
     {
-        TR_Basic(0.8f,0.4f);
+        TRBasic(0.8f,0.4f);
     }
 
     public void SetImage(string command)
