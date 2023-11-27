@@ -64,21 +64,27 @@ public class Constants : MonoBehaviour
     public const string SPEAKER = "Speaker";
     public const string ACTOR = "Actor";
     public const string TRANSFORM = "Transform";
-    public const string IMAGE = "Image";
-    public const string SCENE = "Scene";
-    public const string JUGGLE = "Juggle";
     public const string FADE = "Fade";
     public const string COLOR = "Color";
     public const string SWITCH = "Switch";
-    public const string KILL = "Kill";
     public const string TRANSITION = "Transition";
     public const string NONE = "None";
+    public const string WHITE = "white";
+    public const string SPACE_KEY = "space";
+    #endregion
+    #region Tags
+    public const string IMAGE = "Image";
+    public const string SCENE = "Scene";
+    public const string JUGGLE = "Juggle";
+    public const string LOAD = "Load";
     public const string BACKGROUND = "Background";
     public const string SHOW = "Show";
     public const string HIDE = "Hide";
     public const string REMOVE_JUGGLE = "RemoveJuggle";
     public const string UN_JUGGLE = "UnJuggle";
-    public const string WHITE = "white";
-    public const string SPACE_KEY = "space";
+    public const string KILL = "Kill";
+    #endregion
+    #region File Paths
+    public const string DIALOGUE_PATH = "Assets/Dialogue/";
     #endregion
 }

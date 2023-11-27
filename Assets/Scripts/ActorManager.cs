@@ -41,14 +41,22 @@ public class ActorManager : MonoBehaviour
     {
         string[] args = command.Split(COMMA);
         string name = args[0];
+        GameObject madeActor;
+        if(actorDict.ContainsKey(name))
+        {
+            Debug.Log($"Actor {name} already detected. Proceeding to transforms. Side note: this should not be possible and is an error in tag wrangling.");
+        }
+        else
+        {
         GameObject storedActor = actorPresets.Find(actor => actor.name == name).value;
-        GameObject madeActor = GameObject.Instantiate(storedActor);
+        madeActor = GameObject.Instantiate(storedActor);
         madeActor.transform.parent = actorStage.transform;
         var TT = madeActor.GetComponent<TweenTest>();
         actorDict[TT.actorName] = TT;
+        }
 
-        DoTransform(name + COMMA + args[1]);
-        SwitchImage(name + COMMA + args[2]);
+        DoTransform($"{name},{args[1]}");
+        SwitchImage($"{name},{args[2]}");
     }
 
     //Replace with more sophisticated "fade out"

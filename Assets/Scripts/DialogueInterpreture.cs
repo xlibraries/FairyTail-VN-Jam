@@ -90,7 +90,6 @@ public class DialogueInterpreture : MonoBehaviour
         //Unwraps regex matches
       string key = g.Groups[1].Value;
       string value = g.Groups[2].Value;
-      //Debug.Log(key + " " + value);
 
       // Do something based on the key.
       switch(key)
@@ -115,8 +114,6 @@ public class DialogueInterpreture : MonoBehaviour
         JugglePair newSpeakerJugglePair;
         if(juggleData.TryGetValue(value,out newSpeakerJugglePair)) //New speaker name is in juggleData. Have them start talking
         {
-         // Debug.Log("bingus 2");
-          //JugglePair speakerJugglePair = juggleData[value];
           actorManager.DoTransform($"{value},{newSpeakerJugglePair.speakingTransform}");
           actorManager.SwitchImage($"{value},{newSpeakerJugglePair.speakingImg}");
         }
@@ -146,14 +143,28 @@ public class DialogueInterpreture : MonoBehaviour
         case UN_JUGGLE:
           juggleData.Clear();
         break;
+        case LOAD:
+          LoadNewCRD(value);
+        break;
       }
 
       }
     }
 
+    // Loads in a dialogue file
+    private void LoadNewCRD(string name)
+    {
+      StreamReader inputStream = new StreamReader(DIALOGUE_PATH + name);
+      string result = inputStream.ReadToEnd();
+      pairedDialogueBox.curPut = NULL;
+      dialogueChunks = result.Split("\"");
+      dPos = 0;
+      AskNext();
+      inputStream.Close();
+    }
+
     private void ChangeSpeakerName(string name)
     {
-      /*Rewrite this code later to actually change the outcome in the UI. */
       Debug.Log($"The speaker's name is changed to {name}");
       if(name == NONE) {name = NULL ;}
       speakerIndicator.GetComponent<TextMeshProUGUI>().text = name;

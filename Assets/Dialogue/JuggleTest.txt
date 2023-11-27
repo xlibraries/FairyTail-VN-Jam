@@ -18,5 +18,8 @@ NO GO AWAY"
 [Speaker]: 'Lena'
 "Father
 Please don't .. I have a .. tractor trailer full of weevils"
+[Load]: 'SceneDoor.txt'
+"ee blingus"
+
 
 
