@@ -34,7 +34,7 @@ public class DialogueInterpreture : MonoBehaviour
     private ActorManager actorManager;
 
     string[] dialogueChunks;
-    int dPos = 0;
+    public int dPos = 0;
 
     private Dictionary<string, JugglePair> juggleData;
     private string currentSpeaker = NULL;
@@ -61,7 +61,7 @@ public class DialogueInterpreture : MonoBehaviour
         if (dPos < dialogueChunks.Length) //While there are chunks left , add a chunk one at a time to the dialogue box.
         {
             string next = dialogueChunks[dPos];
-            Debug.Log(next);
+            Debug.Log($"LINE ------ {dPos} \n {next}");
             if (next.Contains(SQUARE_BRACKET_OPEN)) // If this is a token chunk, parse it as such.
             {
                 Debug.Log("Parsing scene");
