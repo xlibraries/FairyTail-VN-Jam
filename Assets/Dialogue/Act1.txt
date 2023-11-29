@@ -1,253 +1,111 @@
-[Background]: 'Forest'
-[Speaker]: 'Lena'
-"Let me try again, Skylan. I think I
-know why it didn't work that time.
-Then you take your turn."
-[Speaker]: 'Skylan'
-"Fourth time is a charm, I guess.
-Not the third. "
-[Speaker]: 'Lena'
-"(steadies breath)
-My hand muscles cramp before I can
-generate enough power."
-[Speaker]: 'Skylan'
-"Its simple: focus on the object.
-Not its surroundings."
-[Speaker]: 'Lena'
-"That is what I am attempting, you
-realize."
-[Speaker]: 'Skylan'
+""
+[Background]: 'Forest' 
+[Speaker]: 'Lena' 
+"Let me try again, Skylan. I think I know why it didn't work that time. Then you take your turn."
+[Speaker]: 'Skylan' 
+"Fourth time is a charm, I guess. Not the third. "
+[Speaker]: 'Lena' 
+"(steadies breath) My hand muscles cramp before I can generate enough power."
+ [Speaker]: 'Skylan' 
+"Its simple: focus on the object. Not its surroundings."
+ [Speaker]: 'Lena' 
+"That is what I am attempting, you realize."
+ [Speaker]: 'Skylan' 
 "Well, you can be better."
-[Speaker]: 'Lena'
+ [Speaker]: 'Lena' 
 "(scowls)"
-[Speaker]: 'Skylan'
-"(chuckles)
-I am only giving you a hard time,
-Lena. You can do it."
-[Speaker]: 'Lena'
-"(changes to a smile)
-Thank you. Then, I hand you your
-butt."
-[Speaker]: 'Skylan'
-"Not if the Arcane Pulse fires
-early. We'll need to shield up at
-Strand's Crossing ASAP.
-Wise idea, Lena thought. Albeit, she wasn't planning on
-beating him up. She extended her arm again toward the dense
-tree several feet away, then made a claw with her fingers.
+ [Speaker]: 'Skylan' 
+"(chuckles) I am only giving you a hard time, Lena. You can do it."
+ [Speaker]: 'Lena' 
+"(changes to a smile) Thank you. Then, I hand you your butt."
+ [Speaker]: 'Skylan' 
+"Not if the Arcane Pulse fires early.  We'll need to shield up at Strand's Crossing ASAP."
+ [Speaker]: 'None' 
+ eee
+"Wise idea, Lena thought.
+Albeit, she wasn't planning on beating him up.  
+She extended her arm again toward the dense tree several feet away, then made a claw with her fingers.
 Purple tree roots crackled and slid as they separated.
-The longer she focused, the more the saw how intertwined
-they were. The roots stiffened up like they resisted her.
+The longer she focused, the more the saw how intertwined they were. 
+The roots stiffened up like they resisted her. 
 She let go and let out a stressed breath."
-[Speaker]: 'Lena'
-"Piece of crap. 
-My power output must need work.
-He claps her on the shoulder."
-[Speaker]: 'Skylan'
-"You will get it. Just like last
-week. Give it another go before we
-head to the Crossing.
-Every four years it builds up, then discharges as a wave for
-five miles wherever it is established, making the woods
-unsafe to travel through for five days. Ironically, it is
-also stunning to look at."
-[Speaker]: 'Lena'
-"If I had a teacher I'd have no
-issue. The thing is - there is not
-one at home. Nor one over at
-Strand's Crossing.
-If we were strong enough, we can be
-outside during it. Always have
-wanted to gaze upon all those
-colors. Like something with
-lightning."
-[Speaker]: 'Skylan'
-"(glances to the woods'
-canopy)
-Definitely is a sight to behold. 
-Lena walks around the outer edge of the nearest trees - some
-without purple veins. Maybe she was just thirsty. So, she
-gulped apple juice from her canteen."
-[Speaker]: 'Lena'
-"Juice break. Go find those herbs. I
-will wait here."
-[Speaker]: 'Skylan'
-"Will be lucky if I do find them. 
-Skylan walks off between trees. After quenching her thirst,
-Lena knew other abilities she can practice while waiting,
-like levitating heavy stones. Three tries it took for a
-hefty, moss-covered stone to lift to three times here height
-and sit atop two more.
-Mmmm, success, she thought. She switched it up to an evade -
-a magic-aided sideways burst of speed. One worked out before
-she tripped."
-[Speaker]: 'Lena'
-"Dang it. I need Skylan as a target
-for this.
-Some time had passed based on the height of the sun. She
-also noticed he had yet to return. Odd, she thought. She
-scanned the immediate area.
-Not here. Not in the trees."
-[Speaker]: 'Lena'
-"Where did he go? Get stuck on a
-thorn bush?
-This is unusual for him. I need to
-look for him before the Pulse goes
-off. He knows his way around these
-woods better than I, though.
-INT: DEEP IN EASTERN FOREST. AFTERNOON.
-She double checks the perimeter. It's as calm as crickets. A
-pat of her dagger reassured her before entering the trees.
-For an unknown amount of time, she looked behind thick
-trunks, fallen logs, or up tree canopies. A slope took her
-up and over to bigger trees. "
-[Speaker]: 'Lena'
-"(Internal thinking shown
-on screen)
- This isn't good.
-Her heart thuds in her chest. She fast walks between brush
-and hops over large logs. That is when she noticed them:
-purple veins glistening brighter while filling with
-electrical pulses."
-[Speaker]: 'Lena'
-"Crap.
-Which-which way would he have gone?
-Lena spun in circles. Some orange herbs here start a path.
-She picks a direction based on tiny orange leaves and
-follows."
-[Speaker]: 'Lena'
-"Lets try this way.
-I knew I should have brought my
-Ithaka bullhorn.
-Writers' Note: Ithaka Bullhorn is a magical horn
-Note
-capable of far-reaching sound waves. Helps alert people
-or find them if they're within a five mile radius. 
-She sees something ahead. Looks bright and wide, like a
-barn with earthly colors. A ways along the leaves end at a
-clearing. Lena scans the area to make sure no one jumps
-her. 
-Nope. No sign of Skylan either. Lena approaches it
-cautiously with a hand on her dagger's handle."
-[Speaker]: 'Lena'
-"(frowning)
-Is this a hideout?"
-[Background]: 'House'
-"Crates set along a side, a wheelbarrow with a mountain of
-dirt sat next to them, smoke rose from the stone chimney,
-and a wood porch gave an industrious presence. Two stories
-of it too - a home. It is a lot of space for being in the
-midst of the woods."
-[Speaker]: 'Lena'
-"(Internal dialogue on
-screen)
-Someone lives way out here. Golly.
-I wonder how close Strand's
-Crossing is to here."
-[May need to fudge the dialogue here - a closeup on the porch could be too much?]
-[Background]: 'House'
-"On the front porch, Lena noticed a figure move. They're
-sitting on a chair with hands on their face. Green dress,
-red-brown hair. Ahh, now she recalled - The Enchantress.
-Dangerous, powerful, older than her, and highly
-knowledgeable. She could bypass her in silence, but, she may
-be the only person for acres.
-What other option is there? The trees will be too dangerous
-to climb and Skylan will get zapped by the Arcane Pulse.
-She hears sniffling. Now, Lena decides to be formal about
-it."
-[Speaker]: 'Lena'
-"(curious)
-Um, hi. "
-[Speaker]: 'Enchantress'
-"(Flinches. Looks around.)
-Who's that?"
-[Speaker]: 'Lena'
-"Sorry. You must be the Enchantress,
-right? Are you okay?"
-[Speaker]: 'Enchantress'
-"(Sees her. Sniffles)
-I am. No, but I will survive.
-You are?
-Lena considers between telling her real name or keeping
-it secret. To trust someone she has only heard of, first
-name basis is rather necessary."
-[Speaker]: 'Lena'
-"Lena.
-Have you seen a younger guy around
-these parts? I'm looking for my
-friend after he went looking for
-magic herbs. 
-The Enchantress lifts her head and sits straight on her
-bench. Her eyes are apricot red."
-[Speaker]: 'Enchantress'
+ [Speaker]: 'Lena' 
+"Piece of crap.  My power output must need work. He claps her on the shoulder."
+ [Speaker]: 'Skylan' 
+"You will get it. Just like last week. Give it another go before we head to the Crossing. Every four years it builds up, then discharges as a wave for five miles wherever it is established, making the woods unsafe to travel through for a few days. Ironically, it's also stunning to look at."
+ [Speaker]: 'Lena' 
+"If I had a teacher I'd have no issue.  The thing is - there is not one at home.  Nor one over at Strand's Crossing. If we were strong enough, we can be outside during it. Always have wanted to gaze upon all those colors. Like something with lightning."
+ [Speaker]: 'None' 
+"Skylan glances up a the canopy, deep in thought."
+ [Speaker]: 'Skylan' 
+"Definitely is a sight to behold.  Lena walks around the outer edge of the nearest trees - somewithout purple veins. Maybe she was just thirsty.  So, she gulped apple juice from her canteen."
+ [Speaker]: 'Lena' 
+"Juice break. Go find those herbs. I will wait here."
+ [Speaker]: 'Skylan' 
+"Will be lucky if I do find them. Skylan walks off between trees.  After quenching her thirst, Lena knew other abilities she can practice while waiting, like levitating heavy stones. Three tries it took for a hefty, moss-covered stone to lift to three times her& height and sit atop two more. Mmmm, success, she thought. She switched it up to an evade - a magic-aided sideways burst of speed.  One worked out before she tripped."
+ [Speaker]: 'Lena' 
+"Dang it. I need Skylan as a target for this. Some time had passed based on the height of the sun.& She also noticed he had yet to return.  Odd, she thought. She scanned the immediate area. Not here. Not in the trees."
+ [Speaker]: 'Lena' 
+"Where did he go? Get stuck on a thorn bush? This is unusual for him. I need to look for him before the Pulse goes off. He knows his way around these woods better than I, though. INT: DEEP IN EASTERN FOREST. AFTERNOON. She double checks the perimeter. It's as calm as crickets. A pat of her dagger reassured her before entering the trees. For an unknown amount of time, she looked behind thick trunks, fallen logs, or up tree canopies. A slope took her up and over to bigger trees. "
+ [Speaker]: 'Lena' 
+"(Internal thinking shown on screen)  This isn't good. Her heart thuds in her chest. She fast walks between brush and hops over large logs. That is when she noticed them: purple veins glistening brighter while filling with electrical pulses."
+ [Speaker]: 'Lena' 
+"Crap. Which-which way would he have gone? Lena spun in circles. Some orange herbs here start a path. She picks a direction based on tiny orange leaves and follows."
+ [Speaker]: 'Lena' 
+"Lets try this way. I knew I should have brought my Ithaka bullhorn. Writers' 
+Note: Ithaka Bullhorn is a magical horn Note capable of far-reaching sound waves. Helps alert people or find them if they're within a five mile radius.  She sees something ahead. Looks bright and wide, like a barn with earthly colors. A ways along the leaves end at a clearing. Lena scans the area to make sure no one jumps her.  Nope. No sign of Skylan either. Lena approaches it cautiously with a hand on her dagger's handle."
+ [Speaker]: 'Lena' 
+"(frowning) Is this a hideout?"
+ [Background]: 'House' 
+"Crates set along a side, a wheelbarrow with a mountain of dirt sat next to them, smoke rose from the stone chimney, and a wood porch gave an industrious presence. Two stories of it too - a home. It is a lot of space for being in the midst of the woods."
+ [Speaker]: 'Lena' 
+"(Internal dialogue on screen) Someone lives way out here. Golly. I wonder how close Strand's Crossing is to here."
+ [May need to fudge the dialogue here - a closeup on the porch could be too much?]
+ [Background]: 'House' 
+"On the front porch, Lena noticed a figure move. They're sitting on a chair with hands on their face. Green dress, red-brown hair. Ahh, now she recalled - The Enchantress. Dangerous, powerful, older than her, and highly knowledgeable. She could bypass her in silence, but, she may be the only person for acres. What other option is there? The trees will be too dangerous to climb and Skylan will get zapped by the Arcane Pulse. She hears sniffling. Now, Lena decides to be formal about it."
+ [Speaker]: 'Lena' 
+"(curious) Um, hi. "
+ [Speaker]: 'Enchantress' 
+"(Flinches. Looks around.) Who's that?"
+ [Speaker]: 'Lena' 
+"Sorry. You must be the Enchantress, right? Are you okay?"
+ [Speaker]: 'Enchantress' 
+"(Sees her. Sniffles) I am. No, but I will survive. You are? Lena considers between telling her real name or keeping it secret. To trust someone she has only heard of, first name basis is rather necessary."
+ [Speaker]: 'Lena' 
+"Lena. Have you seen a younger guy around these parts? I'm looking for my friend after he went looking for magic herbs.  The Enchantress lifts her head and sits straight on her bench. Her eyes are apricot red."
+ [Speaker]: 'Enchantress' 
 "Can you provide some details?"
-[Speaker]: 'Lena'
-"Five-foot-ten, brown hair and
-pants. Carrying a rucksack."
-[Speaker]: 'Enchantress'
-"(shakes head)
-Haven't. 
-(wipes nose with
-handkerchief)
-However, I know magic that can help
-you find him. 
-Having a powerful and dangerous enchantress help is pretty
-overkill. She may betray them for her own needs. Again,
-though, no one else was around."
-[Speaker]: 'Lena'
+ [Speaker]: 'Lena' 
+"Five-foot-ten, brown hair and pants. Carrying a rucksack."
+ [Speaker]: 'Enchantress' 
+"(shakes head) Haven't.  (wipes nose with handkerchief) However, I know magic that can help you find him.  Having a powerful and dangerous enchantress help is pretty overkill. She may betray them for her own needs. Again, though, no one else was around."
+ [Speaker]: 'Lena' 
 "I am in a hurry, so yes, please."
-[Speaker]: 'Enchantress'
+ [Speaker]: 'Enchantress' 
 "What is his name?"
-[Speaker]: 'Lena'
+ [Speaker]: 'Lena' 
 "Skylan."
-[Speaker]: 'Enchantress'
-"(nods gently and stands
-up)
-Alright, sure. Under one condition."
-[Speaker]: 'Lena'
+ [Speaker]: 'Enchantress' 
+"(nods gently and stands up) Alright, sure. Under one condition."
+ [Speaker]: 'Lena' 
 "Of course, there's that. Okay. "
-[Speaker]: 'Enchantress'
-"You help me unlock a door that my
-grandmother - may she now rest in
-peace - forbade me from opening.
-She called it the Forbidden Door. 
-It just requires a bit of arcane
-abilities. So more like The Arcane
-Door.
-Help break a family pact for finding her friend. Not what
-Lena imagined."
-[Speaker]: 'Lena'
-"I've struggled with those. You can
-teach me what I need to find my
-friend and I will open it."
-[Speaker]: 'Enchantress'
-"You have a deal. 
-Door's down in my basement. I'll
-show you."
-[Background]: 'HouseMainHall'
-[Speaker]: 'None'
-"The Enchantress long stride had Lena fast walk. The candle
-lights are low, but rays of yellow sun illuminate the whole
-place. A little bird chirps in a wood cage in the kitchen. A
-landscape painting of a castle by a river hangs on the wall."
-[Background]: 'ArcaneDoor'
-[Speaker]: 'None'
-"Quiet place, Lena observed. It made the house look longer
-than it actually was. Boxes and household tools and a basin
-of water. Bits and bobs in boxes or wrapped in cloth. At the
-back is a hefty wood door. Metal hinges wrap themselves
-along a side. Paintings of fantastical creatures stretched
-along the top and bottom. Candelight mounted on a chandelier
-casted angular shadows. Just one narrow window let in light."
-[Speaker]: 'Lena'
-"(eyes wide)
-Ummm-
-This looks like bad news."
-[Speaker]: 'Enchantress'
+ [Speaker]: 'Enchantress' 
+"You help me unlock a door that my grandmother - may she now rest in peace - forbade me from opening. She called it the Forbidden Door.  It just requires a bit of arcane abilities. So more like The Arcane Door. Help break a family pact for finding her friend. Not what Lena imagined."
+ [Speaker]: 'Lena' 
+"I've struggled with those. You can teach me what I need to find my friend and I will open it."
+ [Speaker]: 'Enchantress' 
+"You have a deal.  Door's down in my basement. I'll show you."
+ [Background]: 'HouseMainHall' 
+[Speaker]: 'None' 
+"The Enchantress long stride had Lena fast walk. The candle lights are low, but rays of yellow sun illuminate the whole place. A little bird chirps in a wood cage in the kitchen. A landscape painting of a castle by a river hangs on the wall."
+ [Background]: 'ArcaneDoor' 
+[Speaker]: 'None' 
+"Quiet place, Lena observed. It made the house look longer than it actually was. Boxes and household tools and a basin of water. Bits and bobs in boxes or wrapped in cloth. At the back is a hefty wood door. Metal hinges wrap themselves along a side. Paintings of fantastical creatures stretched along the top and bottom. Candelight mounted on a chandelier casted angular shadows. Just one narrow window let in light."
+ [Speaker]: 'Lena' 
+"(eyes wide) Ummm- This looks like bad news."
+ [Speaker]: 'Enchantress' 
 "I understand that. You did agree."
-[Speaker]: 'Lena'
+ [Speaker]: 'Lena' 
 "Ehh, I will take my chances at-"
-[Speaker]: 'None'
-"A muffled voice sounds behind the door. Is that - is that
-him?!"
+ [Speaker]: 'None' 
+"A muffled voice sounds behind the door. Is that - is that him?!" 

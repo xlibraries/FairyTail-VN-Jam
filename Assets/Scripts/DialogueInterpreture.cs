@@ -73,7 +73,7 @@ public class DialogueInterpreture : MonoBehaviour
             {
                 //next = next.Replace("\n","");
                 //next = next.Replace(".",".\n");
-                next = next.Replace(NEWLINE, "{i0}" + NEWLINE);
+                next = next.Replace(NEWLINE, NEWLINE + "{i0}");
                 next += "{i0}/%";
                 next = "{i0}" + next;
                 pairedDialogueBox.curPut = next;
