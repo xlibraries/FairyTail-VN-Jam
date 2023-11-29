@@ -41,6 +41,11 @@ public class TypeAttempt3 : MonoBehaviour
         StartCoroutine(TypeLoop());
     }
 
+    public void Restart()
+    {
+        rawShown = "";
+    }
+
     // What does tok mean?
     int SeekNext(string a,int start,string tok)
     {

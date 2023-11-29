@@ -1,0 +1,3 @@
+"shlingus moment"
+[Choice]: 'To Door,SceneDoor.txt,biff,ChoiceTest/Choice2.txt'
+"aaaaaaaaa"

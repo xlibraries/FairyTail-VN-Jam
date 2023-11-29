@@ -19,13 +19,15 @@ public struct JugglePair
 public class DialogueInterpreture : MonoBehaviour
 
 {
-    
+
     [SerializeField]
     public TextAsset dialogueFile;
 
     public GameObject dialogueDestination;
 
     public GameObject speakerIndicator;
+
+    public GameObject choiceMenu;
 
     private TypeAttempt3 pairedDialogueBox;
 
@@ -34,133 +36,146 @@ public class DialogueInterpreture : MonoBehaviour
     string[] dialogueChunks;
     int dPos = 0;
 
-    private Dictionary<string,JugglePair> juggleData;
+    private Dictionary<string, JugglePair> juggleData;
     private string currentSpeaker = NULL;
 
 
     void Start()
     {
-          pairedDialogueBox = dialogueDestination.GetComponent<TypeAttempt3>();
-          pairedDialogueBox.dialogueMaster = this;
-          pairedDialogueBox.curPut = NULL;
-          dialogueChunks = dialogueFile.text.Split("\"");
-          actorManager= this.GetComponent<ActorManager>();
-          juggleData = new Dictionary<string,JugglePair>();
+        pairedDialogueBox = dialogueDestination.GetComponent<TypeAttempt3>();
+        pairedDialogueBox.dialogueMaster = this;
+        pairedDialogueBox.curPut = NULL;
+        dialogueChunks = dialogueFile.text.Split("\"");
+        actorManager = this.GetComponent<ActorManager>();
+        choiceMenu.GetComponent<ChoiceMenu>().gameManager = this;
+        juggleData = new Dictionary<string, JugglePair>();
         //Debug.Log(dialogueChunks[0]);
-          actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
-          AskNext();
+        actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
+        AskNext();
     }
 
 
 
     public void AskNext()
     {
-      if(dPos < dialogueChunks.Length) //While there are chunks left , add a chunk one at a time to the dialogue box.
-      {
-      string next = dialogueChunks[dPos];
-      Debug.Log(next);
-      if(next.Contains(SQUARE_BRACKET_OPEN)) // If this is a token chunk, parse it as such.
-      {
-        Debug.Log("Parsing scene");
-        ParseScene(next);
-        dPos += 1;
-        AskNext();
-      }
-      else
-      {
-      //next = next.Replace("\n","");
-      //next = next.Replace(".",".\n");
-      next = next.Replace(NEWLINE,"{i0}" + NEWLINE);
-      next += "{i0}/%";
-      next = "{i0}" + next;
-      pairedDialogueBox.curPut = next;
-      dPos += 1;
-      }
-      }
+        if (dPos < dialogueChunks.Length) //While there are chunks left , add a chunk one at a time to the dialogue box.
+        {
+            string next = dialogueChunks[dPos];
+            Debug.Log(next);
+            if (next.Contains(SQUARE_BRACKET_OPEN)) // If this is a token chunk, parse it as such.
+            {
+                Debug.Log("Parsing scene");
+                ParseScene(next);
+                dPos += 1;
+                AskNext();
+            }
+            else
+            {
+                //next = next.Replace("\n","");
+                //next = next.Replace(".",".\n");
+                next = next.Replace(NEWLINE, "{i0}" + NEWLINE);
+                next += "{i0}/%";
+                next = "{i0}" + next;
+                pairedDialogueBox.curPut = next;
+                dPos += 1;
+            }
+        }
     }
 
 
     private void ParseScene(string Scene)
     {
-      // Gathers [Key]: 'Value' from the token chunk.
-      var tokens = Regex.Matches(Scene,@"\[(\w+)\]:\s*'([^']+)'");
-      Debug.Log(tokens.Count);
-      foreach(Match g in tokens)
-      {
-        //Unwraps regex matches
-      string key = g.Groups[1].Value;
-      string value = g.Groups[2].Value;
-
-      // Do something based on the key.
-      switch(key)
-      {
-        case SPEAKER:
-
-        if(value != NONE)
+        // Gathers [Key]: 'Value' from the token chunk.
+        var tokens = Regex.Matches(Scene, @"\[(\w+)\]:\s*'([^']+)'");
+        Debug.Log(tokens.Count);
+        foreach (Match g in tokens)
         {
-        
-        JugglePair oldSpeakerJugglePair;
-        if(juggleData.TryGetValue(currentSpeaker, out oldSpeakerJugglePair)) //current speaker name is in juggleData. Have them stop talking
-        {
-          actorManager.DoTransform($"{currentSpeaker},{oldSpeakerJugglePair.silentTransform}");
-          actorManager.SwitchImage($"{currentSpeaker},{oldSpeakerJugglePair.silentImg}");
+            //Unwraps regex matches
+            string key = g.Groups[1].Value;
+            string value = g.Groups[2].Value;
+
+            // Do something based on the key.
+            switch (key)
+            {
+                case SPEAKER:
+
+                    if (value != NONE)
+                    {
+
+                        JugglePair oldSpeakerJugglePair;
+                        if (juggleData.TryGetValue(currentSpeaker, out oldSpeakerJugglePair)) //current speaker name is in juggleData. Have them stop talking
+                        {
+                            actorManager.DoTransform($"{currentSpeaker},{oldSpeakerJugglePair.silentTransform}");
+                            actorManager.SwitchImage($"{currentSpeaker},{oldSpeakerJugglePair.silentImg}");
+                        }
+                    }
+
+                    //Change the speaker name in the UI
+                    ChangeSpeakerName(value);
+                    currentSpeaker = value;
+
+                    JugglePair newSpeakerJugglePair;
+                    if (juggleData.TryGetValue(value, out newSpeakerJugglePair)) //New speaker name is in juggleData. Have them start talking
+                    {
+                        actorManager.DoTransform($"{value},{newSpeakerJugglePair.speakingTransform}");
+                        actorManager.SwitchImage($"{value},{newSpeakerJugglePair.speakingImg}");
+                    }
+
+                    break; //End case for SPEAKER tag
+                case TRANSFORM:
+                    actorManager.DoTransform(value);
+                    break;
+                case IMAGE:
+                    actorManager.SwitchImage(value);
+                    break;
+                case BACKGROUND:
+                    SetBackground(value);
+                    break;
+                case SHOW:
+                    actorManager.SpawnActor(value);
+                    break;
+                case HIDE:
+                    actorManager.KillActor(value);
+                    break;
+                case JUGGLE:
+                    AddJuggle(value);
+                    break;
+                case REMOVE_JUGGLE:
+                    juggleData.Remove(value);
+                    break;
+                case UN_JUGGLE:
+                    juggleData.Clear();
+                    break;
+                case LOAD:
+                    LoadNewCRD(value);
+                    break;
+                case CHOICE:
+                    AddChoiceUI(value);
+                    break;
+            }
+
         }
-        }
-
-        //Change the speaker name in the UI
-        ChangeSpeakerName(value);
-        currentSpeaker = value;
-
-        JugglePair newSpeakerJugglePair;
-        if(juggleData.TryGetValue(value,out newSpeakerJugglePair)) //New speaker name is in juggleData. Have them start talking
-        {
-          actorManager.DoTransform($"{value},{newSpeakerJugglePair.speakingTransform}");
-          actorManager.SwitchImage($"{value},{newSpeakerJugglePair.speakingImg}");
-        }
-
-         break; //End case for SPEAKER tag
-        case TRANSFORM:
-          actorManager.DoTransform(value);
-          break;
-        case IMAGE:
-          actorManager.SwitchImage(value);
-          break;
-        case BACKGROUND:
-          SetBackground(value);
-          break;
-        case SHOW:
-          actorManager.SpawnActor(value);
-          break;
-        case HIDE:
-        actorManager.KillActor(value);
-         break;
-        case JUGGLE:
-          AddJuggle(value);
-        break;
-        case REMOVE_JUGGLE:
-          juggleData.Remove(value); 
-        break;
-        case UN_JUGGLE:
-          juggleData.Clear();
-        break;
-        case LOAD:
-          LoadNewCRD(value);
-        break;
-      }
-
-      }
     }
 
-    // Loads in a dialogue file
-    private void LoadNewCRD(string name)
+    private void AddChoiceUI(string data)
     {
-      StreamReader inputStream = new StreamReader(DIALOGUE_PATH + name);
-      string result = inputStream.ReadToEnd();
-      pairedDialogueBox.curPut = NULL;
-      dialogueChunks = result.Split("\"");
-      dPos = 0;
-      AskNext();
-      inputStream.Close();
+        choiceMenu.GetComponent<ChoiceMenu>().TakeButtons(data);
+        choiceMenu.SetActive(true);
+    }
+
+
+    // Loads in a dialogue file
+    public void LoadNewCRD(string name)
+    {
+        StreamReader inputStream = new StreamReader(DIALOGUE_PATH + name);
+        string result = inputStream.ReadToEnd();
+        Debug.Assert(result != null);
+        pairedDialogueBox.curPut = NULL;
+        dialogueChunks = result.Split("\"");
+        dPos = 0;
+        AskNext();
+        inputStream.Close();
+
     }
 
     private void ChangeSpeakerName(string name)
