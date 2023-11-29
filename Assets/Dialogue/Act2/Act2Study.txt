@@ -1,0 +1,49 @@
+"Study."
+ENCHANTRESS
+Up the stairs to the left.
+She enters. Boxes flanked the wide birchwood desk, a stack
+of parchment on the table. A black leather-wrapped sword
+hung on the wall. Lena first scans the whole room. Lockpicks
+were thin enough to sit almost anywhere. 
+She checks each shelf on the single bookshelf.
+LENA
+None on here.
+A small box sat on top of a corner table. Lena looked inside
+and saw:
+LENA
+I would think its here.
+Besides, a large chest sat squarely opposite the bookshelf.
+LENA
+Lets try the desk.
+Each of its six drawers had some amout of weight. The middle
+ones had the most - some cost measuring tools and a ink
+wels. In a bottom one, she found a leather book with
+"Journal" etched in elegant cursive. Its inside cover read,
+"For your business and your stories. To Grandma". The "From"
+was blank.
+LENA
+Hmmm.
+(flips page)
+"Want to see what's behind the
+door? Well, take on an apprentice
+first. You will need to practice
+the advanced abilities before
+setting foot inside. Or else, well,
+you'll learn the hard way."
+LENA
+Something to keep in mind.
+11.
+Then, she checked the other bottom drawer. Her fingers
+caused the back inner edge to push up the front. A hidden
+space. And in it laid two grey metal lockpicks. 
+LENA
+(smiles)
+There you are.
+INT: HOUSE. MAIN HALL
+Satisfied, she returned to the main hall. She grinned to the
+Enchantress as she revealed them.
+LENA
+Lockpicks found.
+ENCHANTRESS
+"(smiling)
+Simple enough."
