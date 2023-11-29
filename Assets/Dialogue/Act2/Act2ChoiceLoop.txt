@@ -1,0 +1,3 @@
+[Speaker]: 'Lena'
+[Choice]: 'Workshop.,Act2/Act2Workshop.txt,Kitchen.,Act2/Act2Kitchen.txt,Study.,Act2/Act2Study.txt'
+"I will go to the:"

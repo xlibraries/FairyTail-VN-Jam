@@ -143,7 +143,7 @@ midst of the woods."
 screen)
 Someone lives way out here. Golly.
 I wonder how close Strand's
-Crossing is too here."
+Crossing is to here."
 [May need to fudge the dialogue here - a closeup on the porch could be too much?]
 [Background]: 'House'
 "On the front porch, Lena noticed a figure move. They're

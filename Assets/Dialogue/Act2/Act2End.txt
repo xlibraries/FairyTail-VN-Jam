@@ -1,0 +1,93 @@
+[Background]: 'HouseMainHall'
+"Two found. Two to find. Unlocking that door and freeing
+Skylan was that much closer. Lena held the charm up to the
+Enchantress'."
+[Speaker]: 'Enchantress'
+"Good work. 
+I bet the heat almost burnt your
+arm hair."
+[Speaker]: 'Lena'
+"Fortunate it was not a first degree
+burn."
+[Speaker]: 'Enchantress'
+"(grimaces)
+Sorry.
+How many more pieces do you need?"
+[Speaker]: 'Lena'
+"One: the unsealing charm itself.
+In the kitchen, you said?"
+[Speaker]: 'Enchantress'
+"(nods)
+Straight down from the front door.
+I wish she were more specific, Lena thought. She walked back
+down the hall."
+[Speaker]: 'Enchantress'
+"(talking quickly with a
+raised pitch)
+Just so you are aware, the Arcane
+Pulse is getting closer to going
+off.
+Uh oh. And upon entering the kitchen, Lena saw she was right
+- the trees outside a window glistened even more in its
+powerful purple and blue."
+[Background]: 'Kitchen'
+"Either the Enchantress' cooks a hell of a lot for one person or
+she made many magic-based foods for guests. Several shelves
+with pots, pans, skillets, and a couple wide cauldrons. She
+flipped open cupboards and drawers and a pantry filled with
+various sized jars. 
+Maybe I missed it, Lena thought. 
+One cupboard had a stack of books with pictures of foods.
+Flipping through two of thems found only breakfast recepies.
+Her stomach growled. Wait, hold on. On the page was a
+recepie for an oath. A note was stuck in the spine. It read:
+You can't see what lies on the
+other side without an apprentice,
+(E's real name). Teaching someone
+else means the magic keeps going.
+You grow as a person, too.
+The Enchantress' enjoys the family business. She hates 
+this oath part of it."
+[Speaker]: 'Lena'
+"Wow, thats crazy.
+It made a lot more sense to her. What where was the charm
+hiding, however?
+A moment later:"
+[Speaker]: 'Lena'
+"(facepalm)
+She scurried back to the pantry. Inside, hovering at a
+corner behind a jar it leaned - a flat, chestnut-colored
+circle. Lena let out a sigh of relief. "
+[Speaker]: 'Lena'
+"I am an idiot for not seeing that.
+(for player)
+Now I have it all. Lets go back to
+her."
+[Background]: 'LivingRoom'
+"Skylan wouldn't die on her watch. Shortly, the cover of
+Strand's Crossing will shield them.
+Jogging to the living area, Lena extended the elements in
+her hands. "
+[Speaker]: 'Lena'
+"All four pieces. Here you are."
+[Speaker]: 'Enchantress'
+"(nods approvingly)
+You did it. Was it difficult?"
+[Speaker]: 'Lena'
+"I missed a few details the first
+time."
+[Speaker]: 'Enchantress'
+"You will need to be more aware as
+you learn."
+[Speaker]: 'Lena'
+"(rolls eyes)
+Yeah, I realize that. Skylan
+teaches me."
+[Speaker]: 'Enchantress'
+"That's good. Or I can. Let's
+unseal that door first.
+You have no idea how eager I am."
+[Speaker]: 'Lena'
+"Oh, I do know.
+I know its you, Skylan, Lena thouught. The Enchantress has
+the wrong hunch. But, I guess we will see."
