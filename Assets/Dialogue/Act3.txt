@@ -1,0 +1,123 @@
+[Background]: 'ArcaneDoorBasement' 
+"At once, their shoes skittered down the hall and back down to the basement.
+ The Arcane Door stood resulute - candlelight flicking on it as though it will burst open.
+ Conwenna observed."
+ [Speaker]: 'Enchantress' 
+"Listen carefully.
+ Pun not intended.
+ Insert the lockpicks.
+ Find the right angles.
+ Then speak the unealing charm, then rotate the (MORE) tumblers.
+ Kindof envelope the amplifier charm over the picks when it's toughest.
+ Lena nods, then kneels on the cold stone floor.
+ Each lockpick slid in at different angles.
+ And she leans in close to hear.
+ Each little shift of the pick produced a tiny sound - if she managed to move them."
+ [Speaker]: 'Lena' 
+"One.
+ Or that is two? Three minutes later: Skylan is more handy than I at this sort of thing.
+ (Growls) Time for the unsealing charm.
+ Lena activates it by submerging the exposed part of each lock.
+ Each becomes outlined by a flare of yellow-brown.
+ She moves the picks some more, one eye open."
+ [Speaker]: 'Lena' 
+C'mon you piece of junk [Speaker]: 'Enchantress' 
+"(Glares) Four clicks - each lockpick moved counterclockwise - followed with a metallic twing.
+ It did it! Lena shot to her feet wearing an anticipatory smile.
+ And it opens with a dramatic woosh."
+ [Speaker]: 'Lena' 
+"Sorry."
+ It worked!  [Speaker]: 'Enchantress' 
+"Sure did.
+ And who is - that? Lena blinks dumfounded: a bruised man leaning against a sloped dirt wall wearing a tan shirt."
+ Skylan - he lives!  [Speaker]: 'Lena' 
+"Skylan! Are you alright? (Notices cuts in addition to bruises) How did you-? Skylans face morphs between surprise as well as relief.
+ Lena clamps herself around him like she won ten thousand gold coins."
+ [Speaker]: 'Skylan' 
+"By the Guardians."
+ [Speaker]: 'Lena' 
+"I thought you were lost."
+ [Speaker]: 'Skylan' 
+"Yeah.
+ No thanks to this.
+ (Points to a massive, dark ravine) And didn't haves lockpicks.
+ Then there's my companion  The Enchantress's eyes redden up at the admitting thought of not seeing her grandmother's ghost.
+ However, she manages to  accept it."
+ [Speaker]: 'Enchantress' 
+"(Sniffling) Not a strange voice after all- (Expression shifts to bewilderment) Grandmother didn't make it up! (Voice trails off. ) "
+[Speaker]: 'Skylan' 
+Um, Him [Speaker]: 'Lena' 
+"She grips her dagger's hilt.
+ (Takes a sharp breath)  ONE OF THEM.
+ Everyone gazes with shock.
+ It is the size of possibly three of The Enchantress' house combined.
+ Leathery green blanket its body.
+ A massive dragon laying on the right of the door's clearing.
+ Puzzled, Conwenna examines the doorway felt along its frame: a sizzling, invisible surface."
+ [Speaker]: 'Enchantress' 
+"Its a portal, Lena.
+  Grandma's folk tale about the green dragon was real after all."
+ [Speaker]: 'Skylan' 
+"(Firm voice) Good thing she kept it at bay.
+ She approaches it with caution.
+ When she was out of arms reach, it stirs and looks at her.
+ Well, down at her."
+  [Speaker]: 'Dragon' 
+"(A pleased rumbling voice) Ah.
+ Conwenna.
+ Your grandmother would have been impressed you did unseal the door in less than a year.
+ Now, its your turn to keep our pact.
+ Agree, and I keep providing my skills, and we face the Arane Pulse.
+ Disagree, and I fly off forever.
+ The Enchantress scratches her chin.
+ She looks back at Lena and Skylan."
+  [Speaker]: 'Enchantress' 
+"Here's the catch.
+  Go outside and, um, hopefully not die.
+ Maybe loose a third of my power, which is hard to know for sure.
+ Or, let him go and wait it out here? Extremely rare is a skilled, talking dragon in our lands.
+ Lena had let go of her dagger.
+ Gears spun in her head."
+ [Speaker]: 'Lena' 
+What is the chance of survival? [Speaker]: 'Enchantress' 
+"One in six."
+  [Speaker]: 'Skylan' 
+"Shucks.
+ Had I brought my historical graph scroll, I'd figure out the timing."
+ [Speaker]: 'Lena' 
+"Yeah, that was probably my responsibility.
+ And now I know for next time.
+ Enchantress, can you try? If it only depleats a third of your power, Skylan and I can get out alive to Strand's Crossing.
+  By now, we might not make it even if we had more dragons."
+ [Speaker]: 'Skylan' 
+"Get to keep him that way.
+ A long moment later, she faced the dragon again."
+ [Speaker]: 'Enchantress' 
+"Come help me.
+ I'll make you small enough to fit through the door.
+ The dragon nods its great green snout and rises.
+ The Enchantress says a phrase, waves something Lena can't see.
+ It shrinks to the size of a large dog.
+ At the door, Lena looks her in the eye with a great smile."
+ [Speaker]: 'Lena' 
+"You will be known by everyone who hears our story.
+ Your grandmother would be proud."
+ [Speaker]: 'Skylan' 
+"(offers dirty hand. Grimaces at sore muscle)
+ What she said.
+ They exit the ravine and fast walk back up the basement stairs.
+ Conwenna left it unlocked.
+ And their guess was almost right: every tree with purple pulsating roots around sounded with distortions.
+ Her and the dragon, returned to normal size, stood tall in her lawn with its wings spread.
+ Lena and Skylan huddled inside the cracked open door.
+ Each time the Pulse hit it, it bounced off, to everyone's relief.
+  EPILOGUE Lena meets with Conwenna on the weekends at the house.
+ Became pretty good at the tougher powers the more they sparr.
+ Her enormous appetite for knowledge caused Lena to learn much on the fly.
+ Skylan still wanders the woods when safe to do so.
+ From Strand's Crossing if need be.
+ He visits Lena and their new friend regularly, being careful with his footing.
+ Conwenna - the Enchantress - spends her weekends training her new apprentice and making minor politics.
+ Selling potions and powers continued being the main business.
+ Her othe goal of becoming a truly powerful sorceress will help her tap into the Arcane Pulse, studying and improving so much she may put the mages at Strand's Crossing to shame.
+ She misses her grandmother, however, no longer grieves.
