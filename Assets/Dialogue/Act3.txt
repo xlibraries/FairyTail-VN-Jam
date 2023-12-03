@@ -1,52 +1,73 @@
 [Background]: 'ArcaneDoorBasement' 
 "At once, their shoes skittered down the hall and back down to the basement.
- The Arcane Door stood resulute - candlelight flicking on it as though it will burst open.
+ The Arcane Door stood resolute - candlelight flicking on it as though it will burst open.
  Conwenna observed."
  [Speaker]: 'Enchantress' 
 "Listen carefully.
  Pun not intended.
  Insert the lockpicks.
  Find the right angles.
- Then speak the unealing charm, then rotate the (MORE) tumblers.
- Kindof envelope the amplifier charm over the picks when it's toughest.
+ Then speak the unsealing charm, then rotate the tumblers.
+ Kind of envelop the amplifier charm over the picks when it's toughest.
  Lena nods, then kneels on the cold stone floor.
  Each lockpick slid in at different angles.
  And she leans in close to hear.
  Each little shift of the pick produced a tiny sound - if she managed to move them."
  [Speaker]: 'Lena' 
 "One.
- Or that is two? Three minutes later: Skylan is more handy than I at this sort of thing.
- (Growls) Time for the unsealing charm.
+ Or that is two?
+ .......
+ ........................
+ ..................................
+ Ah - Uh..
+ Skylan is more handy than I at this sort of thing.
+ (Growls) 
+ Time for the unsealing charm.
  Lena activates it by submerging the exposed part of each lock.
  Each becomes outlined by a flare of yellow-brown.
  She moves the picks some more, one eye open."
  [Speaker]: 'Lena' 
-C'mon you piece of junk [Speaker]: 'Enchantress' 
-"(Glares) Four clicks - each lockpick moved counterclockwise - followed with a metallic twing.
+"C'mon, you piece of junk!"
+[Speaker]: 'None'
+The enchantress glares.
+"Four clicks - each lockpick moved counterclockwise - followed with a metallic twing.
  It did it! Lena shot to her feet wearing an anticipatory smile.
  And it opens with a dramatic woosh."
  [Speaker]: 'Lena' 
-"Sorry."
- It worked!  [Speaker]: 'Enchantress' 
+"Sorry.
+ It worked!"
+ [Speaker]: 'Enchantress' 
 "Sure did.
- And who is - that? Lena blinks dumfounded: a bruised man leaning against a sloped dirt wall wearing a tan shirt."
- Skylan - he lives!  [Speaker]: 'Lena' 
-"Skylan! Are you alright? (Notices cuts in addition to bruises) How did you-? Skylans face morphs between surprise as well as relief.
+ And who is - that?"
+[Speaker]: 'None'
+ "Lena blinks dumfounded: a bruised man leaning against a sloped dirt wall wearing a tan shirt.
+ Skylan - he lives!"
+ [Speaker]: 'Lena' 
+"Skylan! 
+ Are you alright? 
+ (Notices cuts in addition to bruises) 
+ How did you-? 
+ Skylans face morphs between surprise as well as relief.
  Lena clamps herself around him like she won ten thousand gold coins."
  [Speaker]: 'Skylan' 
-"By the Guardians."
+"By the Guardians..."
  [Speaker]: 'Lena' 
 "I thought you were lost."
  [Speaker]: 'Skylan' 
 "Yeah.
  No thanks to this.
- (Points to a massive, dark ravine) And didn't haves lockpicks.
+ (Points to a massive, dark ravine) 
+ And.. I didn't haves lockpicks.
  Then there's my companion  The Enchantress's eyes redden up at the admitting thought of not seeing her grandmother's ghost.
  However, she manages to  accept it."
  [Speaker]: 'Enchantress' 
-"(Sniffling) Not a strange voice after all- (Expression shifts to bewilderment) Grandmother didn't make it up! (Voice trails off. ) "
+"(Sniffling) 
+Not a strange voice after all- 
+(Expression shifts to bewilderment) 
+Grandmother didn't make it up! (Voice trails off. ) "
 [Speaker]: 'Skylan' 
-Um, Him [Speaker]: 'Lena' 
+"Um, Him" 
+[Speaker]: 'Lena' 
 "She grips her dagger's hilt.
  (Takes a sharp breath)  ONE OF THEM.
  Everyone gazes with shock.
