@@ -152,14 +152,18 @@ public class DialogueInterpreture : MonoBehaviour
                 case CHOICE:
                     AddChoiceUI(value);
                     break;
+                case CHOICE_EXHAUSTIVE:
+                    AddChoiceUI(value,true);
+                    break;
             }
 
         }
     }
 
-    private void AddChoiceUI(string data)
+    private void AddChoiceUI(string data, bool exhaustive = false)
     {
-        choiceMenu.GetComponent<ChoiceMenu>().TakeButtons(data);
+        ChoiceMenu ChoiceMenuObject = choiceMenu.GetComponent<ChoiceMenu>();
+        ChoiceMenuObject.TakeButtons(data,exhaustive);
         choiceMenu.SetActive(true);
     }
 
