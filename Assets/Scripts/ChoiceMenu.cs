@@ -49,17 +49,22 @@ public class ChoiceMenu : MonoBehaviour
         }
     }
 
-    private void ButtonsExhaustive(string[] args)
+    private void ButtonsExhaustive(string[] data)
     {
+    List<string> args = new List<string>(data);
     string finalDestination = args[0];
     args.RemoveAt(0);
 
-    if(exhaustedOptions.Length == (args.Length-1)/2)
+    /*
+    if(exhaustedOptions.Count == (args.Count-1)/2)
     {
-      LinkWrapper(finalDestination);   
+      LinkWrapper(finalDestination);
+      exhaustedOptions.Clear();
+      finalDestination = "";
     }
+    */
 
-    for (int i = 0; i < args.Length-1; i+=2)
+    for (int i = 0; i < args.Count-1; i+=2)
         {
        
             string buttonText = args[i];
@@ -79,8 +84,9 @@ public class ChoiceMenu : MonoBehaviour
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = buttonText;
             newButton.GetComponent<Button>().onClick.AddListener(() => 
             {
+                Debug.Log(buttonDestination);
                 exhaustedOptions.Add(buttonDestination);
-                LinkWrapper(buttonDestination)
+                LinkWrapper(buttonDestination);
             });
 
         }
