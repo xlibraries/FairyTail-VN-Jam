@@ -1,10 +1,11 @@
-""
 [Background]: 'Forest' 
+[Show]: 'Lena,LeftCenterDown,Normal'
+[Juggle]: 'Lena,LeftCenter,NormalSpeak,LeftCenterDown,Normal'
 [Speaker]: 'Lena' 
 "Let me try again, Skylan.
 I think I know why it didn't work that time.
 Then you take your turn."
-[Speaker]: 'Skylan' 
+[Speaker]: 'Skylan'
 "Fourth time is a charm, I guess.
 Not the third."
 [Speaker]: 'Lena' 
@@ -217,4 +218,5 @@ You did agree."
 [Speaker]: 'Lena' 
 "Ehh, I will take my chances at-"
 [Speaker]: 'None' 
-"A muffled voice sounds behind the door. Is that - is that him?!" 
+"A muffled voice sounds behind the door. Is that - is that him?!"
+[Load]: 'Act2/Act2Start.txt'
