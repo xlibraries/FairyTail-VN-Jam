@@ -590,6 +590,10 @@ MonoBehaviour:
     value: {fileID: 21300000, guid: 062774899cebd57469c98471984dad1b, type: 3}
   - name: beans
     value: {fileID: 21300000, guid: f618c5fe13b18994aa5aee8b97d8dca1, type: 3}
+  - name: Forest
+    value: {fileID: 21300000, guid: e45df677b44b77f46b167228c517fe64, type: 3}
+  - name: House
+    value: {fileID: 21300000, guid: 0f5ec530fe06e774aaef287e1723c97d, type: 3}
 --- !u!1 &927915301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda2e0bab33f6e042a3dc4ccd37dd75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueFile: {fileID: 4900000, guid: c6da85c7d3f21ab49841d6bf41bb3731, type: 3}
+  dialogueFile: {fileID: 4900000, guid: 9b51dbadd5f105f4ba1772b3a5505638, type: 3}
   dialogueDestination: {fileID: 56011363}
   speakerIndicator: {fileID: 1194290649}
   choiceMenu: {fileID: 5018949962567014239}
@@ -1115,6 +1119,8 @@ MonoBehaviour:
     value: {fileID: 5936849927484905887, guid: 9965a745c82f8ff4099b89b5a753b65d, type: 3}
   - name: Enchantress
     value: {fileID: 1806007091540707826, guid: 901c8c1e5cb44ca4994bcc6035ab9cc8, type: 3}
+  - name: Skylan
+    value: {fileID: 6572511269904918475, guid: 546a20808ca220f4f8ca54202c818542, type: 3}
   actorStage: {fileID: 1194290649}
 --- !u!114 &5018949962567014234
 MonoBehaviour:

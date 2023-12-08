@@ -75,6 +75,17 @@ public class TweenTest : MonoBehaviour
       });
     }
 
+    public void TRFade()
+    {
+      this.gameObject.GetComponent<Image>().TweenColor(Color.clear,0.2f);
+    }
+
+    public void TRFadeIn()
+    {
+      this.gameObject.GetComponent<Image>().color = Color.clear;
+      this.gameObject.GetComponent<Image>().TweenColor(Color.white,2.0f);
+    }
+
 
     /*
     PushUp and PushDown are RELATIVE - wherever the Actor is, it will move them slightly up or down

@@ -5,10 +5,14 @@
 [Juggle]: 'Skylan,PushUp,NormalSpeak,RightCenterDown,Normal'
 [Transform]: 'Lena,Flip'
 [Speaker]: 'Lena' 
+[Transform]: 'Skylan,FadeIn'
+[Transform]: 'Lena,FadeIn'
 "Let me try again, Skylan.
 I think I know why it didn't work that time.
 Then you take your turn."
 [Speaker]: 'Skylan'
+[Juggle]: 'Lena,Bob,NormalSpeak,LeftCenterDown,Normal'
+[Juggle]: 'Skylan,Bob,NormalSpeak,RightCenterDown,Normal'
 "Fourth time is a charm, I guess.
 Not the third."
 [Speaker]: 'Lena' 
@@ -44,25 +48,28 @@ She let go and let out a stressed breath."
  My power output must need work.
 He claps her on the shoulder."
 [Speaker]: 'Skylan' 
-"You will get it.
+"You'll get there - I promise you!
 Just like last week.
 Give it another go before we head to the Crossing.
 Every four years it builds up, then discharges as a wave for five miles wherever it is established, making the woods unsafe to travel through for a few days.
-Ironically, it's also stunning to look at."
+Purple fire in the forest..
+You should see it when it happens, it's quite beautiful!
+But first... your training."
 [Speaker]: 'Lena' 
 "If I had a teacher I'd have no issue.
- The thing is - there is not one at home.
- Nor one over at Strand's Crossing.
-If we were strong enough, we can be outside during it.
+The thing is - there aren't any at home.
+Nor any over at Strand's Crossing.
+Right here, if we were strong enough...
+We could be outside during that Pulse.
 Always have wanted to gaze upon all those colors.
 Like something with lightning."
 [Speaker]: 'None' 
 "Skylan glances up a the canopy, deep in thought."
 [Speaker]: 'Skylan' 
 "Definitely is a sight to behold.
- Lena walks around the outer edge of the nearest trees - somewithout purple veins.
+Lena walks around the outer edge of the nearest trees - some lacked the purple veins this place was known for.
 Maybe she was just thirsty.
- So, she gulped apple juice from her canteen."
+So, she gulped apple juice from her canteen."
 [Speaker]: 'Lena' 
 "Juice break.
 Go find those herbs.
@@ -123,10 +130,11 @@ Lena approaches it cautiously with a hand on her dagger's handle."
 [Speaker]: 'Lena' 
 "(frowning) Is this a hideout?"
 [Background]: 'House' 
+[Speaker]: 'None' 
 "Crates set along a side, a wheelbarrow with a mountain of dirt sat next to them, smoke rose from the stone chimney, and a wood porch gave an industrious presence.
 Two stories of it too - a home.
 It is a lot of space for being in the midst of the woods."
-[Speaker]: 'Lena' 
+[Speaker]: 'Lena'
 "(In thought) Someone lives way out here.
 Golly.
 I wonder how close Strand's Crossing is to here."
@@ -138,7 +146,8 @@ Green dress, red-brown hair.
 Ahh, now she recalled - The Enchantress.
 Dangerous, powerful, older than her, and highly knowledgeable.
 She could bypass her in silence, but, she may be the only person for acres.
-What other option is there? The trees will be too dangerous to climb and Skylan will get zapped by the Arcane Pulse.
+What other option is there? The trees here are no ordinary trees, quite unfit for climbing.
+And the Arcane Pulse is approaching quickly. Skylan... He's in danger..
 She hears sniffling.
 Now, Lena decides to be formal about it."
 [Speaker]: 'Lena' 
