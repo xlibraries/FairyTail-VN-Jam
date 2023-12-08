@@ -49,6 +49,7 @@ public class ActorManager : MonoBehaviour
         else
         {
         GameObject storedActor = actorPresets.Find(actor => actor.name == name).value;
+        Debug.Assert(storedActor != null);
         madeActor = GameObject.Instantiate(storedActor);
         madeActor.transform.parent = actorStage.transform;
         var TT = madeActor.GetComponent<TweenTest>();

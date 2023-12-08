@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda2e0bab33f6e042a3dc4ccd37dd75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueFile: {fileID: 4900000, guid: e2de0a3de52826c40953869c24a516f0, type: 3}
+  dialogueFile: {fileID: 4900000, guid: c6da85c7d3f21ab49841d6bf41bb3731, type: 3}
   dialogueDestination: {fileID: 56011363}
   speakerIndicator: {fileID: 1194290649}
   choiceMenu: {fileID: 5018949962567014239}
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorPresets:
   - name: Lena
-    value: {fileID: 5552296813309427433, guid: 9965a745c82f8ff4099b89b5a753b65d, type: 3}
+    value: {fileID: 5936849927484905887, guid: 9965a745c82f8ff4099b89b5a753b65d, type: 3}
   - name: Enchantress
     value: {fileID: 1806007091540707826, guid: 901c8c1e5cb44ca4994bcc6035ab9cc8, type: 3}
   actorStage: {fileID: 1194290649}

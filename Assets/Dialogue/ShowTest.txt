@@ -1,0 +1,3 @@
+[Show]: 'Lena,LeftCenterDown,NormalOpen'
+[Speaker]: 'Lena'
+"I gotta test this now, to see if it works.'
