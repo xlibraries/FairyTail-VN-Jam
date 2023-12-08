@@ -135,7 +135,7 @@ public class DialogueInterpreture : MonoBehaviour
                     actorManager.SpawnActor(value);
                     break;
                 case HIDE:
-                    actorManager.KillActor(value);
+                    RemoveActor(value);
                     break;
                 case JUGGLE:
                     AddJuggle(value);
@@ -165,6 +165,14 @@ public class DialogueInterpreture : MonoBehaviour
         ChoiceMenu ChoiceMenuObject = choiceMenu.GetComponent<ChoiceMenu>();
         ChoiceMenuObject.TakeButtons(data,exhaustive);
         choiceMenu.SetActive(true);
+    }
+
+    
+    private void RemoveActor(string actorName)
+    {
+        Debug.Log($"{actorName} removed from stage and unsubscribed from the Juggle System");
+        juggleData.Remove(actorName);
+        actorManager.KillActor(actorName);
     }
 
 

@@ -63,9 +63,10 @@ public class ActorManager : MonoBehaviour
     //Replace with more sophisticated "fade out"
     public void KillActor(string command)
     {
-        GameObject actorToKill = actorPresets.Find(actor => actor.name == name).value;
-        GameObject.Destroy(actorToKill);
-        //DoTransform($"{command},KillFade");
+        //GameObject actorToKill = actorPresets.Find(actor => actor.name == command).value;
+        //GameObject.Destroy(actorToKill);
+        DoTransform($"{command},KillFade");
+        actorDict.Remove(command);
     }
 
 

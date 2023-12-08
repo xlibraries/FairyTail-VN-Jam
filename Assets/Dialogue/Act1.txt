@@ -17,7 +17,6 @@ Not the third."
 "Its simple: focus on the object.
 Not its surroundings."
 [Speaker]: 'Lena' 
-[Transform]: 'Lena,KillFade'
 "That is what I am attempting, you realize."
 [Speaker]: 'Skylan' 
 "Well, you can be better."
@@ -71,6 +70,7 @@ I will wait here."
 [Speaker]: 'Skylan' 
 "Will be lucky if I do find them."
 [Speaker]: 'None' 
+[Hide]: 'Skylan'
 "Skylan walks off between trees.
 After quenching her thirst, Lena knew other abilities she can practice while waiting, like levitating heavy stones.
 Three tries it took for a hefty, moss-covered stone to lift to three times her& height and sit atop two more.
