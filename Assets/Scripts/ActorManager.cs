@@ -65,6 +65,7 @@ public class ActorManager : MonoBehaviour
     {
         GameObject actorToKill = actorPresets.Find(actor => actor.name == name).value;
         GameObject.Destroy(actorToKill);
+        //DoTransform($"{command},KillFade");
     }
 
 

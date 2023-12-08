@@ -1,3 +1,5 @@
-[Show]: 'Lena,LeftCenterDown,NormalOpen'
+[Show]: 'Lena,LeftCenterDown,Normal'
 [Speaker]: 'Lena'
-"I gotta test this now, to see if it works.'
+"I gotta test this now, to see if it works."
+[Transform]: 'Lena,Bob'
+"ehe"

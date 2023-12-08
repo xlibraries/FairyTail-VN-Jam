@@ -1,6 +1,9 @@
 [Background]: 'Forest' 
 [Show]: 'Lena,LeftCenterDown,Normal'
-[Juggle]: 'Lena,LeftCenter,NormalSpeak,LeftCenterDown,Normal'
+[Show]: 'Skylan,RightCenterDown,Normal'
+[Juggle]: 'Lena,PushUp,NormalSpeak,LeftCenterDown,Normal'
+[Juggle]: 'Skylan,PushUp,NormalSpeak,RightCenterDown,Normal'
+[Transform]: 'Lena,Flip'
 [Speaker]: 'Lena' 
 "Let me try again, Skylan.
 I think I know why it didn't work that time.
@@ -14,6 +17,7 @@ Not the third."
 "Its simple: focus on the object.
 Not its surroundings."
 [Speaker]: 'Lena' 
+[Transform]: 'Lena,KillFade'
 "That is what I am attempting, you realize."
 [Speaker]: 'Skylan' 
 "Well, you can be better."

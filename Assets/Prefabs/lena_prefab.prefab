@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorName: Lena
   emotions:
-  - name: NormalOpen
-    value: {fileID: 21300000, guid: f194a666cbbd6af4e8c5a2d7b3d11b8a, type: 3}
-  - name: NormalClosed
+  - name: Normal
     value: {fileID: 21300000, guid: 691aeb9d48e507146b1c061374ae1ed5, type: 3}
+  - name: NormalSpeak
+    value: {fileID: 21300000, guid: f194a666cbbd6af4e8c5a2d7b3d11b8a, type: 3}
