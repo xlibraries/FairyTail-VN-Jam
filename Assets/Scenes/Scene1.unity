@@ -1086,7 +1086,7 @@ MonoBehaviour:
   dialogueDestination: {fileID: 56011363}
   speakerIndicator: {fileID: 1194290649}
   choiceMenu: {fileID: 5018949962567014239}
-  dPos: 0
+  dPos: 58
 --- !u!4 &2032161908
 Transform:
   m_ObjectHideFlags: 0
