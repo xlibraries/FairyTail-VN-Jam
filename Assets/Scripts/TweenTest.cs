@@ -30,6 +30,13 @@ public class TweenTest : MonoBehaviour
         transform.TweenPosition(new Vector3(x*Screen.width,y*Screen.height,0f),0.2f);
     }
 
+    private void TRTeleportBasic(float x, float y)
+    {
+        transform.position = new Vector3(x*Screen.width,y*Screen.height,0f);
+    }
+
+
+
     public void TRLeftCenter()
     {
         TRBasic(0.4f,0.5f);
@@ -50,6 +57,11 @@ public class TweenTest : MonoBehaviour
     public void TRRightCenterDown()
     {
         TRBasic(0.8f,0.4f);
+    }
+
+    public void TRCenter()
+    {
+        TRBasic(0.5f,0.5f);
     }
 
     public void TRFlip()
@@ -84,6 +96,13 @@ public class TweenTest : MonoBehaviour
     {
       this.gameObject.GetComponent<Image>().color = Color.clear;
       this.gameObject.GetComponent<Image>().TweenColor(Color.white,2.0f);
+    }
+
+    public void TRCenterFadeIn()
+    {
+      TRTeleportBasic(0.5f,0.5f);
+      this.gameObject.GetComponent<Image>().color = Color.clear;
+      this.gameObject.GetComponent<Image>().TweenColor(Color.white,0.2f);
     }
 
 

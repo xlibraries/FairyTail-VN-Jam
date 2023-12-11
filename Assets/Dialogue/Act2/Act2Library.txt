@@ -1,0 +1,55 @@
+[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
+[Show]: 'Enchantress,Center,Normal'
+[Speaker]: 'Lena'
+"
+
+I want to go to the Library."
+[Speaker]: 'The Enchantress'
+"(nods)
+Straight down from the front door, then up the stairs."
+[Speaker]: 'None'
+"She walks back down the hall determined to beat the Pulse.
+[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
+[Transform]: 'Enchantress,Fade'
+[Speaker]: 'The Enchantress'
+"(talking quickly, hollering)
+Just so you are aware, the Arcane Pulse is getting closer to going off."
+[Speaker]: 'None'
+"Uh oh. Upon entering the library, Lena saw she was right - the trees outside the nearest window glistened brighter in that spine-tingling, powerful purple and blue."
+[Background]: 'Library'
+[Speaker]: 'None'
+"Lena got right to work. This library boasted an impressive size. 
+All four walls with shelves, a couple full armor suits in corners, and a chandelier throwing candlelight all around. 
+Its rope was secured around a wall hook. But, only five shelves high was every wall stacked; every top one had tools. Magic tools? 
+And a few large scrolls set in corners of shelves.
+A stack of books lay on a table in the midst."
+[OUTDATED SHOW STATEMENT]: 'Lena, direction, direction, neutral expression'
+[Show]: 'Lena,CenterFadeIn,Normal'
+[Juggle]: 'Lena,LeftCenter,Normal,Bob,NormalSpeak'
+[Speaker]: 'Lena'
+"Alrighty. A charm like this might be in a box, or on a shelf, or in another rock.
+I don't have time to look through all these. Wish I knew an incantation that pointed out the guidebooks. 
+That enchantress probably knows this place in-and-out.."
+[Speaker]: 'None'
+"One shelf had high cupboard doors. Inside were a stack of cookbooks.
+Her stomach growls seeing boiling stew and fresh eggs. 
+Two more are magic instruction texts."
+[Speaker]: 'Lena'
+"Does not give me answers."
+[Speaker]: 'None'
+"She rifles through books on another shelf.
+Wait, hold on. 
+One book has the title ''How to Run a Magical Business for Dummies.'', with a slip of paper sticking out. 
+It reads:
+''You can't see what lies on the other side without an apprentice, Conwenna. Teaching someone else means the magic keeps in the family. You grow as a person, too.'' "
+[Speaker]: 'Lena'
+"Wow, that explains things now. 
+Rather specific, too."
+[Speaker]: 'None'
+"Where was the charm hiding, however?
+A moment later, she facepalms herself. She scurries to the other end of the room. Hiding in a corner by a trio of scrolls is a silver stone. Lena let out a sigh of relief."
+[Speaker]: 'Lena'
+"I am an idiot for only now considering this spot.
+Now I have it all. Let's return to her."
+[Transform]: 'Lena,Fade'
+[Load]: 'Act2/Act2ChoiceLoop.txt' 
