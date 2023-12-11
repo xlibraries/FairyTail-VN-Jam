@@ -39,9 +39,9 @@ Two more are magic instruction texts."
 [Speaker]: 'None'
 "She rifles through books on another shelf.
 Wait, hold on. 
-One book has the title ''How to Run a Magical Business for Dummies.'', with a slip of paper sticking out. 
+One book has the title 'How to Run a Magical Business for Dummies.', with a slip of paper sticking out. 
 It reads:
-''You can't see what lies on the other side without an apprentice, Conwenna. Teaching someone else means the magic keeps in the family. You grow as a person, too.'' "
+'You can't see what lies on the other side without an apprentice, Conwenna. Teaching someone else means the magic keeps in the family. You grow as a person, too.' "
 [Speaker]: 'Lena'
 "Wow, that explains things now. 
 Rather specific, too."

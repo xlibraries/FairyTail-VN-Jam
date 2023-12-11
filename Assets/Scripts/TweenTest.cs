@@ -95,7 +95,7 @@ public class TweenTest : MonoBehaviour
     public void TRFadeIn()
     {
       this.gameObject.GetComponent<Image>().color = Color.clear;
-      this.gameObject.GetComponent<Image>().TweenColor(Color.white,2.0f);
+      this.gameObject.GetComponent<Image>().TweenColor(Color.white,0.2f);
     }
 
     public void TRCenterFadeIn()

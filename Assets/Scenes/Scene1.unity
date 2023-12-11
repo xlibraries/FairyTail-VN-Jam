@@ -594,6 +594,8 @@ MonoBehaviour:
     value: {fileID: 21300000, guid: e45df677b44b77f46b167228c517fe64, type: 3}
   - name: House
     value: {fileID: 21300000, guid: 0f5ec530fe06e774aaef287e1723c97d, type: 3}
+  - name: Study
+    value: {fileID: 21300000, guid: 5b7f664b515582d458717c354f6be292, type: 3}
 --- !u!1 &927915301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,7 +1084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda2e0bab33f6e042a3dc4ccd37dd75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueFile: {fileID: 4900000, guid: 0ecf23f25a87a3947afeff890f88871c, type: 3}
+  dialogueFile: {fileID: 4900000, guid: 480184761dc7600429dea13754ce22af, type: 3}
   dialogueDestination: {fileID: 56011363}
   speakerIndicator: {fileID: 1194290649}
   choiceMenu: {fileID: 5018949962567014239}
