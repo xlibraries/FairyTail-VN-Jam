@@ -127,6 +127,7 @@ public class TypeAttempt3 : MonoBehaviour
                         break;
                     case 'i':
                         yield return new WaitUntil(()=> Input.GetKeyDown(SPACE_KEY));
+                        dialogueMaster.SpamPart();
                         rawShown = NULL;
                         break;
                     case 't':

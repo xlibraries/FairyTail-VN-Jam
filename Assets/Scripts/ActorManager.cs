@@ -69,7 +69,7 @@ public class ActorManager : MonoBehaviour
 
     public void SpamActor(string command)
     {
-      Debug.Log("Trying to spam");
+      //Debug.Log("Trying to spam");
       string[] args = command.Split(COMMA);
       Debug.Assert(args.Length > 1);
       var grabbedActor = actorDict[args[0]];

@@ -55,13 +55,13 @@ public class DialogueInterpreture : MonoBehaviour
         AskNext();
     }
 
-    void SpamPart()
+    public void SpamPart()
     {
         string spaminfo;
         if (spamTalkers.TryGetValue(currentSpeaker, out spaminfo)) 
         {
         actorManager.SpamActor($"{currentSpeaker},{spaminfo}");
-        Debug.Log($"{currentSpeaker},{spaminfo}");
+        //Debug.Log($"{currentSpeaker},{spaminfo}");
         }
     }
 
@@ -260,6 +260,8 @@ public class DialogueInterpreture : MonoBehaviour
       newJugglePair.silentImg = rawData[4];
       juggleData[actorName] = newJugglePair;
     }
+
+
 
 
 }
