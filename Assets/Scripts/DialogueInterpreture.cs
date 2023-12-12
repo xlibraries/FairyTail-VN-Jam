@@ -172,7 +172,7 @@ public class DialogueInterpreture : MonoBehaviour
                     AddSpam(value);
                     break;
                 case UNSPAM:
-                    AddChoiceUI(value,true);
+                    RemoveSpam(value);
                     break;
             }
 

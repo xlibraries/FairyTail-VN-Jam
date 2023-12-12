@@ -13,7 +13,7 @@ I want to go to the Workshop."
 A stack of branches by a table. And a mini forge with a crate of scrap metal in the corner. "
 [Show]: 'Lena,CenterFadeIn,Normal'
 [Transform]: 'Lena,Flip'
-[Juggle]: 'Lena,LeftCenter,NormalSpeak,Bob,Normal'
+[Spam]: 'Lena,NormalSpeak,Normal'
 [Speaker]: 'Lena'
 "Quite an arrangement for such a dwelling.
 What am I looking for?"
@@ -48,12 +48,15 @@ We're at the Enchantress's service."
 [Speaker]: 'Talking Hammer'
 "Building the family business for seven generations."
 [Speaker]: 'Lena'
-"Maybe they know enough about her I can find out more, Lena
-thought."
+[Unspam]: 'Lena'
+"(Family business, huh?)
+(Maybe they know some stuff about the Enchantress, and what's up with these charms..)"
+[Spam]: 'Lena,NormalSpeak,Normal'
 [Speaker]: 'Lena'
 "I am kind of lost here. I am looking for some charm that makes another charm more effective.
 Also, does the Enchantress have a real name?"
 [Speaker]: 'Talking Hammer'
+[Unspam]: 'Lena'
 "Does it make you float?"
 [Speaker]: 'Lena'
 "No, it-"
