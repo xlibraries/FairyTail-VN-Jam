@@ -105,6 +105,21 @@ public class TweenTest : MonoBehaviour
       this.gameObject.GetComponent<Image>().TweenColor(Color.white,0.2f);
     }
 
+    public void TalkBob(string talkingImageName, string quietImageName)
+    {
+        var talkimg = emotions.Find(emotion => emotion.name == talkingImageName);
+        var quietimg = emotions.Find(emotion => emotion.name == quietImageName);
+        this.gameObject.GetComponent<Image>().sprite = talkimg.value;
+
+        Vector3 oldPosition = transform.position;
+        transform.TweenPosition(oldPosition + new Vector3(0f,30f,0f),0.2f)
+        .OnComplete(()=>
+        {
+        transform.TweenPosition(oldPosition,0.2f);
+        this.gameObject.GetComponent<Image>().sprite = quietimg.value;
+        });
+    }
+
 
     /*
     PushUp and PushDown are RELATIVE - wherever the Actor is, it will move them slightly up or down

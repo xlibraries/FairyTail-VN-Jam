@@ -1,5 +1,22 @@
-[Show]: 'Lena,LeftCenterDown,Normal'
-[Speaker]: 'Lena'
-"I gotta test this now, to see if it works."
-[Transform]: 'Lena,Bob'
-"ehe"
+[Show]: 'Hammer,LeftCenterDown,Normal'
+[Show]: 'Shield,Center,Normal'
+[Show]: 'Bottle,RightCenterDown,Normal'
+[Speaker]: 'Hammer'
+[Spam]: 'Hammer,Normal,NormalSpeak'
+"Pingus
+EnchantressE
+EnchantressE
+Enchantress
+EnchantressE"
+[Speaker]: 'Shield'
+"Pingus
+EnchantressE
+EnchantressE
+Enchantress
+EnchantressE"
+[Speaker]: 'Bottle'
+"Pingus
+EnchantressE
+EnchantressE
+Enchantress
+EnchantressE"

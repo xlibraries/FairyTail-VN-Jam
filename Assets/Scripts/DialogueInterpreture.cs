@@ -37,6 +37,7 @@ public class DialogueInterpreture : MonoBehaviour
     public int dPos = 0;
 
     private Dictionary<string, JugglePair> juggleData;
+    private Dictionary<string, string> spamTalkers;
     private string currentSpeaker = NULL;
 
 
@@ -49,9 +50,19 @@ public class DialogueInterpreture : MonoBehaviour
         actorManager = this.GetComponent<ActorManager>();
         choiceMenu.GetComponent<ChoiceMenu>().gameManager = this;
         juggleData = new Dictionary<string, JugglePair>();
-        //Debug.Log(dialogueChunks[0]);
+        spamTalkers = new Dictionary<string, string>();
         actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
         AskNext();
+    }
+
+    void SpamPart()
+    {
+        string spaminfo;
+        if (spamTalkers.TryGetValue(currentSpeaker, out spaminfo)) 
+        {
+        actorManager.SpamActor($"{currentSpeaker},{spaminfo}");
+        Debug.Log($"{currentSpeaker},{spaminfo}");
+        }
     }
 
 
@@ -78,6 +89,7 @@ public class DialogueInterpreture : MonoBehaviour
                 next = "{i0}" + next;
                 //Debug.Log($"This is {next.Length}");
                 pairedDialogueBox.curPut = next;
+                SpamPart();
                 dPos += 1;
             }
         }
@@ -156,6 +168,12 @@ public class DialogueInterpreture : MonoBehaviour
                 case CHOICE_EXHAUSTIVE:
                     AddChoiceUI(value,true);
                     break;
+                case SPAM:
+                    AddSpam(value);
+                    break;
+                case UNSPAM:
+                    AddChoiceUI(value,true);
+                    break;
             }
 
         }
@@ -206,6 +224,24 @@ public class DialogueInterpreture : MonoBehaviour
       var bg = GameObject.FindGameObjectsWithTag(BACKGROUND)[0].GetComponent<BackgroundBasic>();
       bg.FadeColorSwitch(Color.black,2.0f,name);
     }
+
+    private void AddSpam(string Data)
+    {
+        
+        string[] rawData = Data.Split(COMMA);
+        Debug.Assert(rawData.Length > 1);
+        string actorName = rawData[0];
+        Debug.Log($"{actorName} added to spam system");
+        string speakingImg = rawData[1];
+        string silentImg = rawData[2];
+        spamTalkers[actorName] = $"{speakingImg},{silentImg}";
+    }
+
+    private void RemoveSpam(string name)
+    {
+        spamTalkers.Remove(name);
+    }
+
 
     /*
     Assigns juggle behavior to an actor.

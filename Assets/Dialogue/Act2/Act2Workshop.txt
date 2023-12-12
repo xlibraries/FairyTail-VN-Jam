@@ -1,106 +1,96 @@
-"Workshop."
+[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
+[Show]: 'Enchantress,Center,Normal'
+[Speaker]: 'Lena'
+"
+
+I want to go to the Workshop."
 [Speaker]: 'Enchantress'
-First door by the porch.
+"First door by the porch."
+[Transform]: 'Enchantress,Fade'
 [Background]: 'Workshop'
-Two wide glass windows let natural light beam in. Its easier
-to see in here than the office, which was musty with one
-window. Curls of carved wood litter a hand-powered lathe. A
-stack of branches by a table. And a mini forge with a crate
-of scrap metal in the corner. 
+[Speaker]: 'None'
+"Two wide glass windows let natural light beam in. Its easier to see in here than the office, which was musty with one window. Curls of carved wood litter a hand-powered lathe. 
+A stack of branches by a table. And a mini forge with a crate of scrap metal in the corner. "
+[Show]: 'Lena,CenterFadeIn,Normal'
+[Transform]: 'Lena,Flip'
+[Juggle]: 'Lena,LeftCenter,NormalSpeak,Bob,Normal'
 [Speaker]: 'Lena'
-Quite an arrangement for such a
-dwelling.
-What am I looking for?
-On the table lay a pile of corks, a line of glass bottles,
-and silver soul stones. Lena inspects one.
+"Quite an arrangement for such a dwelling.
+What am I looking for?"
+[Speaker]: 'None'
+"On the table lay a pile of corks, a line of glass bottles,
+and silver soul stones. Lena inspects one."
 [Speaker]: 'Lena'
-Pretty nice ones. The word on it
-looks similar to one in Beshat.
-A local language shedid not know well. If she hadn't blown a
-whole in her parent's barn during the previous attempt
-learning it, she'd had given herself another try.
-A voice breaks her concentration and makes her flinch.
+"Pretty nice ones. The word on it looks similar to one in Beshat, a local language she did not know well.
+If she hadn't blown a hole in her parent's barn during the previous attempt learning it, she'd had given herself another try.
+A voice breaks her concentration and makes her flinch."
 [Speaker]: 'A voice'
-Who is rummaging about here? Those
-soul stones belong to the
-Enchantress!
+"Who is rummaging about here? Those soul stones belong to the Enchantress!"
 [Speaker]: 'Another voice'
-A guest. Careful - she she might
+"A guest. Careful - she she might
 melt us if we annoy her.
-Lena glanced left and right, confused as to who these were.
+Lena glanced left and right, confused as to who these were."
 [Speaker]: 'Lena'
-Who the heck is speaking?
-She stepped further in, eyes sharp. She checked on the floor
+"Who the heck is speaking?"
+[Speaker]: 'None'
+"She stepped further in, eyes sharp. She checked on the floor
 and the ceiling before three objects moved dramatically.
-A glass bottle, a circular shield, and a wide-nosed hammer
-hopped in place.
+A glass bottle, a circular shield, and a wide-nosed hammer hopped in place."
 [Speaker]: 'Lena'
-(saucer-eyed and jaw
-dropped)
-I was not aware objects can be
-under, um, speaking incantations.
-This is just crazy.
+"(saucer-eyed and jaw dropped)
+I was not aware objects can be under, um, speaking incantations.
+This is just crazy."
 [Speaker]: 'Talking Glass Bottle'
-Yes, madam. 
+"Yes, madam."
 [Speaker]: 'Talking Circular Shield'
-Says the woman who just walked in.
-We're at the Enchantress's service.
+"Says the woman who just walked in.
+We're at the Enchantress's service."
 [Speaker]: 'Talking Hammer'
-Building the family business for
-seven generations. 
-Maybe they know enough about her I can find out more, Lena
-thought.
+"Building the family business for seven generations."
 [Speaker]: 'Lena'
-I am kind of lost here. I am
-looking for some charm that makes
-another charm more effective.
-Also, does the Enchantress have a
-real name?
+"Maybe they know enough about her I can find out more, Lena
+thought."
+[Speaker]: 'Lena'
+"I am kind of lost here. I am looking for some charm that makes another charm more effective.
+Also, does the Enchantress have a real name?"
 [Speaker]: 'Talking Hammer'
-Does it make you float?
+"Does it make you float?"
 [Speaker]: 'Lena'
-No, it-
+"No, it-"
 [Speaker]: 'Talking Glass Bottle'
-Does it remove items stuck to
-another?
-That is a fast guess, she thought.
+"Does it remove items stuck to another?"
+[Speaker]: 'None'
+"A quick guess, Lena thought.."
 [Speaker]: 'Lena'
-Um, yes, as a matter of fact. The
-Enchantress and I need it. For a
-project.
+"Um, yes, as a matter of fact. The Enchantress and I need it. For a project."
 [Speaker]: 'Talking Circular Shield'
-You refer to her magical name. I
-can tell you real name.
+"You refer to her magical name. I can tell you her real name."
 [Speaker]: 'Lena'
-Sure. But I need the charm, too. 
+"Sure. But I need the charm, too. "
 [Speaker]: 'Talking Hammer'
-Grab the orange soul stone with the
-forge's tongs. Heat it up. Just
-enough will release the charm as
-long as you don't drop it.
+"Grab the orange soul stone with the forge's tongs. Heat it up. Just enough will release the charm as long as you don't drop it."
 [Speaker]: 'Talking Circular Shield'
-(real name) is her name.
-Good businesswoman; persuasive and
-powerful. Even though a few from
-Strand's Crossing don't like her,
-she's remained useful. No one knows
-where her parents are.
-Lena carefully pinched the tongs on the stone. It was the
-length of her whole hand. 
+"The Enchantress - Conwenna is her name. 
+Good businesswoman; persuasive and powerful. 
+Even though a few from Strand's Crossing don't like her, she's remained useful. 
+For as long as I've been here, none of the family has uttered their last name. Maybe they never had one..
+This house holds many mysteries, and Conwenna is all that remains of that legendary line."
+[Speaker]: 'None'
+"Lena carefully pinched the tongs on the stone. 
+It was the length of her whole hand. "
 [Speaker]: 'Lena'
-Interesting.
-She held it inside the blazing hot heat. The stone began
-quaking. Lena grimaced with sweat beads on her forehead and
-her arms searing hot. A few minutes past and it burst apart
-- a swirling orange sphere of power the size of a mango. And
-she yanked her arms out.
+"Interesting.
+She held it inside the blazing hot heat. The stone began quaking. 
+Lena grimaced with sweat beads on her forehead and her arms searing hot. 
+A few minutes past and it burst apart - a swirling orange sphere of power the size of a mango. 
+And she yanked her arms out."
 [Speaker]: 'Lena'
-Ouch!
-Yes. Another piece found.
+"Ouch!"
+"Yes. Another piece found."
 [Speaker]: 'Talking Hammer'
-That's it! Well done. 
+"That's it! Well done."
 [Speaker]: 'Talking Glass Bottle'
-Well done, indeed.
+"Well done, indeed."
 [Speaker]: 'Lena'
-Returning to the Enchantress now.
-Thank you.
+"Returning to the Enchantress now.
+Thank you."

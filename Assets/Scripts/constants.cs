@@ -85,6 +85,10 @@ public class Constants : MonoBehaviour
     public const string KILL = "Kill";
     public const string CHOICE = "Choice";
     public const string CHOICE_EXHAUSTIVE = "ChoiceExhaustive";
+
+    public const string SPAM = "Spam";
+    public const string UNSPAM = "Unspam";
+    
     #endregion
     #region File Paths
     public const string DIALOGUE_PATH = "Assets/Dialogue/";

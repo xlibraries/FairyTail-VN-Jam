@@ -49,9 +49,9 @@ There you are."
 [Transform]: 'Enchantress,CenterFadeIn'
 [Transform]: 'Lena,FadeIn'
 [Transform]: 'Lena,Flip'
-[Transform]: 'Enchantress',Flip'
+[Transform]: 'Enchantress,Flip'
 [Juggle]: 'Lena,LeftCenter,Normal,Bob,NormalSpeak'
-[Juggle]: 'Enchantress,RightCenter,Normal,Bob,NormalSpeak'
+[Juggle]: 'Enchantress,Bob,NormalSpeak,RightCenter,Normal'
 [Speaker]: 'Lena'
 "Lockpicks found."
 [Speaker]: 'Enchantress'

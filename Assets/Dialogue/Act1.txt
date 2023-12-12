@@ -225,7 +225,7 @@ Bits and bobs in boxes or wrapped in cloth.
 At the back is a hefty wood door.
 Metal hinges wrap themselves along a side.
 Paintings of fantastical creatures stretched along the top and bottom.
-Candelight mounted on a chandelier casted angular shadows.
+Candlelight mounted on a chandelier casted angular shadows.
 Just one narrow window let in light."
 [Speaker]: 'Lena' 
 "(eyes wide) Ummm- This looks like bad news."
