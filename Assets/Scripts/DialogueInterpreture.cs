@@ -6,6 +6,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using TMPro;
 using static Constants;
+using static AudioManager;
 
 public struct JugglePair
 {
@@ -173,10 +174,15 @@ public class DialogueInterpreture : MonoBehaviour
                 case UNSPAM:
                     RemoveSpam(value);
                     break;
+                case MUSIC:
+                    AudioManager.instance.PlayMusic(value);
+                    break;
             }
 
         }
     }
+
+
 
     private void AddChoiceUI(string data, bool exhaustive = false)
     {

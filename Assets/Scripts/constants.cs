@@ -88,6 +88,8 @@ public class Constants : MonoBehaviour
 
     public const string SPAM = "Spam";
     public const string UNSPAM = "Unspam";
+
+    public const string MUSIC = "Music";
     
     #endregion
     #region File Paths

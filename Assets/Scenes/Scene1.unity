@@ -1067,6 +1067,7 @@ GameObject:
   - component: {fileID: 2032161908}
   - component: {fileID: 2032161907}
   - component: {fileID: 2032161909}
+  - component: {fileID: 2032161910}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1132,6 +1133,24 @@ MonoBehaviour:
   - name: Shield
     value: {fileID: 3834160405766034388, guid: f6851a8c55662144d8d46d3dadbc6bf1, type: 3}
   actorStage: {fileID: 1194290649}
+--- !u!114 &2032161910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032161906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563200bfca382bc47ae92682795c8b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicList:
+  - name: Grief
+    music: {fileID: 8300000, guid: da691f5d79d7c7e4b87aea1c45b167f2, type: 3}
+  - name: Forest
+    music: {fileID: 8300000, guid: 29816da6145bae9468ebb9a13eab3dd1, type: 3}
+  mainAudioSource: {fileID: 0}
 --- !u!114 &5018949962567014234
 MonoBehaviour:
   m_ObjectHideFlags: 0
