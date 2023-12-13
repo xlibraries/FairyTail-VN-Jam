@@ -89,7 +89,6 @@ public class DialogueInterpreture : MonoBehaviour
                 next = "{i0}" + next;
                 //Debug.Log($"This is {next.Length}");
                 pairedDialogueBox.curPut = next;
-                SpamPart();
                 dPos += 1;
             }
         }

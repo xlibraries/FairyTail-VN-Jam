@@ -1,5 +1,6 @@
 [OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
 [Show]: 'Enchantress,Center,Normal'
+[Spam]: 'Enchantress,Normal,NormalSpeak'
 [Speaker]: 'Lena'
 "
 
@@ -27,25 +28,30 @@ A voice breaks her concentration and makes her flinch."
 [Speaker]: 'A voice'
 "Who is rummaging about here? Those soul stones belong to the Enchantress!"
 [Speaker]: 'Another voice'
-"A guest. Careful - she she might
-melt us if we annoy her.
+"A guest. Careful - she she might melt us if we annoy her.
 Lena glanced left and right, confused as to who these were."
 [Speaker]: 'Lena'
 "Who the heck is speaking?"
 [Speaker]: 'None'
 "She stepped further in, eyes sharp. She checked on the floor
-and the ceiling before three objects moved dramatically.
-A glass bottle, a circular shield, and a wide-nosed hammer hopped in place."
+and the ceiling before three objects moved dramatically."
+[Show]: 'Hammer,LeftCenterDown,Normal'
+[Show]: 'Shield,Center,Normal'
+[Show]: 'Bottle,RightCenterDown,Normal'
+[Spam]: 'Hammer,Normal,NormalSpeak'
+[Spam]: 'Shield,Normal,NormalSpeak'
+[Spam]: 'Bottle,Normal,NormalSpeak'
+"A glass bottle, a circular shield, and a wide-nosed hammer hopped in place."
 [Speaker]: 'Lena'
 "(saucer-eyed and jaw dropped)
 I was not aware objects can be under, um, speaking incantations.
 This is just crazy."
-[Speaker]: 'Talking Glass Bottle'
+[Speaker]: 'Bottle'
 "Yes, madam."
-[Speaker]: 'Talking Circular Shield'
+[Speaker]: 'Shield'
 "Says the woman who just walked in.
 We're at the Enchantress's service."
-[Speaker]: 'Talking Hammer'
+[Speaker]: 'Hammer'
 "Building the family business for seven generations."
 [Speaker]: 'Lena'
 [Unspam]: 'Lena'
@@ -55,24 +61,24 @@ We're at the Enchantress's service."
 [Speaker]: 'Lena'
 "I am kind of lost here. I am looking for some charm that makes another charm more effective.
 Also, does the Enchantress have a real name?"
-[Speaker]: 'Talking Hammer'
+[Speaker]: 'Hammer'
 [Unspam]: 'Lena'
 "Does it make you float?"
 [Speaker]: 'Lena'
 "No, it-"
-[Speaker]: 'Talking Glass Bottle'
+[Speaker]: 'Bottle'
 "Does it remove items stuck to another?"
 [Speaker]: 'None'
 "A quick guess, Lena thought.."
 [Speaker]: 'Lena'
 "Um, yes, as a matter of fact. The Enchantress and I need it. For a project."
-[Speaker]: 'Talking Circular Shield'
+[Speaker]: 'Shield'
 "You refer to her magical name. I can tell you her real name."
 [Speaker]: 'Lena'
 "Sure. But I need the charm, too. "
-[Speaker]: 'Talking Hammer'
+[Speaker]: 'Hammer'
 "Grab the orange soul stone with the forge's tongs. Heat it up. Just enough will release the charm as long as you don't drop it."
-[Speaker]: 'Talking Circular Shield'
+[Speaker]: 'Shield'
 "The Enchantress - Conwenna is her name. 
 Good businesswoman; persuasive and powerful. 
 Even though a few from Strand's Crossing don't like her, she's remained useful. 
@@ -90,10 +96,15 @@ And she yanked her arms out."
 [Speaker]: 'Lena'
 "Ouch!"
 "Yes. Another piece found."
-[Speaker]: 'Talking Hammer'
+[Speaker]: 'Hammer'
 "That's it! Well done."
-[Speaker]: 'Talking Glass Bottle'
+[Speaker]: 'Bottle'
 "Well done, indeed."
 [Speaker]: 'Lena'
+[Transform]: 'Hammer,Fade'
+[Transform]: 'Shield,Fade'
+[Transform]: 'Bottle,Fade'
+[Transform]: 'Lena,Fade'
 "Returning to the Enchantress now.
 Thank you."
+[Load]: 'Act2/Act2ChoiceLoop.txt' 
