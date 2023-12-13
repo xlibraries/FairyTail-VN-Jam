@@ -1150,6 +1150,8 @@ MonoBehaviour:
     music: {fileID: 8300000, guid: da691f5d79d7c7e4b87aea1c45b167f2, type: 3}
   - name: Forest
     music: {fileID: 8300000, guid: 29816da6145bae9468ebb9a13eab3dd1, type: 3}
+  - name: DangerParadise
+    music: {fileID: 8300000, guid: 69c653b2582975946b15645697be83d8, type: 3}
   mainAudioSource: {fileID: 0}
 --- !u!114 &5018949962567014234
 MonoBehaviour:
