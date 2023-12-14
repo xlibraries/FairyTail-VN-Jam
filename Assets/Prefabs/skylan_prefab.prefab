@@ -92,6 +92,14 @@ MonoBehaviour:
   actorName: Skylan
   emotions:
   - name: Normal
-    value: {fileID: 21300000, guid: 691aeb9d48e507146b1c061374ae1ed5, type: 3}
+    value: {fileID: 21300000, guid: f1c1e649c3c415c43b15e22305630645, type: 3}
   - name: NormalSpeak
-    value: {fileID: 21300000, guid: f194a666cbbd6af4e8c5a2d7b3d11b8a, type: 3}
+    value: {fileID: 21300000, guid: 8baed5733e0c9244c85f79e721183786, type: 3}
+  - name: Sad
+    value: {fileID: 21300000, guid: 948f2a1c5d75ed348a696cc518450836, type: 3}
+  - name: SadSpeak
+    value: {fileID: 21300000, guid: f3161689e8de60247bf04bb6bb02afea, type: 3}
+  - name: Happy
+    value: {fileID: 21300000, guid: 4cce4721b7cfb7745902e3d0a82bd96f, type: 3}
+  - name: HappySpeak
+    value: {fileID: 21300000, guid: fcdbfc46b5d56264bbfc51c96decb59a, type: 3}

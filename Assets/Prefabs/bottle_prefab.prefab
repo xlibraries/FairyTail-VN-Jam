@@ -92,6 +92,6 @@ MonoBehaviour:
   actorName: Bottle
   emotions:
   - name: Normal
-    value: {fileID: 21300000, guid: 2b41809b50d5aea4ba0c0d74f2859c14, type: 3}
+    value: {fileID: 21300000, guid: 98e843a4fb5d1b1489b563df025f1a38, type: 3}
   - name: NormalSpeak
-    value: {fileID: 21300000, guid: 8c2cb58f59c4d95408374ffd7532232c, type: 3}
+    value: {fileID: 21300000, guid: 98e843a4fb5d1b1489b563df025f1a38, type: 3}
