@@ -84,6 +84,7 @@ public class TweenTest : MonoBehaviour
       this.gameObject.GetComponent<Image>().TweenColor(Color.clear,0.2f)
       .OnComplete(() => {
         GameObject.Destroy(this.gameObject);
+        Tweening.KillAll();
       });
     }
 

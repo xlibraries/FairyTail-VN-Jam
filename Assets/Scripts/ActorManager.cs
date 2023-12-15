@@ -82,8 +82,11 @@ public class ActorManager : MonoBehaviour
         string[] args = command.Split(COMMA);
         Debug.Assert(args.Length > 1);
         var grabbedActor = actorDict[args[0]];
+        if(grabbedActor.gameObject.activeSelf)
+        {
         var transformMethod = grabbedActor.GetType().GetMethod("TR" + args[1]);
         transformMethod.Invoke(grabbedActor,null);
+        }
     }
 
     public void SwitchImage(string command)

@@ -7,6 +7,7 @@
 [Speaker]: 'Lena' 
 [Transform]: 'Skylan,FadeIn'
 [Transform]: 'Lena,FadeIn'
+[Museic]: 'Grief'
 "Let me try again, Skylan.
 I think I know why it didn't work that time.
 Then you take your turn."
@@ -25,17 +26,23 @@ Not its surroundings."
 [Speaker]: 'Skylan' 
 "Well, you can be better."
 [Speaker]: 'Lena' 
+[Image]: 'Lena,SadSpeak'
 "(scowls)"
 [Speaker]: 'Skylan' 
 "(chuckles) I am only giving you a hard time, Lena.
 You can do it."
 [Speaker]: 'Lena' 
+[Juggle]: 'Lena,PushUp,HappySpeak,LeftCenterDown,Happy'
 "(changes to a smile) Thank you.
 Then, I hand you your butt."
 [Speaker]: 'Skylan' 
 "Not if the Arcane Pulse fires early.
  We'll need to shield up at Strand's Crossing ASAP."
-[Speaker]: 'None' 
+[Speaker]: 'None'
+[Image]: 'Lena,Normal'
+[Juggle]: 'Lena,PushUp,NormalSpeak,LeftCenterDown,Normal'
+[Spam]: 'Lena,NormalSpeak,Normal'
+[Spam]: 'Skylan,NormalSpeak,Normal'
 "Wise idea, Lena thought.
 Albeit, she wasn't planning on beating him up.
 She extended her arm again toward the dense tree several feet away, then made a claw with her fingers.
@@ -78,6 +85,8 @@ I will wait here."
 "Will be lucky if I do find them."
 [Speaker]: 'None' 
 [Hide]: 'Skylan'
+[Transform]: 'Lena,Center'
+[UnJuggle]
 "Skylan walks off between trees.
 After quenching her thirst, Lena knew other abilities she can practice while waiting, like levitating heavy stones.
 Three tries it took for a hefty, moss-covered stone to lift to three times her& height and sit atop two more.
@@ -98,6 +107,7 @@ I need to look for him before the Pulse goes off.
 He knows his way around these woods better than I, though.
 [Background] 'Forest'
 Sometime in the afternoon.
+[Speaker]: 'None' 
 "She double checks the perimeter.
 It's as calm as crickets.
 A pat of her dagger reassured her before entering the trees.
@@ -116,15 +126,16 @@ Some orange herbs here start a path.
 She picks a direction based on tiny orange leaves and follows."
 [Speaker]: 'Lena' 
 "Lets try this way.
-I knew I should have brought my Ithaka bullhorn.
+I knew I should have brought my Ithaka bullhorn."
+[kabinky]
 Writers' 
 Note: Ithaka Bullhorn is a magical horn Note capable of far-reaching sound waves.
 Helps alert people or find them if they're within a five mile radius.
- She sees something ahead.
+"She sees something ahead.
 Looks bright and wide, like a barn with earthly colors.
 A ways along the leaves end at a clearing.
 Lena scans the area to make sure no one jumps her.
- Nope.
+Nope.
 No sign of Skylan either.
 Lena approaches it cautiously with a hand on her dagger's handle."
 [Speaker]: 'Lena' 
@@ -140,6 +151,7 @@ Golly.
 I wonder how close Strand's Crossing is to here."
 [May need to fudge the dialogue here - a closeup on the porch could be too much?]
 [Background]: 'House' 
+[Speaker]: 'None'
 "On the front porch, Lena noticed a figure move.
 They're sitting on a chair with hands on their face.
 Green dress, red-brown hair.
@@ -155,23 +167,28 @@ Now, Lena decides to be formal about it."
 [Show]: 'Enchantress,RightCenterDown,Normal'
 [Transform]: 'Enchantress,Flip'
 [Transform]: 'Enchantress,FadeIn'
-[Juggle]: 'Enchantress,PushUp,NormalSpeak,RightCenterDown,Normal'
+[Juggle]: 'Enchantress,PushUp,Normal,RightCenterDown,NormalSpeak'
 [Speaker]: 'Enchantress' 
 "(Flinches. Looks around.) Who's that?"
 [Speaker]: 'Lena' 
 "Sorry.
 You must be the Enchantress, right? Are you okay?"
+[Speaker]: 'None'
+"The woman's eyes are red and puffy, and her movements stiffened, as though she spent a while out here in a bit of saddened trance."
+"She does a bad job of hiding her current state." 
 [Speaker]: 'Enchantress' 
-"(Sees her. Sniffles) I am.
-No, but I will survive. And you are...?"
+"(Sees her. Sniffles) I - I am^2,sorry.
+A- Ah^2, it's nothing, I'm fine. 
+And you are...?"
 [Speaker]: 'None'
 Lena considers between telling her real name or keeping it secret.
 To trust someone she has only heard of, first name basis is rather necessary."
 [Speaker]: 'Lena' 
 "Lena. 
 Have you seen a younger guy around these parts? 
-I'm looking for my friend after he went looking for magic herbs.
-The Enchantress lifts her head and sits straight on her bench.
+I'm looking for my friend after he went looking for magic herbs."
+[Speaker]: 'None'
+"The Enchantress lifts her head and sits straight on her bench.
 Her eyes are apricot red."
 [Speaker]: 'Enchantress' 
 "Can you provide some details?"
@@ -179,9 +196,13 @@ Her eyes are apricot red."
 "Five-foot-ten, brown hair and pants.
 Carrying a rucksack."
 [Speaker]: 'Enchantress' 
-"(shakes head) Haven't.
- (wipes nose with handkerchief) However, I know magic that can help you find him.
- Having a powerful and dangerous enchantress help is pretty overkill.
+"(shakes head) Haven't."
+[Speaker]: 'None'
+"She wipes her nose with her handkercheif."
+[Speaker]: 'Enchantress'
+"However, I know magic that can help you find him."
+[Speaker]: 'None'
+"Having a powerful and dangerous enchantress help is pretty overkill.
 She may betray them for her own needs.
 Again, though, no one else was around."
 [Speaker]: 'Lena' 
@@ -197,18 +218,19 @@ Under one condition."
 "Of course, there's that.
 Okay."
 [Speaker]: 'Enchantress' 
-"You help me unlock a door that my grandmother - may she now rest in peace - forbade me from opening.
+"You help me unlock a door that my grandmother - ^6 may she now rest in peace ^6 - forbade me from opening.
 She called it the Forbidden Door.
 It just requires a bit of arcane abilities.
-So more like The Arcane Door.
-Help break a family pact for finding her friend.
+So more like The Arcane Door."
+[Speaker]: 'None'
+"Help break a family pact for finding her friend.
 Not what Lena imagined."
 [Speaker]: 'Lena' 
 "I've struggled with those.
 You can teach me what I need to find my friend and I will open it."
 [Speaker]: 'Enchantress' 
 "You have a deal.
- Door's down in my basement.
+Door's down in my basement.
 I'll show you."
 [Background]: 'HouseMainHall' 
 [Speaker]: 'None' 
