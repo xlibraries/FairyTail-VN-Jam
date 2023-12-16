@@ -99,6 +99,18 @@ public class TweenTest : MonoBehaviour
       this.gameObject.GetComponent<Image>().TweenColor(Color.white,0.2f);
     }
 
+    public void TRScaleDown()
+    {
+        Vector3 halfsize = transform.localScale * 0.5f;
+        transform.TweenScale(halfsize,0.2f);
+    }
+
+    public void TRScaleNormal()
+    {
+        Vector3 fullsize = Vector3.Normalize(transform.localScale);
+        transform.TweenScale(fullsize,0.2f);
+    }
+
     public void TRCenterFadeIn()
     {
       TRTeleportBasic(0.5f,0.5f);
