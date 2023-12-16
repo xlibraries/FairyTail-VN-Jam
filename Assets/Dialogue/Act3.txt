@@ -32,9 +32,9 @@
 "C'mon, you piece of junk!"
 [Speaker]: 'None'
 The enchantress glares.
-"Four clicks - each lockpick moved counterclockwise - followed with a metallic twing.
+"Four clicks - each lockpick moved counterclockwise - followed with a metallic twang.
  It did it! Lena shot to her feet wearing an anticipatory smile.
- And it opens with a dramatic woosh."
+ And it opens with a dramatic whoosh."
  [Speaker]: 'Lena' 
 "Sorry.
  It worked!"
@@ -135,7 +135,7 @@ She looks back at Lena and Skylan and calls out."
 "Yeah, that was probably my responsibility.
  And now I know for next time.
  Conwenna, can you try? 
- If it only depleats a third of your power, Skylan and I can get out alive to Strand's Crossing.
+ If it only depletes a third of your power, Skylan and I can get out alive to Strand's Crossing.
  By now, we might not make it even if we had more dragons."
  [Speaker]: 'Skylan' 
 "Get to keep him that way."
@@ -158,8 +158,38 @@ She looks back at Lena and Skylan and calls out."
  [Speaker]: 'Skylan' 
  "What she said."
 [Speaker]: 'None' 
+[Background]: 'Forest'
 "They exit the ravine and fast walk back up the basement stairs.
- Conwenna left it unlocked."
+Conwenna left it unlocked.
+Their guess was almost right: the woods were afire with purple, pulsating roots. The trees thrummed with terrible distortions.
+The sky crackled and shone with a fell light that made their hearts sink.
+Conwenna and the Dragon stood together on the lawn. The dragon, at full size, spread its wings in readiness.
+Skylan and Lena huddled together on the porch, feeling quite exposed.
+Then it came.
+The wind howled,
+the ground shook,
+and the sky rumbled,
+as purple waves tore through the forest with heavy ferocity.
+But they broke at the tree line, spreading round and drifting by the house.
+It was working - they were doing it!
+For a couple minutes, they sat there in the hideous storm, holding off the danger wave by wave.
+At once, Conwenna let out a beleaguered cry."
+[Speaker]: 'Enchantress' 
+"Lena!
+I need you!
+We can't hold on much longer - come up here!"
+[Speaker]: 'None' 
+"Lena wobbled up to the field, and stood next to the Dragon and Conwenna. Not sure what to do, she held out her hands and immediately felt it.
+The terror - the overwhelming power slamming on her soul. She found herself locked in a leaning stance, already fighting hard to stay on her feet.
+It was scary, but she remembered the roots, and told herself hesitantly that there wasn't much of a difference.
+She clenched her teeth and fought. 
+The waves bebegancan to buckle, shift, and lessen.
+With all three of them, the Pulse was held at bay.
+At the end of it, Lena and Conwenna collapsed on the ground, alive but exhausted."
+
+
+
+
 
  And their guess was almost right: every tree with purple pulsating roots around sounded with distortions.
  Her and the dragon, returned to normal size, stood tall in her lawn with its wings spread.
