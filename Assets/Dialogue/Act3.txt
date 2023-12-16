@@ -1,16 +1,21 @@
 [Background]: 'ArcaneDoor'
-[Show] 'Lena,RightCenterDown,Normal'
+[Show]: 'Lena,Center,Normal'
+[Transform]: 'Lena,ScaleDown'
+[Spam]: 'Lena,NormalSpeak,Normal'
 "At once, their shoes skittered down the hall and back down to the basement.
  The Arcane Door stood resolute - candlelight flicking on it as though it will burst open.
  Conwenna observed."
  [Speaker]: 'Enchantress'
- [Show] 'Enchantress,RightCenterDown,Normal'
+ [Show]: 'Enchantress,RightCenterDown,NormalSpeak'
+ [Transform]: 'Enchantress,Flip'
 "Listen carefully.
- Pun not intended.
- Insert the lockpicks.
+ Pun not intended."
+[Spam]: 'Enchantress,NormalSpeak,Normal'
+"Insert the lockpicks.
  Find the right angles.
  Then speak the unsealing charm, then rotate the tumblers.
- Kind of envelop the amplifier charm over the picks when it's toughest.
+ Kind of envelop the amplifier charm over the picks when it's toughest."
+[Speaker]: 'None'
  Lena nods, then kneels on the cold stone floor.
  Each lockpick slid in at different angles.
  And she leans in close to hear.
@@ -76,8 +81,8 @@ Grandmother.. didn't make it up!"
 "She grips her dagger's hilt.
  Everyone gazes with shock as something huge lurches forward.
  It's a dragon - a big one, towering over the adventurers.
- Leathery green blankets its body and its watchful eyes comb the cavern, clearly aware
- of their presence. The earth rumbles with its measured, predatory breath.
+ Leathery green blankets its body and its watchful eyes comb the cavern, clearly aware of their presence. 
+ The earth rumbles with its measured, predatory breath.
  Lena felt idiotic for not noticing the beast.
  As for how Skylan survived this long in the midst of such a creature, she had no clue.
  Puzzled, Conwenna examines the doorway felt along its frame: a sizzling, invisible surface."
