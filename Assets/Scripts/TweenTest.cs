@@ -64,6 +64,21 @@ public class TweenTest : MonoBehaviour
         TRBasic(0.5f,0.5f);
     }
 
+    public void TRWorkshopShield()
+    {
+            TRBasic(0.2f,0.3f);
+    }
+
+    public void TRWorkshopBottle()
+    {
+           TRBasic(0.8f,0.3f);
+    }
+
+    public void TRWorkshopHammer()
+    {
+           TRBasic(0.75f,0.3f);
+    }
+
     public void TRFlip()
     {
         transform.localScale = new Vector3(-1,1,1);

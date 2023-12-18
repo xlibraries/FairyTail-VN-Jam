@@ -46,7 +46,7 @@ public class TypeAttempt3 : MonoBehaviour
         rawShown = "";
     }
 
-    // What does tok mean?
+    // tok = token
     int SeekNext(string a,int start,string tok)
     {
         int endchar = a.Substring(start).IndexOf(tok);
@@ -127,7 +127,7 @@ public class TypeAttempt3 : MonoBehaviour
                         break;
                     case 'i':
                         yield return new WaitUntil(()=> Input.GetKeyDown(SPACE_KEY));
-                        dialogueMaster.SpamPart();
+                        dialogueMaster.DoSpam();
                         rawShown = NULL;
                         break;
                     case 't':

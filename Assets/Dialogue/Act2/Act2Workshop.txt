@@ -35,9 +35,10 @@ Lena glanced left and right, confused as to who these were."
 [Speaker]: 'None'
 "She stepped further in, eyes sharp. She checked on the floor
 and the ceiling before three objects moved dramatically."
-[Show]: 'Hammer,LeftCenterDown,Normal'
-[Show]: 'Shield,Center,Normal'
-[Show]: 'Bottle,RightCenterDown,Normal'
+[Show]: 'Hammer,WorkshopHammer,Normal'
+[Show]: 'Shield,WorkshopShield,Normal'
+[Show]: 'Bottle,WorkshopBottle,Normal'
+[Transform]: 'Shield,ScaleDown'
 [Spam]: 'Hammer,Normal,NormalSpeak'
 [Spam]: 'Shield,Normal,NormalSpeak'
 [Spam]: 'Bottle,Normal,NormalSpeak'

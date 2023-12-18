@@ -40,6 +40,7 @@ public class DialogueInterpreture : MonoBehaviour
     private Dictionary<string, JugglePair> juggleData;
     private Dictionary<string, string> spamTalkers;
     private string currentSpeaker = NULL;
+    private bool BOB = false;
 
 
     void Start()
@@ -54,16 +55,12 @@ public class DialogueInterpreture : MonoBehaviour
         spamTalkers = new Dictionary<string, string>();
         actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
         AskNext();
+        StartCoroutine(SpamLogic());
     }
 
-    public void SpamPart()
+    public void DoSpam()
     {
-        string spaminfo;
-        if (spamTalkers.TryGetValue(currentSpeaker, out spaminfo)) 
-        {
-        actorManager.SpamActor($"{currentSpeaker},{spaminfo}");
-        //Debug.Log($"{currentSpeaker},{spaminfo}");
-        }
+        BOB = true;
     }
 
 
@@ -267,6 +264,20 @@ public class DialogueInterpreture : MonoBehaviour
     }
 
 
-
+    IEnumerator SpamLogic()
+    {
+    while(true)
+    {
+     Debug.Log("Awaiting bobbiness");
+     yield return new WaitUntil(() => BOB);
+     Debug.Log("Bobbing actor");
+     string spaminfo;
+     if(spamTalkers.TryGetValue(currentSpeaker, out spaminfo))
+     {
+     actorManager.SpamActor($"{currentSpeaker},{spaminfo}");
+     } 
+     BOB = false;
+    }
+    }
 
 }
