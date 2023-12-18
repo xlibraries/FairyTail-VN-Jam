@@ -25,6 +25,8 @@ public class ChoiceMenu : MonoBehaviour
     }
 
 
+
+
     private void ButtonsNonExhaustive(string[] args)
     {
     for (int i = 0; i < args.Length-1; i+=2)
@@ -55,14 +57,15 @@ public class ChoiceMenu : MonoBehaviour
     string finalDestination = args[0];
     args.RemoveAt(0);
 
-    /*
-    if(exhaustedOptions.Count == (args.Count-1)/2)
+    
+    if(exhaustedOptions.Count == (args.Count-1))
     {
-      LinkWrapper(finalDestination);
       exhaustedOptions.Clear();
       finalDestination = "";
+      LinkWrapper(finalDestination);
+      return;
     }
-    */
+    
 
     for (int i = 0; i < args.Count-1; i+=2)
         {
@@ -82,16 +85,10 @@ public class ChoiceMenu : MonoBehaviour
 
             newButton.transform.SetParent(firstButton.transform.parent);
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = buttonText;
-            newButton.GetComponent<Button>().onClick.AddListener(() => 
-            {
-                Debug.Log(buttonDestination);
-                exhaustedOptions.Add(buttonDestination);
-                LinkWrapper(buttonDestination);
-            });
+            newButton.GetComponent<Button>().onClick.AddListener(() => LinkWrapperExhuastive(buttonDestination));
 
         }
     }
-
 
 
     public void TakeButtons(string data, bool exhaustive)
@@ -106,6 +103,12 @@ public class ChoiceMenu : MonoBehaviour
         {
             ButtonsNonExhaustive(args);
         }
+    }
+
+    void LinkWrapperExhuastive(string destination)
+    {
+        exhaustedOptions.Add(destination);
+        LinkWrapper(destination);
     }
 
 

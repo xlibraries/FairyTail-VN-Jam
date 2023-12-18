@@ -2,8 +2,7 @@
 [Show]: 'Enchantress,Center,Normal'
 [Spam]: 'Enchantress,NormalSpeak,Normal'
 [Speaker]: 'Lena'
-"
-I  want to go to the Workshop."
+"I  want to go to the Workshop."
 [Speaker]: 'Enchantress'
 "First door by the porch."
 [Transform]: 'Enchantress,Fade'
