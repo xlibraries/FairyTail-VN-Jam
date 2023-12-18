@@ -14,7 +14,8 @@ public class TypeAttempt3 : MonoBehaviour
         {'R',"red"},
         {'G',"green"},
         {'B',"blue"},
-        {'Y',"yellow"}
+        {'Y',"yellow"},
+        {'W',"white"}
     };
 
     public float typeSpeed = 0.05f;
@@ -28,6 +29,7 @@ public class TypeAttempt3 : MonoBehaviour
     
     [SerializeField]
     int pos;
+    int offset;
 
     [MultilineAttribute]
     public string curPut = NULL;
@@ -53,11 +55,19 @@ public class TypeAttempt3 : MonoBehaviour
         return endchar + 1;
     }
 
+    public void SubmitText(string text)
+    {
+        rawShown = "";
+        curPut = text;
+        pos = 0;
+        offset = 0;
+    }
+
 
     IEnumerator TypeLoop()
     {
         pos = 0;
-        int offset = 0;
+        offset = 0;
         while (true)
         {
             int combo = pos + offset;
@@ -88,11 +98,11 @@ public class TypeAttempt3 : MonoBehaviour
             if (c == BACKSLASH)
             {
                 char color = curPut[combo + 1];
+                //Debug.Log(color);
                 offset += 2;
                 rawShown += "<color=\"";
                 string cs = WHITE; //What is cs?
                 cs = colorIndex[color];
-
                 rawShown += cs;
                 rawShown += "\">";
                 continue;

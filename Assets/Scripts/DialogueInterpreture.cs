@@ -47,7 +47,7 @@ public class DialogueInterpreture : MonoBehaviour
     {
         pairedDialogueBox = dialogueDestination.GetComponent<TypeAttempt3>();
         pairedDialogueBox.dialogueMaster = this;
-        pairedDialogueBox.curPut = NULL;
+        pairedDialogueBox.curPut = "";
         dialogueChunks = dialogueFile.text.Split("\"");
         actorManager = this.GetComponent<ActorManager>();
         choiceMenu.GetComponent<ChoiceMenu>().gameManager = this;
@@ -82,8 +82,7 @@ public class DialogueInterpreture : MonoBehaviour
             {
                 next = next.Replace(NEWLINE, NEWLINE + "{i0}");
                 next += "{i0}/%";
-                //next = "{i0}" + next;
-                pairedDialogueBox.curPut = next;
+                pairedDialogueBox.SubmitText(next);
                 dPos += 1;
             }
         }
