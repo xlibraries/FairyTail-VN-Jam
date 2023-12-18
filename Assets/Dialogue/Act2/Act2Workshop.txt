@@ -1,10 +1,9 @@
 [OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
 [Show]: 'Enchantress,Center,Normal'
-[Spam]: 'Enchantress,Normal,NormalSpeak'
+[Spam]: 'Enchantress,NormalSpeak,Normal'
 [Speaker]: 'Lena'
 "
-
-I want to go to the Workshop."
+I  want to go to the Workshop."
 [Speaker]: 'Enchantress'
 "First door by the porch."
 [Transform]: 'Enchantress,Fade'
@@ -22,7 +21,9 @@ What am I looking for?"
 "On the table lay a pile of corks, a line of glass bottles,
 and silver soul stones. Lena inspects one."
 [Speaker]: 'Lena'
-"Pretty nice ones. The word on it looks similar to one in Beshat, a local language she did not know well.
+"Pretty nice ones."
+[Speaker]: 'None'
+"The word on it looks similar to one in Beshat, a local language she did not know well.
 If she hadn't blown a hole in her parent's barn during the previous attempt learning it, she'd had given herself another try.
 A voice breaks her concentration and makes her flinch."
 [Speaker]: 'A voice'
@@ -55,15 +56,12 @@ We're at the Enchantress's service."
 [Speaker]: 'Hammer'
 "Building the family business for seven generations."
 [Speaker]: 'Lena'
-[Unspam]: 'Lena'
 "(Family business, huh?)
 (Maybe they know some stuff about the Enchantress, and what's up with these charms..)"
-[Spam]: 'Lena,NormalSpeak,Normal'
 [Speaker]: 'Lena'
 "I am kind of lost here. I am looking for some charm that makes another charm more effective.
 Also, does the Enchantress have a real name?"
 [Speaker]: 'Hammer'
-[Unspam]: 'Lena'
 "Does it make you float?"
 [Speaker]: 'Lena'
 "No, it-"

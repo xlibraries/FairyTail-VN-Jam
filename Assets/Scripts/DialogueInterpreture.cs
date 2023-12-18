@@ -80,12 +80,9 @@ public class DialogueInterpreture : MonoBehaviour
             }
             else
             {
-                //next = next.Replace("\n","");
-                //next = next.Replace(".",".\n");
                 next = next.Replace(NEWLINE, NEWLINE + "{i0}");
                 next += "{i0}/%";
-                next = "{i0}" + next;
-                //Debug.Log($"This is {next.Length}");
+                //next = "{i0}" + next;
                 pairedDialogueBox.curPut = next;
                 dPos += 1;
             }

@@ -1,9 +1,9 @@
 [OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
 [Show]: 'Enchantress,Center,Normal'
+[Spam]: 'Enchantress,NormalSpeak,Normal'
 [Speaker]: 'Lena'
 "
-
-I want to go to the Study."
+I  want to go to the Study."
 [Speaker]: 'Enchantress'
 "Up the stairs to the left."
 [Transform]: 'Enchantress,Fade'
