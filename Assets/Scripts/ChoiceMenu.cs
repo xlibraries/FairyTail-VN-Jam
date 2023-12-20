@@ -9,14 +9,20 @@ public class ChoiceMenu : MonoBehaviour
 
     public GameObject firstButton;
     public DialogueInterpreture gameManager;
-    public List<string> exhaustedOptions;
-    public HashSet<string> smartExhaustedOptions = new HashSet<string>();
+    //public HashSet<string> smartExhaustedOptions = new HashSet<string>();
+    public HashSet<string> smartExhaustedOptions = new HashSet<string>
+    {
+        "Act2/Act2Workshop.txt",
+        "Act2/Act2Library.txt",
+        "Act2/Act2Study.txt"
+    };
 
 
 
     private void ClearButtons()
     {
         Button[] buttons = gameObject.GetComponentsInChildren<Button>();
+        firstButton.SetActive(true);
         for(int i = 0; i < buttons.Length; i++)
         {
             if(buttons[i].gameObject != firstButton)
@@ -63,27 +69,20 @@ public class ChoiceMenu : MonoBehaviour
 
     Debug.Log($"This menu will proceed to {finalDestination}");
     Debug.Log(string.Join(", ",smartExhaustedOptions));
+    firstButton.SetActive(false);
 
-    
 
     for (int i = 0; i < args.Count-1; i+=2)
         {
        
             string buttonText = args[i];
             string buttonDestination = args[i+1];
-            if(smartExhaustedOptions.Contains(buttonDestination)) {return;}
+            if(smartExhaustedOptions.Contains(buttonDestination)) {continue;}
             else { everyButtonClicked = false;}
-
             GameObject newButton;
-            if (i == 0)
-            {
-                newButton = firstButton;
-            }
-            else
-            {
-                newButton = (GameObject)Instantiate(firstButton);
-            }
+            newButton = (GameObject)Instantiate(firstButton);
 
+            newButton.SetActive(true);
             newButton.transform.SetParent(firstButton.transform.parent);
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = buttonText;
             newButton.GetComponent<Button>().onClick.AddListener(() => LinkWrapperExhuastive(buttonDestination));
@@ -92,7 +91,10 @@ public class ChoiceMenu : MonoBehaviour
 
         if(everyButtonClicked)
         {
-            Debug.Log("END STATE REACHED");
+            LinkWrapper(finalDestination);
+            smartExhaustedOptions.Clear();
+            finalDestination = "";
+            gameObject.SetActive(false);
         }
     }
 
