@@ -10,6 +10,8 @@ public class ChoiceMenu : MonoBehaviour
     public GameObject firstButton;
     public DialogueInterpreture gameManager;
     public List<string> exhaustedOptions;
+    public HashSet<string> smartExhaustedOptions = new HashSet<string>();
+
 
 
     private void ClearButtons()
@@ -22,6 +24,7 @@ public class ChoiceMenu : MonoBehaviour
                 Destroy(buttons[i].gameObject);
             }
         }
+
     }
 
 
@@ -59,6 +62,8 @@ public class ChoiceMenu : MonoBehaviour
     bool everyButtonClicked = true;
 
     Debug.Log($"This menu will proceed to {finalDestination}");
+    Debug.Log(string.Join(", ",smartExhaustedOptions));
+
     
 
     for (int i = 0; i < args.Count-1; i+=2)
@@ -66,7 +71,7 @@ public class ChoiceMenu : MonoBehaviour
        
             string buttonText = args[i];
             string buttonDestination = args[i+1];
-            if(exhaustedOptions.Contains(buttonDestination)) {return;}
+            if(smartExhaustedOptions.Contains(buttonDestination)) {return;}
             else { everyButtonClicked = false;}
 
             GameObject newButton;
@@ -108,7 +113,8 @@ public class ChoiceMenu : MonoBehaviour
 
     void LinkWrapperExhuastive(string destination)
     {
-        exhaustedOptions.Add(destination);
+        //exhaustedOptions.Add(destination);
+        smartExhaustedOptions.Add(destination);
         LinkWrapper(destination);
     }
 
