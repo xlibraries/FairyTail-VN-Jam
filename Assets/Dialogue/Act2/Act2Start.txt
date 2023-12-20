@@ -1,108 +1,93 @@
-
-Skylan!"
+"{s0.002}Skylan!"
 [Background]: 'ArcaneDoor'
-"Lena blinked several times, ran, and knocked hard on it. He
-found himself locked behind a magical door. This one - how?
-Its not like it is dusk outside and fell in a hole."
+[Speaker]: 'None'
+"Lena blinked several times, ran, and knocked hard on it. 
+He found himself locked behind a magical door. 
+How was this possible?
+Something like this isn't as likely as falling in a hole..
+This was quite strange."
 [Speaker]: 'Lena'
-"Alright, that means I am staying.
-Is that you, Skylan? Its Lena. What
-happened?"
+"This is - wh - what?
+Is that you, Skylan? It's me, Lena. What happened?"
+[Speaker]: 'None'
+"Beside her, the Enchantress takes a step back, a look of fear in her eyes."
 [Speaker]: 'Enchantress'
-"(Taken aback)
-Its high pitched. There is no way Sounds like: my grandma."
+"It's.. high-pitched. That sounds like my grandmother!"
 [Speaker]: 'Lena'
-"That isn't possible. Sounds like a
-male voice and I know what my
-friend sounds like. I thought you
-said your Grandmother had passed
-away?
-The voice sounds off a second time.
-(To the door)
-Did you smack your head on a rock?
-I don't understand what you're
-saying."
+"No, that - that isn't possible. That sounds like a male voice^6, and I know what my friend sounds like. 
+I thought you said your grandmother had passed away?"
+[Speaker]: 'None'
+"Another whisper floats forth from the door. Lena and the Enchantress stare at it in confusion."
+[Speaker]: 'Lena'
+"Did you smack your head on a rock?
+I don't understand what you're saying."
 [Speaker]: 'Enchantress'
 "Can you see anything?"
 [Speaker]: 'Enchantress'
-"Yes, but I know that voice
-anywhere."
+"Yes, but I know that voice anywhere."
 [Speaker]: 'Lena'
 "Me as well. Sounds like Skylan."
 [Speaker]: 'Enchantress'
-"It's like she left her ghost behind
-to warn me about something. Or have
-a last laugh. Frightens me a bit."
+"It's like she left her ghost behind to warn me about something. 
+Or have a last laugh. Frightens me a bit."
 [Speaker]: 'Lena'
-"She must have a dark sense of
-humor."
+"She must have a dark sense of humor."
 [Speaker]: 'Enchantress'
 "I'm actually being serious. "
 [Speaker]: 'Lena'
 "(chuckles)
- I respectfully disagree its her. 
-It has to be my friend. He must
-have stumbled behind this door with
-zero realization. I need to find
-out more.
-How long ago did your grandmother
-pass away?"
-[Speaker]: 'Enchantress'
-"(sniffles)
-Um, five days ago.
-I need to add - I can't directly
-open it. You can ask me what you
-may need to get it unlocked.
-However, I am not allowed to give
-straight answers.
-Details really do matter though, Lena thought. The house may
-or may not be protected from the Arcane Pulse, and whoever
-is stuck probably won't be. Time is ticking also."
-[Speaker]: 'Lena'
-"Hmm. What might I need, then?
-Relieved, the Enchantress' nods acceptingly."
-[Speaker]: 'Enchantress'
-"It has a very tough sealing charm -
-from the inside and outside. If one
-wants to break it, we have an
-unsealing incantation. I tried
-tweaking it to make it easier. But-"
+I respectfully disagree that it's her. 
+It has to be my friend. 
+He must have stumbled behind this door with zero realization.
+I need to find out more.
+How long ago did your grandmother pass away?"
 [Speaker]: 'None'
-"She shrugs"
+"The Enchantress pauses, frowns, and stirs up an old memory. The answer lightly floats out  of her mouth."
+[Speaker]: 'Enchantress'
+"Um, five days ago.
+I need to add - I can't directly open it. 
+You can ask me what you may need to get it unlocked.
+However, I am not allowed to give straight answers."
+[Speaker]: 'None'
+"Details really do matter though, Lena thought. 
+The house may or may not be protected from the Arcane Pulse, and whoever is stuck probably won't be. 
+And we're running out of time..."
+[Speaker]: 'Lena'
+"Hmm. What might I need, then?"
+[Speaker]: 'None'
+"Relieved, the Enchantress nods acceptingly."
+[Speaker]: 'Enchantress'
+"It has a very tough sealing charm - from the inside and outside. 
+If one wants to break it, we have an unsealing incantation. 
+I tried tweaking it to make it easier. But-"
+[Speaker]: 'None'
+"She shrugs."
 [Speaker]: 'Enchantress'
 "Nope.
-Her best chance was doing that. Borderline ransacking this
-house."
+Her best chance was doing that. Borderline ransacking this house."
 [Speaker]: 'Lena'
 "Where can I find one?"
 [Speaker]: 'Enchantress'
-"In my house.
-Lena motions "Give me more information" with her hand."
+"In my house."
+[Speaker]: 'None'
+"Lena motions 'Give me more information' with her hand."
 [Speaker]: 'Lena'
 "And?"
 [Speaker]: 'Enchantress'
-"You can search the rooms. I have a
-library, and a study for my
-business afairs, and my workshop.
-Just don't stick your hand in the
-forge. 
-Writer's Note: changing to library again.
-On a trustworthy level now, Lena thought. "
+"You can search the rooms. I have a library, a study for my business affairs, and my workshop.
+Just don't stick your hand in the forge."
+[Speaker]: 'None'
+"On a trustworthy level now, Lena thought. "
 [Speaker]: 'Lena'
-"So, it needs a few words and a
-metal rod or something to work."
+"So, it needs a few words and a metal rod or something to work."
 [Speaker]: 'Enchantress'
-"Hah, nope. A set of lockpicks, a
-charm to unstick tough-to-open
-jars, and another charm to amplify
-their effectiveness. Put 'em
-together and they unlock the
-Forbidden Door's seal.
-You can look in them in any order."
+"Hah, nope. A set of lockpicks, a charm to unstick tough-to-open jars, and another charm to amplify their effectiveness. 
+Put 'em together and they unlock the Forbidden Door's seal.
+You can look for them in any order."
 [Speaker]: 'Lena'
-"Well, shoot. I need to get my ass
-moving."
+"Well, shoot. I need to get my ass moving."
 [Background]: 'HouseMainHall'
 "Lena walked past the workshop on the way to the basement. It
 may have additional tools than the charm to use. But the
 lockpicks were a core ingredient. "
+[Load]: 'Act2/Act2ChoiceLoop.txt'
