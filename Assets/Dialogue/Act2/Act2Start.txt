@@ -1,4 +1,4 @@
-"{s0.002}Skylan!"
+"Skylan!"
 [Background]: 'ArcaneDoor'
 [Speaker]: 'None'
 "Lena blinked several times, ran, and knocked hard on it. 

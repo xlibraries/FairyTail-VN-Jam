@@ -26,7 +26,7 @@ public class ActorManager : MonoBehaviour
 
         Debug.Log("Finding all actors");
         var actorList = GameObject.FindGameObjectsWithTag("Actor");
-        Debug.Assert(actorList.Length > 0);
+        if(actorList.Length == 0 ) {return;}
         foreach (var actorGameObject in actorList)
         {
             var TT = actorGameObject.GetComponent<TweenTest>();

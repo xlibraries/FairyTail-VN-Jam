@@ -56,15 +56,9 @@ public class ChoiceMenu : MonoBehaviour
     List<string> args = new List<string>(data);
     string finalDestination = args[0];
     args.RemoveAt(0);
+    bool everyButtonClicked = true;
 
-    
-    if(exhaustedOptions.Count == (args.Count-1))
-    {
-      exhaustedOptions.Clear();
-      finalDestination = "";
-      LinkWrapper(finalDestination);
-      return;
-    }
+    Debug.Log($"This menu will proceed to {finalDestination}");
     
 
     for (int i = 0; i < args.Count-1; i+=2)
@@ -73,6 +67,8 @@ public class ChoiceMenu : MonoBehaviour
             string buttonText = args[i];
             string buttonDestination = args[i+1];
             if(exhaustedOptions.Contains(buttonDestination)) {return;}
+            else { everyButtonClicked = false;}
+
             GameObject newButton;
             if (i == 0)
             {
@@ -87,6 +83,11 @@ public class ChoiceMenu : MonoBehaviour
             newButton.GetComponentInChildren<TextMeshProUGUI>().text = buttonText;
             newButton.GetComponent<Button>().onClick.AddListener(() => LinkWrapperExhuastive(buttonDestination));
 
+        }
+
+        if(everyButtonClicked)
+        {
+            Debug.Log("END STATE REACHED");
         }
     }
 
