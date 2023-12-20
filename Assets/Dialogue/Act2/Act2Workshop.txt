@@ -17,6 +17,7 @@ A stack of branches by a table. And a mini forge with a crate of scrap metal in 
 "Quite an arrangement for such a dwelling.
 What am I looking for?"
 [Speaker]: 'None'
+[Transform]: 'Lena,Flip'
 "On the table lay a pile of corks, a line of glass bottles,
 and silver soul stones. Lena inspects one."
 [Speaker]: 'Lena'
@@ -26,15 +27,17 @@ and silver soul stones. Lena inspects one."
 If she hadn't blown a hole in her parent's barn during the previous attempt learning it, she'd had given herself another try.
 A voice breaks her concentration and makes her flinch."
 [Speaker]: 'A voice'
+[Transform]: 'Lena,Flip'
 "Who is rummaging about here? Those soul stones belong to the Enchantress!"
 [Speaker]: 'Another voice'
+[Transform]: 'Lena,Flip'
 "A guest. Careful - she she might melt us if we annoy her.
 Lena glanced left and right, confused as to who these were."
 [Speaker]: 'Lena'
+[Transform]: 'Lena,Flip'
 "Who the heck is speaking?"
 [Speaker]: 'None'
-"She stepped further in, eyes sharp. She checked on the floor
-and the ceiling before three objects moved dramatically."
+"She stepped further in, eyes sharp. She checked on the floor and the ceiling before three objects moved dramatically."
 [Show]: 'Hammer,WorkshopHammer,Normal'
 [Show]: 'Shield,WorkshopShield,Normal'
 [Show]: 'Bottle,WorkshopBottle,Normal'
@@ -50,6 +53,7 @@ This is just crazy."
 [Speaker]: 'Bottle'
 "Yes, madam."
 [Speaker]: 'Shield'
+[Transform]: 'Lena,Flip'
 "Says the woman who just walked in.
 We're at the Enchantress's service."
 [Speaker]: 'Hammer'
@@ -61,6 +65,7 @@ We're at the Enchantress's service."
 "I am kind of lost here. I am looking for some charm that makes another charm more effective.
 Also, does the Enchantress have a real name?"
 [Speaker]: 'Hammer'
+[Transform]: 'Lena,Flip'
 "Does it make you float?"
 [Speaker]: 'Lena'
 "No, it-"
@@ -70,6 +75,7 @@ Also, does the Enchantress have a real name?"
 "A quick guess, Lena thought.."
 [Speaker]: 'Lena'
 "Um, yes, as a matter of fact. The Enchantress and I need it. For a project."
+[Transform]: 'Lena,Flip'
 [Speaker]: 'Shield'
 "You refer to her magical name. I can tell you her real name."
 [Speaker]: 'Lena'

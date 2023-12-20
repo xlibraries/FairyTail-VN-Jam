@@ -81,7 +81,7 @@ public class TweenTest : MonoBehaviour
 
     public void TRFlip()
     {
-        transform.localScale = new Vector3(-1,1,1);
+        transform.localScale = new Vector3(transform.localScale.x * -1,transform.localScale.y,transform.localScale.z);
     }
 
     public void TRBob()
