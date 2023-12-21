@@ -9,13 +9,16 @@ public class ChoiceMenu : MonoBehaviour
 
     public GameObject firstButton;
     public DialogueInterpreture gameManager;
-    //public HashSet<string> smartExhaustedOptions = new HashSet<string>();
+    public HashSet<string> smartExhaustedOptions = new HashSet<string>();
+    bool isOpen = true;
+    /*
     public HashSet<string> smartExhaustedOptions = new HashSet<string>
     {
         "Act2/Act2Workshop.txt",
         "Act2/Act2Library.txt",
         "Act2/Act2Study.txt"
     };
+    */
 
 
 
@@ -94,7 +97,6 @@ public class ChoiceMenu : MonoBehaviour
             LinkWrapper(finalDestination);
             smartExhaustedOptions.Clear();
             finalDestination = "";
-            gameObject.SetActive(false);
         }
     }
 
@@ -102,6 +104,7 @@ public class ChoiceMenu : MonoBehaviour
     public void TakeButtons(string data, bool exhaustive)
     {
         ClearButtons();
+        ShowUI();
         string[] args = data.Split(",");
         if(exhaustive)
         {
@@ -115,6 +118,7 @@ public class ChoiceMenu : MonoBehaviour
 
     void LinkWrapperExhuastive(string destination)
     {
+        if(!isOpen) {return;}
         //exhaustedOptions.Add(destination);
         smartExhaustedOptions.Add(destination);
         LinkWrapper(destination);
@@ -123,8 +127,21 @@ public class ChoiceMenu : MonoBehaviour
 
     void LinkWrapper(string destination)
     {
+        if(!isOpen) {return;}
         gameManager.LoadNewCRD(destination);
-        gameObject.SetActive(false);
+        HideUI();
+    }
+
+    public void HideUI()
+    {
+        gameObject.transform.localScale = new Vector3(0,0,0);
+        isOpen = false;
+    }
+
+    public void ShowUI()
+    {
+        gameObject.transform.localScale = Vector3.one;
+        isOpen = true;
     }
 
 }

@@ -181,7 +181,7 @@ public class DialogueInterpreture : MonoBehaviour
     {
         ChoiceMenu ChoiceMenuObject = choiceMenu.GetComponent<ChoiceMenu>();
         ChoiceMenuObject.TakeButtons(data,exhaustive);
-        choiceMenu.SetActive(true);
+        //ChoiceMenuObject.ShowUI();
     }
 
     

@@ -8,8 +8,7 @@
 [Transform]: 'Enchantress,Fade'
 [Background]: 'Workshop'
 [Speaker]: 'None'
-"Two wide glass windows let natural light beam in. Its easier to see in here than the office, which was musty with one window. Curls of carved wood litter a hand-powered lathe. 
-A stack of branches by a table. And a mini forge with a crate of scrap metal in the corner. "
+"Two wide glass windows let natural light beam in. It's easier to see in here than the office, which was musty with one window. Curls of carved wood litter a hand-powered lathe. A stack of branches by a table. And a mini forge with a crate of scrap metal in the corner. "
 [Show]: 'Lena,CenterFadeIn,Normal'
 [Transform]: 'Lena,Flip'
 [Spam]: 'Lena,NormalSpeak,Normal'
@@ -31,8 +30,9 @@ A voice breaks her concentration and makes her flinch."
 "Who is rummaging about here? Those soul stones belong to the Enchantress!"
 [Speaker]: 'Another voice'
 [Transform]: 'Lena,Flip'
-"A guest. Careful - she she might melt us if we annoy her.
-Lena glanced left and right, confused as to who these were."
+"A guest. Careful - she she might melt us if we annoy her."
+[Speaker]: 'None'
+"Lena glanced left and right, confused as to who these were."
 [Speaker]: 'Lena'
 [Transform]: 'Lena,Flip'
 "Who the heck is speaking?"
@@ -74,14 +74,31 @@ Also, does the Enchantress have a real name?"
 [Speaker]: 'None'
 "A quick guess, Lena thought.."
 [Speaker]: 'Lena'
-"Um, yes, as a matter of fact. The Enchantress and I need it. For a project."
+"Um, yes, as a matter of fact. The Enchantress and I need it. For a --"
+[Speaker]: 'None'
+"Revealing her goal would be a mistake, Lena considers. She'd have to keep this a secret, even if they were once told about the door. 
+In her mind, Lena saw it: a brief image of being knocked out by a talking hammer. She winced internally. "
+[Speaker]: 'Lena'
+[Spam]: 'Lena,HappySpeak,Happy'
+"-- project."
+[Spam]: 'Lena,NormalSpeak,Normal'
+"Also, does she have an actual name? I realize that title fits her, but she must have a common name."
 [Transform]: 'Lena,Flip'
 [Speaker]: 'Shield'
-"You refer to her magical name. I can tell you her real name."
+"You refer to her title. I can tell you her real name."
 [Speaker]: 'Lena'
 "Sure. But I need the charm, too. "
+[Speaker]: 'Bottle'
+"Why don't you tell us why you need & it and we can provide a hint?"
+[Speaker]: 'Lena'
+"Well, we are -"
+[Speaker]: 'None'
+"Her lip curls."
+[Speaker]: 'Lena'
+"- just preparing something to shield the house for the Arcane Pulse's next firing."
 [Speaker]: 'Hammer'
-"Grab the orange soul stone with the forge's tongs. Heat it up. Just enough will release the charm as long as you don't drop it."
+"She looks trustworthy to me.
+Grab the orange soul stone with the forge's tongs. Heat it up. Just enough will release the charm as long as you don't drop it."
 [Speaker]: 'Shield'
 "The Enchantress - Conwenna is her name. 
 Good businesswoman; persuasive and powerful. 
@@ -109,6 +126,5 @@ And she yanked her arms out."
 [Transform]: 'Shield,Fade'
 [Transform]: 'Bottle,Fade'
 [Transform]: 'Lena,Fade'
-"Returning to the Enchantress now.
-Thank you."
+"Thank you so much! I'll be leaving now!"
 [Load]: 'Act2/Act2ChoiceLoop.txt' 
