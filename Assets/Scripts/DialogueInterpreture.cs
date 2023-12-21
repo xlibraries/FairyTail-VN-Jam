@@ -167,6 +167,9 @@ public class DialogueInterpreture : MonoBehaviour
                 case UNSPAM:
                     RemoveSpam(value);
                     break;
+                case RESETSPAM:
+                    spamTalkers.Clear();
+                    break;
                 case MUSIC:
                     AudioManager.instance.PlayMusic(value);
                     break;

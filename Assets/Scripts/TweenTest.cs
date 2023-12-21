@@ -84,6 +84,11 @@ public class TweenTest : MonoBehaviour
         transform.localScale = new Vector3(transform.localScale.x * -1,transform.localScale.y,transform.localScale.z);
     }
 
+     public void TRFixFlip()
+    {
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x),Mathf.Abs(transform.localScale.y),Mathf.Abs(transform.localScale.z));
+    }
+
     public void TRBob()
     {
         Vector3 oldPosition = transform.position;

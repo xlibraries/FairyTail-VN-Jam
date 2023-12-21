@@ -1,9 +1,6 @@
 [OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
-[Show]: 'Enchantress,Center,Normal'
 [Speaker]: 'Lena'
-"
-
-I want to go to the Library."
+"I want to go to the Library."
 [Speaker]: 'The Enchantress'
 "(nods)
 Straight down from the front door, then up the stairs."
@@ -11,6 +8,7 @@ Straight down from the front door, then up the stairs."
 "She walks back down the hall determined to beat the Pulse.
 [OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
 [Transform]: 'Enchantress,Fade'
+[Transform]: 'Lena,Fade'
 [Speaker]: 'The Enchantress'
 "(talking quickly, hollering)
 Just so you are aware, the Arcane Pulse is getting closer to going off."
@@ -25,7 +23,8 @@ And a few large scrolls set in corners of shelves.
 A stack of books lay on a table in the midst."
 [OUTDATED SHOW STATEMENT]: 'Lena, direction, direction, neutral expression'
 [Show]: 'Lena,CenterFadeIn,Normal'
-[Juggle]: 'Lena,LeftCenter,Normal,Bob,NormalSpeak'
+[Spam]: 'Lena,NormalSpeak,Normal'
+[Transform]: 'Lena,FixFlip'
 [Speaker]: 'Lena'
 "Alrighty. A charm like this might be in a box, or on a shelf, or in another rock.
 I don't have time to look through all these. Wish I knew an incantation that pointed out the guidebooks. 
@@ -51,5 +50,19 @@ A moment later, she facepalms herself. She scurries to the other end of the room
 [Speaker]: 'Lena'
 "I am an idiot for only now considering this spot.
 Now I have it all. Let's return to her."
-[Transform]: 'Lena,Fade'
+[Background]: 'HouseMainHall'
+[Transform]: 'Lena,LeftCenter'
+[Transform]: 'Enchantress,RightCenter'
+""
+[Transform]: 'Enchantress,FadeIn'
+[Transform]: 'Lena,FadeIn'
+[Spam]: 'Lena,NormalSpeak,Normal'
+[Spam]: 'Enchantress,NormalSpeak,Normal'
+[Transform]: 'Lena,FixFlip'
+[Transform]: 'Enchantress,FixFlip'
+[Transform]: 'Lena,Flip'
+[Transform]: 'Enchantress,Flip'
+[Spam]: 'Enchantress,HappySpeak,Happy'
+[Speaker]: 'Enchantress'
+"Where to?"
 [Load]: 'Act2/Act2ChoiceLoop.txt' 

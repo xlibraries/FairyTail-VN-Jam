@@ -11,14 +11,13 @@ public class ChoiceMenu : MonoBehaviour
     public DialogueInterpreture gameManager;
     public HashSet<string> smartExhaustedOptions = new HashSet<string>();
     bool isOpen = true;
+    
     /*
     public HashSet<string> smartExhaustedOptions = new HashSet<string>
     {
         "Act2/Act2Workshop.txt",
-        "Act2/Act2Library.txt",
-        "Act2/Act2Study.txt"
-    };
-    */
+    };*/
+    
 
 
 

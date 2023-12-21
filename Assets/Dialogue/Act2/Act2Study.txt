@@ -1,12 +1,11 @@
 [OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
-[Show]: 'Enchantress,Center,Normal'
-[Spam]: 'Enchantress,NormalSpeak,Normal'
 [Speaker]: 'Lena'
 "
 I  want to go to the Study."
 [Speaker]: 'Enchantress'
 "Up the stairs to the left."
 [Transform]: 'Enchantress,Fade'
+[Transform]: 'Lena,Fade'
 [Background]: 'Study'
 [Speaker]: 'None'
 "She enters. Boxes flanked the wide birchwood desk, a stack of parchment on the table. 
@@ -15,10 +14,12 @@ Lena first scans the whole room.
 Lockpicks were thin enough to sit almost anywhere. 
 She checks each shelf on the single bookshelf."
 [Show]: 'Lena,CenterFadeIn,Normal'
-[Juggle]: 'Lena,LeftCenter,Normal,Bob,NormalSpeak'
+[Spam]: 'Lena,NormalSpeak,Normal'
+[Transform]: 'Lena,Flip'
 [Speaker]: 'Lena'
 "None on here."
 [Speaker]: 'None'
+[Transform]: 'Lena,LeftCenterDown'
 "A small box sat on top of a corner table. Lena looked inside and saw:"
 [Speaker]: 'Lena'
 "I would think its here."
@@ -44,16 +45,21 @@ In a bottom one, she found a leather book with 'Journal' etched in elegant cursi
 There you are."
 [Background]: 'HouseMainHall'
 [Transform]: 'Lena,Fade'
+[Transform]: 'Lena,LeftCenter'
 "Satisfied, she returned to the main hall. She grinned to the Enchantress as she revealed them."
 [UnJuggle]
-[Transform]: 'Enchantress,CenterFadeIn'
+[UnSpam]
+[Transform]: 'Enchantress,FadeIn'
 [Transform]: 'Lena,FadeIn'
+[Spam]: 'Lena,NormalSpeak,Normal'
+[Spam]: 'Enchantress,NormalSpeak,Normal'
+[Transform]: 'Lena,FixFlip'
+[Transform]: 'Enchantress,FixFlip'
 [Transform]: 'Lena,Flip'
 [Transform]: 'Enchantress,Flip'
-[Juggle]: 'Lena,LeftCenter,Normal,Bob,NormalSpeak'
-[Juggle]: 'Enchantress,Bob,NormalSpeak,RightCenter,Normal'
 [Speaker]: 'Lena'
 "Lockpicks found."
+[Spam]: 'Enchantress,HappySpeak,Happy'
 [Speaker]: 'Enchantress'
 "(smiling) Simple enough."
 [Load]: 'Act2/Act2ChoiceLoop.txt' 

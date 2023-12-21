@@ -87,7 +87,9 @@ public class Constants : MonoBehaviour
     public const string CHOICE_EXHAUSTIVE = "ChoiceExhaustive";
 
     public const string SPAM = "Spam";
-    public const string UNSPAM = "Unspam";
+    public const string UNSPAM = "UnSpam";
+    public const string RESETSPAM = "ResetSpam";
+
 
     public const string MUSIC = "Music";
     
