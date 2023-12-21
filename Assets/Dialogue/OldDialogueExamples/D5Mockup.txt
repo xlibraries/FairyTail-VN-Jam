@@ -1,0 +1,26 @@
+[Location]: 'Study'
+[Speaker]: 'Lena'
+[Transform]: 'Lena,LeftCenter'
+[Transform]: 'Enchantress,RightCenterDown'
+[Background]: 'beans'
+"
+So..
+Why is this place empty?"
+[Transform]: 'Enchantress,RightCenter'
+[Speaker]: 'Enchantress'
+[Image]: 'Lena,angry'
+[Image]: 'Enchantress,angry'
+"...^6...^6...^6..." 
+[Speaker]: 'Lena'
+"I've agreed to work with you. You need to tell me what's going on!
+There's no way that you're the only person who lives here."
+[Speaker]: '*'
+[Transform]: 'Enchantress,RightCenterDown'
+[Transform]: 'Lena,LeftCenterDown'
+[Image]: 'Enchantress,happy'
+"The enchantress picks up a set of bowls with strange instruments in them, staring at them deeply.
+She's lost in thought."
+[Speaker]: 'Enchantress'
+[Transform]: 'Enchantress,RightCenter'
+[Image]: 'Enchantress,angry'
+"The last person to live here with me was my grandmother^6, who left this earth a couple nights ago."

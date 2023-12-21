@@ -6,6 +6,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using TMPro;
 using static Constants;
+using static AudioManager;
 
 public struct JugglePair
 {
@@ -34,24 +35,32 @@ public class DialogueInterpreture : MonoBehaviour
     private ActorManager actorManager;
 
     string[] dialogueChunks;
-    int dPos = 0;
+    public int dPos = 0;
 
     private Dictionary<string, JugglePair> juggleData;
+    private Dictionary<string, string> spamTalkers;
     private string currentSpeaker = NULL;
+    private bool BOB = false;
 
 
     void Start()
     {
         pairedDialogueBox = dialogueDestination.GetComponent<TypeAttempt3>();
         pairedDialogueBox.dialogueMaster = this;
-        pairedDialogueBox.curPut = NULL;
+        pairedDialogueBox.curPut = "";
         dialogueChunks = dialogueFile.text.Split("\"");
         actorManager = this.GetComponent<ActorManager>();
         choiceMenu.GetComponent<ChoiceMenu>().gameManager = this;
         juggleData = new Dictionary<string, JugglePair>();
-        //Debug.Log(dialogueChunks[0]);
+        spamTalkers = new Dictionary<string, string>();
         actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
         AskNext();
+        StartCoroutine(SpamLogic());
+    }
+
+    public void DoSpam()
+    {
+        BOB = true;
     }
 
 
@@ -61,7 +70,7 @@ public class DialogueInterpreture : MonoBehaviour
         if (dPos < dialogueChunks.Length) //While there are chunks left , add a chunk one at a time to the dialogue box.
         {
             string next = dialogueChunks[dPos];
-            Debug.Log(next);
+            Debug.Log($"LINE ------ {dPos} \n {next}");
             if (next.Contains(SQUARE_BRACKET_OPEN)) // If this is a token chunk, parse it as such.
             {
                 Debug.Log("Parsing scene");
@@ -71,12 +80,9 @@ public class DialogueInterpreture : MonoBehaviour
             }
             else
             {
-                //next = next.Replace("\n","");
-                //next = next.Replace(".",".\n");
-                next = next.Replace(NEWLINE, "{i0}" + NEWLINE);
+                next = next.Replace(NEWLINE, NEWLINE + "{i0}");
                 next += "{i0}/%";
-                next = "{i0}" + next;
-                pairedDialogueBox.curPut = next;
+                pairedDialogueBox.SubmitText(next);
                 dPos += 1;
             }
         }
@@ -135,7 +141,7 @@ public class DialogueInterpreture : MonoBehaviour
                     actorManager.SpawnActor(value);
                     break;
                 case HIDE:
-                    actorManager.KillActor(value);
+                    RemoveActor(value);
                     break;
                 case JUGGLE:
                     AddJuggle(value);
@@ -152,15 +158,38 @@ public class DialogueInterpreture : MonoBehaviour
                 case CHOICE:
                     AddChoiceUI(value);
                     break;
+                case CHOICE_EXHAUSTIVE:
+                    AddChoiceUI(value,true);
+                    break;
+                case SPAM:
+                    AddSpam(value);
+                    break;
+                case UNSPAM:
+                    RemoveSpam(value);
+                    break;
+                case MUSIC:
+                    AudioManager.instance.PlayMusic(value);
+                    break;
             }
 
         }
     }
 
-    private void AddChoiceUI(string data)
+
+
+    private void AddChoiceUI(string data, bool exhaustive = false)
     {
-        choiceMenu.GetComponent<ChoiceMenu>().TakeButtons(data);
+        ChoiceMenu ChoiceMenuObject = choiceMenu.GetComponent<ChoiceMenu>();
+        ChoiceMenuObject.TakeButtons(data,exhaustive);
         choiceMenu.SetActive(true);
+    }
+
+    
+    private void RemoveActor(string actorName)
+    {
+        Debug.Log($"{actorName} removed from stage and unsubscribed from the Juggle System");
+        juggleData.Remove(actorName);
+        actorManager.KillActor(actorName);
     }
 
 
@@ -194,6 +223,24 @@ public class DialogueInterpreture : MonoBehaviour
       bg.FadeColorSwitch(Color.black,2.0f,name);
     }
 
+    private void AddSpam(string Data)
+    {
+        
+        string[] rawData = Data.Split(COMMA);
+        Debug.Assert(rawData.Length > 1);
+        string actorName = rawData[0];
+        Debug.Log($"{actorName} added to spam system");
+        string speakingImg = rawData[1];
+        string silentImg = rawData[2];
+        spamTalkers[actorName] = $"{speakingImg},{silentImg}";
+    }
+
+    private void RemoveSpam(string name)
+    {
+        spamTalkers.Remove(name);
+    }
+
+
     /*
     Assigns juggle behavior to an actor.
     Accepts five arguments - the name, the transform+image when talking, and the transform+image when not talking
@@ -212,5 +259,21 @@ public class DialogueInterpreture : MonoBehaviour
       juggleData[actorName] = newJugglePair;
     }
 
+
+    IEnumerator SpamLogic()
+    {
+    while(true)
+    {
+     Debug.Log("Awaiting bobbiness");
+     yield return new WaitUntil(() => BOB);
+     Debug.Log("Bobbing actor");
+     string spaminfo;
+     if(spamTalkers.TryGetValue(currentSpeaker, out spaminfo))
+     {
+     actorManager.SpamActor($"{currentSpeaker},{spaminfo}");
+     } 
+     BOB = false;
+    }
+    }
 
 }

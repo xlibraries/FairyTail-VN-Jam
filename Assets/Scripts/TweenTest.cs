@@ -30,6 +30,13 @@ public class TweenTest : MonoBehaviour
         transform.TweenPosition(new Vector3(x*Screen.width,y*Screen.height,0f),0.2f);
     }
 
+    private void TRTeleportBasic(float x, float y)
+    {
+        transform.position = new Vector3(x*Screen.width,y*Screen.height,0f);
+    }
+
+
+
     public void TRLeftCenter()
     {
         TRBasic(0.4f,0.5f);
@@ -50,6 +57,112 @@ public class TweenTest : MonoBehaviour
     public void TRRightCenterDown()
     {
         TRBasic(0.8f,0.4f);
+    }
+
+    public void TRCenter()
+    {
+        TRBasic(0.5f,0.5f);
+    }
+
+    public void TRWorkshopShield()
+    {
+            TRBasic(0.2f,0.3f);
+    }
+
+    public void TRWorkshopBottle()
+    {
+           TRBasic(0.8f,0.3f);
+    }
+
+    public void TRWorkshopHammer()
+    {
+           TRBasic(0.75f,0.3f);
+    }
+
+    public void TRFlip()
+    {
+        transform.localScale = new Vector3(transform.localScale.x * -1,transform.localScale.y,transform.localScale.z);
+    }
+
+    public void TRBob()
+    {
+        Vector3 oldPosition = transform.position;
+        transform.TweenPosition(oldPosition + new Vector3(0f,30f,0f),0.2f)
+        .OnComplete(()=>
+        {
+        transform.TweenPosition(oldPosition,0.2f);
+        });
+    }
+
+    public void TRKillFade()
+    {
+      this.gameObject.GetComponent<Image>().TweenColor(Color.clear,0.2f)
+      .OnComplete(() => {
+        GameObject.Destroy(this.gameObject);
+        Tweening.KillAll();
+      });
+    }
+
+    public void TRFade()
+    {
+      this.gameObject.GetComponent<Image>().TweenColor(Color.clear,0.2f);
+    }
+
+    public void TRFadeIn()
+    {
+      this.gameObject.GetComponent<Image>().color = Color.clear;
+      this.gameObject.GetComponent<Image>().TweenColor(Color.white,0.2f);
+    }
+
+    public void TRScaleDown()
+    {
+        Vector3 halfsize = transform.localScale * 0.5f;
+        transform.TweenScale(halfsize,0.2f);
+    }
+
+    public void TRScaleNormal()
+    {
+        Vector3 fullsize = Vector3.Normalize(transform.localScale);
+        transform.TweenScale(fullsize,0.2f);
+    }
+
+    public void TRCenterFadeIn()
+    {
+      TRTeleportBasic(0.5f,0.5f);
+      this.gameObject.GetComponent<Image>().color = Color.clear;
+      this.gameObject.GetComponent<Image>().TweenColor(Color.white,0.2f);
+    }
+
+    public void TalkBob(string talkingImageName, string quietImageName)
+    {
+        var talkimg = emotions.Find(emotion => emotion.name == talkingImageName);
+        var quietimg = emotions.Find(emotion => emotion.name == quietImageName);
+        this.gameObject.GetComponent<Image>().sprite = talkimg.value;
+
+        Vector3 oldPosition = transform.position;
+        transform.TweenPosition(oldPosition + new Vector3(0f,30f,0f),0.2f)
+        .OnComplete(()=>
+        {
+        transform.TweenPosition(oldPosition,0.2f);
+        this.gameObject.GetComponent<Image>().sprite = quietimg.value;
+        });
+    }
+
+
+    /*
+    PushUp and PushDown are RELATIVE - wherever the Actor is, it will move them slightly up or down
+    no matter where they are. Good for small twitches or twinges, or just talking.
+    */
+    public void TRPushUp()
+    {
+        Vector3 oldPosition = transform.position;
+        transform.TweenPosition(oldPosition + new Vector3(0f,30f,0f),0.2f);
+    }
+
+    public void TRPushDown()
+    {
+        Vector3 oldPosition = transform.position;
+        transform.TweenPosition(oldPosition - new Vector3(0f,30f,0f),0.2f);
     }
 
     public void SetImage(string command)

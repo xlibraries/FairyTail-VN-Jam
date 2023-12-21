@@ -26,7 +26,7 @@ public class ActorManager : MonoBehaviour
 
         Debug.Log("Finding all actors");
         var actorList = GameObject.FindGameObjectsWithTag("Actor");
-        Debug.Assert(actorList.Length > 0);
+        if(actorList.Length == 0 ) {return;}
         foreach (var actorGameObject in actorList)
         {
             var TT = actorGameObject.GetComponent<TweenTest>();
@@ -49,6 +49,7 @@ public class ActorManager : MonoBehaviour
         else
         {
         GameObject storedActor = actorPresets.Find(actor => actor.name == name).value;
+        Debug.Assert(storedActor != null);
         madeActor = GameObject.Instantiate(storedActor);
         madeActor.transform.parent = actorStage.transform;
         var TT = madeActor.GetComponent<TweenTest>();
@@ -62,8 +63,17 @@ public class ActorManager : MonoBehaviour
     //Replace with more sophisticated "fade out"
     public void KillActor(string command)
     {
-        GameObject actorToKill = actorPresets.Find(actor => actor.name == name).value;
-        GameObject.Destroy(actorToKill);
+        DoTransform($"{command},KillFade");
+        actorDict.Remove(command);
+    }
+
+    public void SpamActor(string command)
+    {
+      //Debug.Log("Trying to spam");
+      string[] args = command.Split(COMMA);
+      Debug.Assert(args.Length > 1);
+      var grabbedActor = actorDict[args[0]];
+      grabbedActor.TalkBob(args[1],args[2]);
     }
 
 
@@ -72,8 +82,11 @@ public class ActorManager : MonoBehaviour
         string[] args = command.Split(COMMA);
         Debug.Assert(args.Length > 1);
         var grabbedActor = actorDict[args[0]];
+        if(grabbedActor.gameObject.activeSelf)
+        {
         var transformMethod = grabbedActor.GetType().GetMethod("TR" + args[1]);
         transformMethod.Invoke(grabbedActor,null);
+        }
     }
 
     public void SwitchImage(string command)

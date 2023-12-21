@@ -585,11 +585,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgrounds:
   - name: HouseMainHall
-    value: {fileID: 21300000, guid: 2b41809b50d5aea4ba0c0d74f2859c14, type: 3}
+    value: {fileID: 21300000, guid: 40b1664ec30d1934a9f5d9f5d31d4a44, type: 3}
   - name: Library
-    value: {fileID: 21300000, guid: 062774899cebd57469c98471984dad1b, type: 3}
+    value: {fileID: 21300000, guid: 26e604e0dbbb0ab43b758e3db8f00d38, type: 3}
   - name: beans
     value: {fileID: 21300000, guid: f618c5fe13b18994aa5aee8b97d8dca1, type: 3}
+  - name: Forest
+    value: {fileID: 21300000, guid: bb6fbb1a09993fc45b5dd123c7f29086, type: 3}
+  - name: House
+    value: {fileID: 21300000, guid: 5681dffa30799e248be19a2a57b1f61b, type: 3}
+  - name: Study
+    value: {fileID: 21300000, guid: 5b7f664b515582d458717c354f6be292, type: 3}
+  - name: Workshop
+    value: {fileID: 21300000, guid: 77cecb8fb6c8b394abbfed37db1fddaa, type: 3}
+  - name: ArcaneDoor
+    value: {fileID: 21300000, guid: a43b327820bf2cb40b4654b8ec97f711, type: 3}
 --- !u!1 &927915301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1069,7 @@ GameObject:
   - component: {fileID: 2032161908}
   - component: {fileID: 2032161907}
   - component: {fileID: 2032161909}
+  - component: {fileID: 2032161910}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1078,10 +1089,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda2e0bab33f6e042a3dc4ccd37dd75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueFile: {fileID: 4900000, guid: f3c326f83667d5840adc23e10fc36655, type: 3}
+  dialogueFile: {fileID: 4900000, guid: 2f47e2341d913a647b09dedd27b18bf6, type: 3}
   dialogueDestination: {fileID: 56011363}
   speakerIndicator: {fileID: 1194290649}
   choiceMenu: {fileID: 5018949962567014239}
+  dPos: 0
 --- !u!4 &2032161908
 Transform:
   m_ObjectHideFlags: 0
@@ -1111,10 +1123,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actorPresets:
   - name: Lena
-    value: {fileID: 5552296813309427433, guid: 9965a745c82f8ff4099b89b5a753b65d, type: 3}
+    value: {fileID: 5936849927484905887, guid: 9965a745c82f8ff4099b89b5a753b65d, type: 3}
   - name: Enchantress
     value: {fileID: 1806007091540707826, guid: 901c8c1e5cb44ca4994bcc6035ab9cc8, type: 3}
+  - name: Skylan
+    value: {fileID: 6572511269904918475, guid: 546a20808ca220f4f8ca54202c818542, type: 3}
+  - name: Hammer
+    value: {fileID: 7878668974252821532, guid: 910d6ca7a782f384195946c54392bc16, type: 3}
+  - name: Bottle
+    value: {fileID: 6945063990265243153, guid: 3fd0e1b12ab37f94fbe75a7ca67b2aaf, type: 3}
+  - name: Shield
+    value: {fileID: 3834160405766034388, guid: f6851a8c55662144d8d46d3dadbc6bf1, type: 3}
   actorStage: {fileID: 1194290649}
+--- !u!114 &2032161910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032161906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563200bfca382bc47ae92682795c8b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicList:
+  - name: Grief
+    music: {fileID: 8300000, guid: da691f5d79d7c7e4b87aea1c45b167f2, type: 3}
+  - name: Forest
+    music: {fileID: 8300000, guid: 29816da6145bae9468ebb9a13eab3dd1, type: 3}
+  - name: DangerParadise
+    music: {fileID: 8300000, guid: 69c653b2582975946b15645697be83d8, type: 3}
+  mainAudioSource: {fileID: 0}
 --- !u!114 &5018949962567014234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1129,6 +1169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstButton: {fileID: 5018949963018837486}
   gameManager: {fileID: 0}
+  exhaustedOptions: []
 --- !u!114 &5018949962567014235
 MonoBehaviour:
   m_ObjectHideFlags: 0

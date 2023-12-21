@@ -1,0 +1,114 @@
+[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
+[Show]: 'Enchantress,Center,Normal'
+[Spam]: 'Enchantress,NormalSpeak,Normal'
+[Speaker]: 'Lena'
+"I  want to go to the Workshop."
+[Speaker]: 'Enchantress'
+"First door by the porch."
+[Transform]: 'Enchantress,Fade'
+[Background]: 'Workshop'
+[Speaker]: 'None'
+"Two wide glass windows let natural light beam in. Its easier to see in here than the office, which was musty with one window. Curls of carved wood litter a hand-powered lathe. 
+A stack of branches by a table. And a mini forge with a crate of scrap metal in the corner. "
+[Show]: 'Lena,CenterFadeIn,Normal'
+[Transform]: 'Lena,Flip'
+[Spam]: 'Lena,NormalSpeak,Normal'
+[Speaker]: 'Lena'
+"Quite an arrangement for such a dwelling.
+What am I looking for?"
+[Speaker]: 'None'
+[Transform]: 'Lena,Flip'
+"On the table lay a pile of corks, a line of glass bottles,
+and silver soul stones. Lena inspects one."
+[Speaker]: 'Lena'
+"Pretty nice ones."
+[Speaker]: 'None'
+"The word on it looks similar to one in Beshat, a local language she did not know well.
+If she hadn't blown a hole in her parent's barn during the previous attempt learning it, she'd had given herself another try.
+A voice breaks her concentration and makes her flinch."
+[Speaker]: 'A voice'
+[Transform]: 'Lena,Flip'
+"Who is rummaging about here? Those soul stones belong to the Enchantress!"
+[Speaker]: 'Another voice'
+[Transform]: 'Lena,Flip'
+"A guest. Careful - she she might melt us if we annoy her.
+Lena glanced left and right, confused as to who these were."
+[Speaker]: 'Lena'
+[Transform]: 'Lena,Flip'
+"Who the heck is speaking?"
+[Speaker]: 'None'
+"She stepped further in, eyes sharp. She checked on the floor and the ceiling before three objects moved dramatically."
+[Show]: 'Hammer,WorkshopHammer,Normal'
+[Show]: 'Shield,WorkshopShield,Normal'
+[Show]: 'Bottle,WorkshopBottle,Normal'
+[Transform]: 'Shield,ScaleDown'
+[Spam]: 'Hammer,Normal,NormalSpeak'
+[Spam]: 'Shield,Normal,NormalSpeak'
+[Spam]: 'Bottle,Normal,NormalSpeak'
+"A glass bottle, a circular shield, and a wide-nosed hammer hopped in place."
+[Speaker]: 'Lena'
+"(saucer-eyed and jaw dropped)
+I was not aware objects can be under, um, speaking incantations.
+This is just crazy."
+[Speaker]: 'Bottle'
+"Yes, madam."
+[Speaker]: 'Shield'
+[Transform]: 'Lena,Flip'
+"Says the woman who just walked in.
+We're at the Enchantress's service."
+[Speaker]: 'Hammer'
+"Building the family business for seven generations."
+[Speaker]: 'Lena'
+"(Family business, huh?)
+(Maybe they know some stuff about the Enchantress, and what's up with these charms..)"
+[Speaker]: 'Lena'
+"I am kind of lost here. I am looking for some charm that makes another charm more effective.
+Also, does the Enchantress have a real name?"
+[Speaker]: 'Hammer'
+[Transform]: 'Lena,Flip'
+"Does it make you float?"
+[Speaker]: 'Lena'
+"No, it-"
+[Speaker]: 'Bottle'
+"Does it remove items stuck to another?"
+[Speaker]: 'None'
+"A quick guess, Lena thought.."
+[Speaker]: 'Lena'
+"Um, yes, as a matter of fact. The Enchantress and I need it. For a project."
+[Transform]: 'Lena,Flip'
+[Speaker]: 'Shield'
+"You refer to her magical name. I can tell you her real name."
+[Speaker]: 'Lena'
+"Sure. But I need the charm, too. "
+[Speaker]: 'Hammer'
+"Grab the orange soul stone with the forge's tongs. Heat it up. Just enough will release the charm as long as you don't drop it."
+[Speaker]: 'Shield'
+"The Enchantress - Conwenna is her name. 
+Good businesswoman; persuasive and powerful. 
+Even though a few from Strand's Crossing don't like her, she's remained useful. 
+For as long as I've been here, none of the family has uttered their last name. Maybe they never had one..
+This house holds many mysteries, and Conwenna is all that remains of that legendary line."
+[Speaker]: 'None'
+"Lena carefully pinched the tongs on the stone. 
+It was the length of her whole hand. "
+[Speaker]: 'Lena'
+"Interesting.
+She held it inside the blazing hot heat. The stone began quaking. 
+Lena grimaced with sweat beads on her forehead and her arms searing hot. 
+A few minutes past and it burst apart - a swirling orange sphere of power the size of a mango. 
+And she yanked her arms out."
+[Speaker]: 'Lena'
+"Ouch!"
+"Yes. Another piece found."
+[Speaker]: 'Hammer'
+"That's it! Well done."
+[Speaker]: 'Bottle'
+"Well done, indeed."
+[Speaker]: 'Lena'
+[Transform]: 'Hammer,Fade'
+[Transform]: 'Shield,Fade'
+[Transform]: 'Bottle,Fade'
+[Transform]: 'Lena,Fade'
+"Returning to the Enchantress now.
+Thank you."
+[Load]: 'Act2/Act2ChoiceLoop.txt' 

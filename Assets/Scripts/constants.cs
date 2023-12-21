@@ -84,6 +84,13 @@ public class Constants : MonoBehaviour
     public const string UN_JUGGLE = "UnJuggle";
     public const string KILL = "Kill";
     public const string CHOICE = "Choice";
+    public const string CHOICE_EXHAUSTIVE = "ChoiceExhaustive";
+
+    public const string SPAM = "Spam";
+    public const string UNSPAM = "Unspam";
+
+    public const string MUSIC = "Music";
+    
     #endregion
     #region File Paths
     public const string DIALOGUE_PATH = "Assets/Dialogue/";

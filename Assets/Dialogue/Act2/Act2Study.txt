@@ -1,0 +1,59 @@
+[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
+[Show]: 'Enchantress,Center,Normal'
+[Spam]: 'Enchantress,NormalSpeak,Normal'
+[Speaker]: 'Lena'
+"
+I  want to go to the Study."
+[Speaker]: 'Enchantress'
+"Up the stairs to the left."
+[Transform]: 'Enchantress,Fade'
+[Background]: 'Study'
+[Speaker]: 'None'
+"She enters. Boxes flanked the wide birchwood desk, a stack of parchment on the table. 
+A black leather-wrapped sword hung on the wall. 
+Lena first scans the whole room. 
+Lockpicks were thin enough to sit almost anywhere. 
+She checks each shelf on the single bookshelf."
+[Show]: 'Lena,CenterFadeIn,Normal'
+[Juggle]: 'Lena,LeftCenter,Normal,Bob,NormalSpeak'
+[Speaker]: 'Lena'
+"None on here."
+[Speaker]: 'None'
+"A small box sat on top of a corner table. Lena looked inside and saw:"
+[Speaker]: 'Lena'
+"I would think its here."
+[Speaker]: 'None'
+"Besides, a large chest sat squarely opposite the bookshelf."
+[Speaker]: 'Lena'
+"Lets try the desk."
+[Speaker]: 'None'
+Each of its six drawers had some amount of weight. The middle ones had the most - some cost measuring tools and a ink wells. 
+In a bottom one, she found a leather book with 'Journal' etched in elegant cursive. Its inside cover read, 'For your business and your stories. To Grandma'. The 'From:' was blank."
+[Speaker]: 'Lena'
+"Hmmm.
+(flips page)"
+[Speaker]: 'None'
+"The journal reads:"
+'Want to see what's behind the door? Well, take on an apprentice first. You will need to practice the advanced abilities before setting foot inside. Or else, well, you'll learn the hard way.'"
+[Speaker]: 'Lena'
+"Something to keep in mind."
+[Speaker]: 'None'
+"Then, she checked the other bottom drawer. Her fingers caused the back inner edge to push up the front. A hidden space. And in it laid two grey metal lockpicks. "
+[Speaker]: 'Lena'
+"(smiles)
+There you are."
+[Background]: 'HouseMainHall'
+[Transform]: 'Lena,Fade'
+"Satisfied, she returned to the main hall. She grinned to the Enchantress as she revealed them."
+[UnJuggle]
+[Transform]: 'Enchantress,CenterFadeIn'
+[Transform]: 'Lena,FadeIn'
+[Transform]: 'Lena,Flip'
+[Transform]: 'Enchantress,Flip'
+[Juggle]: 'Lena,LeftCenter,Normal,Bob,NormalSpeak'
+[Juggle]: 'Enchantress,Bob,NormalSpeak,RightCenter,Normal'
+[Speaker]: 'Lena'
+"Lockpicks found."
+[Speaker]: 'Enchantress'
+"(smiling) Simple enough."
+[Load]: 'Act2/Act2ChoiceLoop.txt' 

@@ -1,0 +1,24 @@
+[Show]: 'Hammer,LeftCenterDown,Normal'
+[Show]: 'Shield,Center,Normal'
+[Show]: 'Bottle,RightCenterDown,Normal'
+[Speaker]: 'Hammer'
+[Spam]: 'Hammer,Normal,NormalSpeak'
+[Spam]: 'Shield,Normal,NormalSpeak'
+[Spam]: 'Bottle,Normal,NormalSpeak'
+"Pingus
+EnchantressE
+EnchantressE
+Enchantress
+EnchantressE"
+[Speaker]: 'Shield'
+"Pingus
+EnchantressE
+EnchantressE
+Enchantress
+EnchantressE"
+[Speaker]: 'Bottle'
+"Pingus
+EnchantressE
+EnchantressE
+Enchantress
+EnchantressE"

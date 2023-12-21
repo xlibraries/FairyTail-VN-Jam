@@ -1,0 +1,5 @@
+"Yimbus"
+[Speaker]: 'Joe'
+"Timbus"
+[Load]: 'ChoiceTest/Start.txt'
+"Yowodong"
