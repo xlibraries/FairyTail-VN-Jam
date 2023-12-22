@@ -49,7 +49,7 @@ public class TypeAttempt3 : MonoBehaviour
     }
 
     // tok = token
-    int SeekNext(string a,int start,string tok)
+    int SeekNext(string a,int start,string tok)  
     {
         int endchar = a.Substring(start).IndexOf(tok);
         return endchar + 1;
@@ -144,8 +144,6 @@ public class TypeAttempt3 : MonoBehaviour
                         StartCoroutine(SwivelCarat());
                         StartCoroutine(UserInput());
                         yield break;
-                        break;
-
                 }
                 offset += endchar;
                 

@@ -28,7 +28,7 @@ public class DialogueInterpreture : MonoBehaviour
 
     public GameObject speakerIndicator;
 
-    public GameObject choiceMenu;
+    public ChoiceMenu choiceMenu;
 
     private TypeAttempt3 pairedDialogueBox;
 
@@ -50,7 +50,7 @@ public class DialogueInterpreture : MonoBehaviour
         pairedDialogueBox.curPut = "";
         dialogueChunks = dialogueFile.text.Split("\"");
         actorManager = this.GetComponent<ActorManager>();
-        choiceMenu.GetComponent<ChoiceMenu>().gameManager = this;
+        //choiceMenu.GetComponent<ChoiceMenu>().gameManager = this;
         juggleData = new Dictionary<string, JugglePair>();
         spamTalkers = new Dictionary<string, string>();
         actorManager.GatherActors();  //Must be done before dialogue is interpreted; otherwise, it will try to animate actors that are not yet found.
@@ -156,10 +156,7 @@ public class DialogueInterpreture : MonoBehaviour
                     LoadNewCRD(value);
                     break;
                 case CHOICE:
-                    AddChoiceUI(value);
-                    break;
-                case CHOICE_EXHAUSTIVE:
-                    AddChoiceUI(value,true);
+                    choiceMenu.GetComponent<ChoiceMenu>().AnalyseChoices(value);
                     break;
                 case SPAM:
                     AddSpam(value);
@@ -174,16 +171,6 @@ public class DialogueInterpreture : MonoBehaviour
 
         }
     }
-
-
-
-    private void AddChoiceUI(string data, bool exhaustive = false)
-    {
-        ChoiceMenu ChoiceMenuObject = choiceMenu.GetComponent<ChoiceMenu>();
-        ChoiceMenuObject.TakeButtons(data,exhaustive);
-        choiceMenu.SetActive(true);
-    }
-
     
     private void RemoveActor(string actorName)
     {
@@ -204,7 +191,6 @@ public class DialogueInterpreture : MonoBehaviour
         dPos = 0;
         AskNext();
         inputStream.Close();
-
     }
 
     private void ChangeSpeakerName(string name)
@@ -257,6 +243,11 @@ public class DialogueInterpreture : MonoBehaviour
       newJugglePair.silentTransform = rawData[3];
       newJugglePair.silentImg = rawData[4];
       juggleData[actorName] = newJugglePair;
+    }
+
+    public void SetDialogueFile(TextAsset newDialogueFile)
+    {
+        dialogueFile = newDialogueFile;
     }
 
 

@@ -3,129 +3,60 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
+using static Constants;
+using Unity.VisualScripting;
 
 public class ChoiceMenu : MonoBehaviour
 {
 
     public GameObject firstButton;
     public DialogueInterpreture gameManager;
-    //public HashSet<string> smartExhaustedOptions = new HashSet<string>();
-    public HashSet<string> smartExhaustedOptions = new HashSet<string>
+    public ButtonManager buttonManager;
+
+
+    public void AnalyseChoices(string value)
     {
-        "Act2/Act2Workshop.txt",
-        "Act2/Act2Library.txt",
-        "Act2/Act2Study.txt"
-    };
-
-
-
-    private void ClearButtons()
-    {
-        Button[] buttons = gameObject.GetComponentsInChildren<Button>();
-        firstButton.SetActive(true);
-        for(int i = 0; i < buttons.Length; i++)
+        List<string> choices = new(value.Split(COMMA));
+        List<string> choiceDestination = new();
+        List<string> buttonName = new();
+        foreach(string choice in choices)
         {
-            if(buttons[i].gameObject != firstButton)
-            {
-                Destroy(buttons[i].gameObject);
-            }
+            string[] args = choice.Split(COLON);
+            choiceDestination.Add(args[0]);
+            buttonName.Add(args[1]);
         }
-
+        GenerateButtons(buttonName, choiceDestination);
     }
 
-
-
-
-    private void ButtonsNonExhaustive(string[] args)
+    private void GenerateButtons(List<string> buttonName, List<string> choiceDestination)
     {
-    for (int i = 0; i < args.Length-1; i+=2)
+        int numButtons = buttonName.Count;
+        GameObject buttonPrefab = firstButton;
+        GameObject buttonParent = GameObject.Find("ChoiceMenu");
+        Transform buttonParentTransform = buttonParent.transform;
+
+        float spacing = 10f; // Adjust this value to control the spacing between buttons
+
+        float buttonWidth = buttonPrefab.GetComponent<RectTransform>().rect.width; // Assuming RectTransform is used for the button
+        float totalWidth = numButtons * buttonWidth + (numButtons - 1) * spacing;
+
+        float startX = buttonParentTransform.position.x - totalWidth / 2f;
+
+        for (int i = 0; i < numButtons; i++)
         {
-            GameObject newButton;
-            string buttonText = args[i];
-            string buttonDestination = args[i+1];
+            GameObject newButton = Instantiate(buttonPrefab);
+            newButton.transform.SetParent(buttonParentTransform);
+            // Calculate the X position based on button width, spacing, and total width
+            float xOffset = startX + i * (buttonWidth + spacing);
+            Vector3 newPosition = new(xOffset, buttonParentTransform.position.y, buttonParentTransform.position.z);
+            newButton.transform.position = newPosition;
+            newButton.GetComponentInChildren<TextMeshProUGUI>().text = buttonName[i];
+            newButton.name = buttonName[i];
+            // Add a string component to the button
 
-            if (i == 0)
-            {
-                newButton = firstButton;
-            }
-            else
-            {
-                newButton = (GameObject)Instantiate(firstButton);
-            }
-
-            newButton.transform.SetParent(firstButton.transform.parent);
-            newButton.GetComponentInChildren<TextMeshProUGUI>().text = buttonText;
-            newButton.GetComponent<Button>().onClick.AddListener(() => LinkWrapper(buttonDestination));
-
+            buttonManager.dialogueFile = choiceDestination[i];
+            //newButton.GetComponent<Button>().onClick.AddListener(() => OnButtonClick(choiceDestination[i]));
         }
     }
-
-    private void ButtonsExhaustive(string[] data)
-    {
-    List<string> args = new List<string>(data);
-    string finalDestination = args[0];
-    args.RemoveAt(0);
-    bool everyButtonClicked = true;
-
-    Debug.Log($"This menu will proceed to {finalDestination}");
-    Debug.Log(string.Join(", ",smartExhaustedOptions));
-    firstButton.SetActive(false);
-
-
-    for (int i = 0; i < args.Count-1; i+=2)
-        {
-       
-            string buttonText = args[i];
-            string buttonDestination = args[i+1];
-            if(smartExhaustedOptions.Contains(buttonDestination)) {continue;}
-            else { everyButtonClicked = false;}
-            GameObject newButton;
-            newButton = (GameObject)Instantiate(firstButton);
-
-            newButton.SetActive(true);
-            newButton.transform.SetParent(firstButton.transform.parent);
-            newButton.GetComponentInChildren<TextMeshProUGUI>().text = buttonText;
-            newButton.GetComponent<Button>().onClick.AddListener(() => LinkWrapperExhuastive(buttonDestination));
-
-        }
-
-        if(everyButtonClicked)
-        {
-            LinkWrapper(finalDestination);
-            smartExhaustedOptions.Clear();
-            finalDestination = "";
-            gameObject.SetActive(false);
-        }
-    }
-
-
-    public void TakeButtons(string data, bool exhaustive)
-    {
-        ClearButtons();
-        string[] args = data.Split(",");
-        if(exhaustive)
-        {
-            ButtonsExhaustive(args);
-        }
-        else
-        {
-            ButtonsNonExhaustive(args);
-        }
-    }
-
-    void LinkWrapperExhuastive(string destination)
-    {
-        //exhaustedOptions.Add(destination);
-        smartExhaustedOptions.Add(destination);
-        LinkWrapper(destination);
-    }
-
-
-    void LinkWrapper(string destination)
-    {
-        gameManager.LoadNewCRD(destination);
-        gameObject.SetActive(false);
-    }
-
 }
-
