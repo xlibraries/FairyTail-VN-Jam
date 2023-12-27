@@ -127,10 +127,7 @@ She picks a direction based on tiny orange leaves and follows."
 [Speaker]: 'Lena' 
 "Lets try this way.
 I knew I should have brought my Ithaka bullhorn."
-[kabinky]
-Writers' 
-Note: Ithaka Bullhorn is a magical horn Note capable of far-reaching sound waves.
-Helps alert people or find them if they're within a five mile radius.
+[Speaker]: 'None'
 "She sees something ahead.
 Looks bright and wide, like a barn with earthly colors.
 A ways along the leaves end at a clearing.
