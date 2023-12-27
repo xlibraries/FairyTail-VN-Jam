@@ -19,7 +19,10 @@ public class ChoiceMenu : MonoBehaviour
     };*/
     
 
-
+    void Awake()
+    {
+        HideUI();
+    }
 
     private void ClearButtons()
     {
