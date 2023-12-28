@@ -96,8 +96,9 @@ Grandmother.. didn't make it up!"
 "Um, Him" 
 [Speaker]: 'None' 
 "She grips her dagger's hilt.
- Everyone gazes with shock as something huge lurches forward.
- It's a dragon - a big one, towering over the adventurers.
+ Everyone gazes with shock as something huge lurches forward."
+[Image]: 'Dragon,Normal'
+ "It's a dragon - a big one, towering over the adventurers.
  Leathery green blankets its body and its watchful eyes comb the cavern, clearly aware of their presence. 
  The earth rumbles with its measured, predatory breath.
  Lena felt idiotic for not noticing the beast.

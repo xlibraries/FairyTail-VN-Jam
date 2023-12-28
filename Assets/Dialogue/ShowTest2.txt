@@ -1,5 +1,3 @@
-"this is not a test."
-[Speaker]: 'Billy'
-"No I don't think so"
-[Choice]: 'Bingus,ShowTest2.txt,Pingus,Act2/Act2Library.txt'
-[eChoiceExhaustive]: 'Act3.txt,Loop.,ShowTest2.txt,Library.,Act2/Act2Library.txt,Study.,Act2/Act2Study.txt'
+[Show]: 'Dragon,Center,Hidden'
+"Hello"
+[FadeTo]: 'Dragon,Normal'

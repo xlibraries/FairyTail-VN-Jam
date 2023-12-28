@@ -25,6 +25,7 @@ public class TweenTest : MonoBehaviour
 
     public List<EmotionPair> emotions;
 
+
     private void TRBasic(float x, float y)
     {
         transform.TweenPosition(new Vector3(x*Screen.width,y*Screen.height,0f),0.2f);
@@ -108,6 +109,8 @@ public class TweenTest : MonoBehaviour
       });
     }
 
+
+
     public void TRFade()
     {
       this.gameObject.GetComponent<Image>().TweenColor(Color.clear,0.2f);
@@ -157,7 +160,8 @@ public class TweenTest : MonoBehaviour
         transform.TweenScale(fullsize,0.2f);
     }
 
-    public void TRCenterFadeIn()
+
+     public void TRCenterFadeIn()
     {
       TRTeleportBasic(0.5f,0.5f);
       this.gameObject.GetComponent<Image>().color = Color.clear;
@@ -200,6 +204,24 @@ public class TweenTest : MonoBehaviour
     {
         var img = emotions.Find(emotion => emotion.name == command);
         this.gameObject.GetComponent<Image>().sprite = img.value;
+    }
+
+    public void FadeImage(string command)
+    {
+
+       var next_image = emotions.Find(emotion => emotion.name == command);
+       GameObject faderActor = (GameObject)Instantiate(gameObject);
+       
+       faderActor.transform.SetParent(gameObject.transform.parent);
+       faderActor.transform.localScale = transform.localScale;
+       faderActor.transform.position = transform.position;
+       faderActor.GetComponent<Image>().sprite = next_image.value;
+       faderActor.GetComponent<Image>().TweenColor(Color.clear,4.0f);
+
+       GetComponent<Image>().color = Color.clear;
+       GetComponent<Image>().TweenColor(Color.white,4.0f);
+
+
     }
 
 

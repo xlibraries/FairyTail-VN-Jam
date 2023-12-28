@@ -76,6 +76,15 @@ public class ActorManager : MonoBehaviour
       grabbedActor.TalkBob(args[1],args[2]);
     }
 
+    public void FadeActorTo(string command)
+    {
+        string[] args = command.Split(COMMA);
+        Debug.Assert(args.Length > 1);
+        var grabbedActor = actorDict[args[0]];
+        grabbedActor.GetComponent<TweenTest>().FadeImage(args[1]); 
+    }
+
+
 
     public void DoTransform(string command)
     {

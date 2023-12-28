@@ -173,6 +173,9 @@ public class DialogueInterpreture : MonoBehaviour
                 case MUSIC:
                     AudioManager.instance.PlayMusic(value);
                     break;
+                case "FadeTo":
+                    actorManager.FadeActorTo(value);
+                    break;
             }
 
         }
