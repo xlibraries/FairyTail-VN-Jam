@@ -595,11 +595,13 @@ MonoBehaviour:
   - name: House
     value: {fileID: 21300000, guid: 5681dffa30799e248be19a2a57b1f61b, type: 3}
   - name: Study
-    value: {fileID: 21300000, guid: 5b7f664b515582d458717c354f6be292, type: 3}
+    value: {fileID: 21300000, guid: 7ee276207cab6ac4d9a176460b0815af, type: 3}
   - name: Workshop
     value: {fileID: 21300000, guid: 77cecb8fb6c8b394abbfed37db1fddaa, type: 3}
   - name: ArcaneDoor
     value: {fileID: 21300000, guid: a43b327820bf2cb40b4654b8ec97f711, type: 3}
+  - name: Cave
+    value: {fileID: 21300000, guid: 7f52113f4e961bb438b5101ee6eba466, type: 3}
 --- !u!1 &927915301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,7 +1091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda2e0bab33f6e042a3dc4ccd37dd75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueFile: {fileID: 4900000, guid: 9b51dbadd5f105f4ba1772b3a5505638, type: 3}
+  dialogueFile: {fileID: 4900000, guid: e83f083288d9861429cf6199abff0c55, type: 3}
   dialogueDestination: {fileID: 56011363}
   speakerIndicator: {fileID: 1194290649}
   choiceMenu: {fileID: 5018949962567014239}
@@ -1134,6 +1136,8 @@ MonoBehaviour:
     value: {fileID: 6945063990265243153, guid: 3fd0e1b12ab37f94fbe75a7ca67b2aaf, type: 3}
   - name: Shield
     value: {fileID: 3834160405766034388, guid: f6851a8c55662144d8d46d3dadbc6bf1, type: 3}
+  - name: Dragon
+    value: {fileID: 1618857936075020352, guid: b62b3ecd9122ed04c9149e4540df25a7, type: 3}
   actorStage: {fileID: 1194290649}
 --- !u!114 &2032161910
 MonoBehaviour:

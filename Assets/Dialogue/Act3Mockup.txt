@@ -1,0 +1,10 @@
+[Background]: 'Cave'
+[Show]: 'Dragon,Center,Normal'
+[Show]: 'Lena,RightCenter,Normal'
+[Show]: 'Enchantress,LeftCenter,Normal'
+[Transforem]: 'Enchantress,DragonRoomSize'
+[Transfoerm]: 'Lena,DragonRoomSize'
+"ee"
+"eee"
+[Transform]: 'Enchantress,DragonRoomHeight'
+[Transform]: 'Lena,DragonRoomHeight'
