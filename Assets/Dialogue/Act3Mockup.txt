@@ -1,7 +1,8 @@
-[Background]: 'Cave'
-[Show]: 'Dragon,Center,Normal'
-[Show]: 'Lena,ThreeFourth,Normal'
+ [Background]: 'Cave'
+ [Show]: 'Dragon,CenterFadeIn,Hidden'
+[Show]: 'Lena,Half,Normal'
+[Show]: 'Skylan,ThreeFourth,Normal'
 [Show]: 'Enchantress,Fourth,Normal'
 [Transform]: 'Enchantress,DragonRoomSize'
 [Transform]: 'Lena,DragonRoomSize'
-"Hello?"
+[Transform]: 'Skylan,DragonRoomSize'

@@ -29,17 +29,20 @@
  Ah - Uh..
  Skylan is more handy than I at this sort of thing.
  Ugh..
- Time for the unsealing charm.
+ Time for the unsealing charm."
+ [Speaker]: 'None'
  Lena activates it by submerging the exposed part of each lock.
  Each becomes outlined by a flare of yellow-brown.
  She moves the picks some more, one eye open."
  [Speaker]: 'Lena' 
 "C'mon, you piece of junk!"
 [Speaker]: 'None'
-The enchantress glares.
-"Four clicks - each lockpick moved counterclockwise - followed with a metallic twang.
+"The enchantress glares.
+Four clicks - each lockpick moved counterclockwise - followed with a metallic twang.
  It did it! Lena shot to her feet wearing an anticipatory smile.
  And it opens with a dramatic whoosh."
+ [Background]: 'Cave'
+ [Show]: 'Dragon,CenterFadeIn,Hidden'
  [Speaker]: 'Lena' 
 "Sorry.
  It worked!"
@@ -47,6 +50,16 @@ The enchantress glares.
 "Sure did.
  And who is - that?"
 [Speaker]: 'None'
+[Show]: 'Skylan,ThreeFourth,Normal'
+[Show]: 'Lena,Half,Normal'
+[Show]: 'Enchantress,Fourth,Normal'
+[Transform]: 'Lena,ScaleNormal'
+[Transform]: 'Enchantress,ScaleNormal'
+[Transform]: 'Skylan,ScaleNormal'
+[Transform]: 'Enchantress,DragonRoomSize'
+[Transform]: 'Lena,DragonRoomSize'
+[Transform]: 'Skylan,DragonRoomSize'
+"Hello?"
  "Lena blinks dumfounded: a bruised man leaning against a sloped dirt wall wearing a tan shirt.
  Skylan - he lives!"
  [Speaker]: 'Lena' 
@@ -55,9 +68,13 @@ The enchantress glares.
  [Speaker]: 'None'
 "Skylan looked a little beat up. A few cuts and bruises but nothing substantial."
 [Speaker]: 'Lena' 
- "How did you-? 
- Skylans face morphs between surprise as well as relief.
- Lena clamps herself around him like she won ten thousand gold coins."
+ "How did you-? "
+ [Speaker]: 'None' 
+ "Skylans face morphs between surprise as well as relief."
+ [Speaker]: 'Lena'
+ [UnSpam]: 'Lena'
+ [Transform]: 'Lena,ThreeFourth'
+ "Lena clamps herself around him like she won ten thousand gold coins."
  [Speaker]: 'Skylan' 
 "By the Guardians..."
  [Speaker]: 'Lena' 
