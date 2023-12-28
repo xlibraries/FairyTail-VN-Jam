@@ -7,7 +7,7 @@
 [Speaker]: 'Lena' 
 [Transform]: 'Skylan,FadeIn'
 [Transform]: 'Lena,FadeIn'
-[Museic]: 'Grief'
+[Music]: 'Grief'
 "Let me try again, Skylan.
 I think I know why it didn't work that time.
 Then you take your turn."

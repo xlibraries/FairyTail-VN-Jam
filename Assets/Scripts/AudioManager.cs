@@ -42,11 +42,13 @@ public class AudioManager : MonoBehaviour
             mainAudioSource.clip = c;
             mainAudioSource.Play();
             mainAudioSource.loop = true;
+            mainAudioSource.volume = PlayerPrefs.GetFloat("MusicVolume");
         }
     }
 
     public void PlayMusic(string name)
     {
+        float gameVolume = PlayerPrefs.GetFloat("MusicVolume");
         AudioClip c = musicList.Find(m => m.name == name).music;
         Debug.Assert(c != null);
 
@@ -59,7 +61,7 @@ public class AudioManager : MonoBehaviour
             secondaryAudioSource.loop = true;
 
             mainAudioSource.TweenVolume(0.0f,2.0f);
-            secondaryAudioSource.TweenVolume(1.0f,2.0f).OnComplete(()=>{
+            secondaryAudioSource.TweenVolume(gameVolume,2.0f).OnComplete(()=>{
                 Destroy(mainAudioSource);
                 mainAudioSource = secondaryAudioSource;
                 mainAudioSource.loop = true;
@@ -70,6 +72,7 @@ public class AudioManager : MonoBehaviour
             mainAudioSource.clip = c;
             mainAudioSource.Play();
             mainAudioSource.loop = true;
+            mainAudioSource.volume = PlayerPrefs.GetFloat("MusicVolume");
         }
     }
 
