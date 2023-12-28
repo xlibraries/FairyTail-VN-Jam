@@ -125,9 +125,23 @@ public class TweenTest : MonoBehaviour
         transform.TweenScale(halfsize,0.2f);
     }
 
+    public void TRFourth()
+    {
+        TRBasic(0.25f,0.2f);
+    }
+
+    public void TRHalf()
+    {
+        TRBasic(0.5f,0.2f);
+    }
+    public void TRThreeFourth()
+    {
+        TRBasic(0.75f,0.2f);
+    }
+
     public void TRDragonRoomSize()
     {
-        Vector3 destinationSize = transform.localScale * 0.2f;
+        Vector3 destinationSize = transform.localScale * 0.6f;
         transform.TweenScale(destinationSize,0.0f);
     }
 
@@ -135,8 +149,6 @@ public class TweenTest : MonoBehaviour
     {
         float oldX = transform.position.x;
         transform.position = new Vector3(oldX,0.2f*Screen.height,0f);
-        //TRBasic(0.5f,0.5f);
-        //Debug.Log("E");
     }
 
     public void TRScaleNormal()

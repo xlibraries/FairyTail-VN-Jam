@@ -1,10 +1,7 @@
 [Background]: 'Cave'
 [Show]: 'Dragon,Center,Normal'
-[Show]: 'Lena,RightCenter,Normal'
-[Show]: 'Enchantress,LeftCenter,Normal'
-[Transforem]: 'Enchantress,DragonRoomSize'
-[Transfoerm]: 'Lena,DragonRoomSize'
-"ee"
-"eee"
-[Transform]: 'Enchantress,DragonRoomHeight'
-[Transform]: 'Lena,DragonRoomHeight'
+[Show]: 'Lena,ThreeFourth,Normal'
+[Show]: 'Enchantress,Fourth,Normal'
+[Transform]: 'Enchantress,DragonRoomSize'
+[Transform]: 'Lena,DragonRoomSize'
+"Hello?"
