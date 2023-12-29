@@ -52,15 +52,10 @@ A moment later, she facepalms herself. She scurries to the other end of the room
 "I am an idiot for only now considering this spot.
 Now I have it all. Let's return to her."
 [Background]: 'HouseMainHall'
-[Transform]: 'Lena,LeftCenter'
-[Transform]: 'Enchantress,RightCenter'
-""
+[Show]: 'Lena,LeftCenter,Normal'
+[Show]: 'Enchantress,RightCenter,Normal'
 [Transform]: 'Enchantress,FadeIn'
 [Transform]: 'Lena,FadeIn'
-[Spam]: 'Lena,NormalSpeak,Normal'
-[Spam]: 'Enchantress,NormalSpeak,Normal'
-[Transform]: 'Lena,FixFlip'
-[Transform]: 'Enchantress,FixFlip'
 [Transform]: 'Lena,Flip'
 [Transform]: 'Enchantress,Flip'
 [Spam]: 'Enchantress,HappySpeak,Happy'

@@ -1,6 +1,6 @@
 [Speaker]: 'Lena'
-"
-I want to go to the Workshop."
+""
+"I want to go to the Workshop."
 [Speaker]: 'Enchantress'
 "First door by the porch."
 [Transform]: 'Enchantress,Fade'
@@ -93,6 +93,7 @@ In her mind, Lena saw it: a brief image of being knocked out by a talking hammer
 "Well, we are -"
 [Speaker]: 'None'
 "Her lip curls."
+[Spam]: 'Lena,HappySpeak,Happy'
 [Speaker]: 'Lena'
 "- just preparing something to shield the house for the Arcane Pulse's next firing."
 [Speaker]: 'Hammer'

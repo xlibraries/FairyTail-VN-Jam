@@ -46,18 +46,17 @@ There you are."
 [Transform]: 'Lena,LeftCenter'
 "Satisfied, she returned to the main hall. She grinned to the Enchantress as she revealed them."
 [UnJuggle]
-[UnSpam]
+[ResetSpam]
+[Show]: 'Lena,LeftCenter,Normal'
+[Show]: 'Enchantress,RightCenter,Normal'
 [Transform]: 'Enchantress,FadeIn'
 [Transform]: 'Lena,FadeIn'
-[Spam]: 'Lena,NormalSpeak,Normal'
-[Spam]: 'Enchantress,NormalSpeak,Normal'
-[Transform]: 'Lena,FixFlip'
-[Transform]: 'Enchantress,FixFlip'
 [Transform]: 'Lena,Flip'
 [Transform]: 'Enchantress,Flip'
+[Juggle]: 'Lena,PushUp,HappySpeak,LeftCenterDown,Happy'
+[Juggle]: 'Enchantress,PushUp,HappySpeak,RightCenterDown,Happy's
 [Speaker]: 'Lena'
 "Lockpicks found."
-[Spam]: 'Enchantress,HappySpeak,Happy'
 [Speaker]: 'Enchantress'
 "(smiling) Simple enough."
 [Load]: 'Act2/Act2ChoiceLoop.txt' 
