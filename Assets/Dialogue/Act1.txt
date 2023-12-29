@@ -52,8 +52,9 @@ The roots stiffened up like they resisted her.
 She let go and let out a stressed breath."
 [Speaker]: 'Lena' 
 "Piece of crap.
- My power output must need work.
-He claps her on the shoulder."
+ My power output must need work."
+[Speaker]: 'None'
+"He claps her on the shoulder."
 [Speaker]: 'Skylan' 
 "You'll get there - I promise you!
 Just like last week.
@@ -73,10 +74,11 @@ Like something with lightning."
 [Speaker]: 'None' 
 "Skylan glances up a the canopy, deep in thought."
 [Speaker]: 'Skylan' 
-"Definitely is a sight to behold.
-Lena walks around the outer edge of the nearest trees - some lacked the purple veins this place was known for.
+"Definitely is a sight to behold."
+[Speaker]: 'None' 
+"Lena walks around the outer edge of the nearest trees - some lacked the purple veins this place was known for.
 Maybe she was just thirsty.
-So, she gulped apple juice from her canteen."
+So she gulped apple juice from her canteen."
 [Speaker]: 'Lena' 
 "Juice break.
 Go find those herbs.
@@ -97,9 +99,11 @@ She switched it up to an evade - a magic-aided sideways burst of speed.
 "Dang it.
 I need Skylan as a target for this.
 Some time had passed based on the height of the sun. & She also noticed he had yet to return.
-Odd, she thought.
-She scanned the immediate area.
-Not here.
+Odd, she thought."
+[Speaker]: 'None' 
+"She scanned the immediate area.
+[Speaker]: 'Lena' 
+"Not here.
 Not in the trees."
 [Speaker]: 'Lena' 
 "Where did he go? Get stuck on a thorn bush? This is unusual for him.
@@ -120,10 +124,16 @@ Her heart thuds in her chest.
 She fast walks between brush and hops over large logs.
 That is when she noticed them: purple veins glistening brighter while filling with electrical pulses."
 [Speaker]: 'Lena' 
-"Crap.
-Which-which way would he have gone? Lena spun in circles.
-Some orange herbs here start a path.
-She picks a direction based on tiny orange leaves and follows."
+"Crap."
+[Transform]: 'Lena,Flip'
+[Image]: 'Lena,Sad'
+Which-which way would he have gone? "
+[Speaker]: 'None' 
+"Lena spun in circles."
+[Speaker]: 'Lena' 
+"Some orange herbs here start a path."
+[Speaker]: 'None' 
+"She picks a direction based on tiny orange leaves and follows."
 [Speaker]: 'Lena' 
 "Lets try this way.
 I knew I should have brought my Ithaka bullhorn."
@@ -156,7 +166,7 @@ Ahh, now she recalled - The Enchantress.
 Dangerous, powerful, older than her, and highly knowledgeable.
 She could bypass her in silence, but, she may be the only person for acres.
 What other option is there? The trees here are no ordinary trees, quite unfit for climbing.
-And the Arcane Pulse is approaching quickly. Skylan... He's in danger..
+And the Arcane Pulse is approaching quickly. & Skylan... He's in danger..
 She hears sniffling.
 Now, Lena decides to be formal about it."
 [Speaker]: 'Lena' 
@@ -171,14 +181,13 @@ Now, Lena decides to be formal about it."
 "Sorry.
 You must be the Enchantress, right? Are you okay?"
 [Speaker]: 'None'
-"The woman's eyes are red and puffy, and her movements stiffened, as though she spent a while out here in a bit of saddened trance."
-"She does a bad job of hiding her current state." 
+"The woman's eyes are red and puffy, and her movements stiffened, as though she spent a while out here in a bit of a saddened trance."
+"She does a bad job of hiding her current state. She hides a sniffle by shifting on the bench." 
 [Speaker]: 'Enchantress' 
-"(Sees her. Sniffles) I - I am^2,sorry.
-A- Ah^2, it's nothing, I'm fine. 
-And you are...?"
+"A- Ah^2, it's nothing, I'm fine. 
+...And you are...?"
 [Speaker]: 'None'
-Lena considers between telling her real name or keeping it secret.
+"Lena considers between telling her real name or keeping it secret.
 To trust someone she has only heard of, first name basis is rather necessary."
 [Speaker]: 'Lena' 
 "Lena. 
@@ -195,7 +204,7 @@ Carrying a rucksack."
 [Speaker]: 'Enchantress' 
 "(shakes head) Haven't."
 [Speaker]: 'None'
-"She wipes her nose with her handkercheif."
+"She wipes her nose with her handkerchief."
 [Speaker]: 'Enchantress'
 "However, I know magic that can help you find him."
 [Speaker]: 'None'
@@ -235,17 +244,20 @@ I'll show you."
 The candle lights are low, but rays of yellow sun illuminate the whole place.
 A little bird chirps in a wood cage in the kitchen.
 A landscape painting of a castle by a river hangs on the wall."
-[Background]: 'ArcaneDoor' 
 [Speaker]: 'None' 
 "Quiet place, Lena observed.
 It made the house look longer than it actually was.
 Boxes and household tools and a basin of water.
-Bits and bobs in boxes or wrapped in cloth.
+Bits and bobs in boxes or wrapped in cloth."
+[Background]: 'ArcaneDoor' 
+[Spam]: 'Lena,Sad,SadSpeak'
 At the back is a hefty wood door.
 Metal hinges wrap themselves along a side.
-Paintings of fantastical creatures stretched along the top and bottom.
 Candlelight mounted on a chandelier casted angular shadows.
-Just one narrow window let in light."
+Just one narrow window let in light.
+Staring at the unassuming blank wood of the door made Lena aware of something.
+A pang in the back of her eyes, a crawling on the back of her neck.
+Something was...wrong with it."
 [Speaker]: 'Lena' 
 "(eyes wide) Ummm- This looks like bad news."
 [Speaker]: 'Enchantress' 

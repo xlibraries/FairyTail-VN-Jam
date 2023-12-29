@@ -1,3 +1,8 @@
+[Show]: 'Lena,Center,Sad'
+[Show]: 'Enchantress,ThreeFourth,Normal'
+[Transform]: 'Lena,ScaleDown'
+[Spam]: 'Lena,SadSpeak,Sad'
+[Spam]: 'Enchantress,NormalSpeak,Normal'
 "Skylan!"
 [Background]: 'ArcaneDoor'
 [Speaker]: 'None'
@@ -87,7 +92,6 @@ You can look for them in any order."
 [Speaker]: 'Lena'
 "Well, shoot. I need to get my ass moving."
 [Background]: 'HouseMainHall'
-"Lena walked past the workshop on the way to the basement. It
-may have additional tools than the charm to use. But the
-lockpicks were a core ingredient. "
+"Lena walked past the workshop on the way to the basement. 
+It may have additional tools than the charm to use. But the lockpicks were a core ingredient. "
 [Load]: 'Act2/Act2ChoiceLoop.txt'

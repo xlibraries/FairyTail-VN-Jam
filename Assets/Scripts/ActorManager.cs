@@ -45,6 +45,9 @@ public class ActorManager : MonoBehaviour
         if(actorDict.ContainsKey(name))
         {
             Debug.Log($"Actor {name} already detected. Proceeding to transforms. Side note: this should not be possible and is an error in tag wrangling.");
+            //DoTransform($"{name},ScaleNormal");
+            DoTransform($"{name},FixFlip");
+            DoTransform($"{name},FadeIn");
         }
         else
         {

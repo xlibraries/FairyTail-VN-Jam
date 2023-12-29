@@ -1,6 +1,7 @@
 [OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
 [Speaker]: 'Lena'
-"I want to go to the Library."
+"
+I want to go to the Library."
 [Speaker]: 'The Enchantress'
 "(nods)
 Straight down from the front door, then up the stairs."

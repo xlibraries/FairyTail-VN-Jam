@@ -59,6 +59,7 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
 [Transform]: 'Enchantress,DragonRoomSize'
 [Transform]: 'Lena,DragonRoomSize'
 [Transform]: 'Skylan,DragonRoomSize'
+[Transform]: 'Lena,Flip'
 "Hello?"
  "Lena blinks dumfounded: a bruised man leaning against a sloped dirt wall wearing a tan shirt.
  Skylan - he lives!"

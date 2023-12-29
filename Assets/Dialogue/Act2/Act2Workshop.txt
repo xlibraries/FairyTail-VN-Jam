@@ -1,19 +1,17 @@
-[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
-[Spam]: 'Enchantress,NormalSpeak,Normal'
-[Spam]: 'Lena,NormalSpeak,Normal'
 [Speaker]: 'Lena'
-"I  want to go to the Workshop."
+"
+I want to go to the Workshop."
 [Speaker]: 'Enchantress'
 "First door by the porch."
 [Transform]: 'Enchantress,Fade'
+[Transform]: 'Lena,Fade'
 [Background]: 'Workshop'
 [Speaker]: 'None'
 "Two wide glass windows let natural light beam in. It's easier to see in here than the office, which was musty with one window. Curls of carved wood litter a hand-powered lathe. A stack of branches by a table. And a mini forge with a crate of scrap metal in the corner. "
 [Show]: 'Lena,CenterFadeIn,Normal'
-[Transform]: 'Lena,FixFlip'
+[Spam]: 'Lena,NormalSpeak,Normal'
 [Transform]: 'Lena,Flip'
 [Speaker]: 'Lena'
-[Spam]: 'Lena,NormalSpeak,Normal'
 "Quite an arrangement for such a dwelling.
 What am I looking for?"
 [Speaker]: 'None'
@@ -21,7 +19,6 @@ What am I looking for?"
 "On the table lay a pile of corks, a line of glass bottles,
 and silver soul stones. Lena inspects one."
 [Speaker]: 'Lena'
-[Spam]: 'Lena,NormalSpeak,Normal'
 "Pretty nice ones."
 [Speaker]: 'None'
 "The word on it looks similar to one in Beshat, a local language she did not know well.

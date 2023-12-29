@@ -1,7 +1,6 @@
-[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
 [Speaker]: 'Lena'
-"
-I  want to go to the Study."
+""
+" I  want to go to the Study."
 [Speaker]: 'Enchantress'
 "Up the stairs to the left."
 [Transform]: 'Enchantress,Fade'
@@ -15,7 +14,6 @@ Lockpicks were thin enough to sit almost anywhere.
 She checks each shelf on the single bookshelf."
 [Show]: 'Lena,CenterFadeIn,Normal'
 [Spam]: 'Lena,NormalSpeak,Normal'
-[Transform]: 'Lena,Flip'
 [Speaker]: 'Lena'
 "None on here."
 [Speaker]: 'None'

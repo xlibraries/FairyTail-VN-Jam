@@ -5,9 +5,7 @@
 [Show]: 'Lena,LeftCenter,Normal'
 [Spam]: 'Lena,NormalSpeak,Normal'
 [Spam]: 'Enchantress,NormalSpeak,Normal'
-[Transform]: 'Lena,FixFlip'
 [Transform]: 'Lena,Flip'
-[Transform]: 'Enchantress,FixFlip'
 [Transform]: 'Enchantress,Flip'
 [ChoiceExhaustive]: 'Act3.txt,Workshop.,Act2/Act2Workshop.txt,Library.,Act2/Act2Library.txt,Study.,Act2/Act2Study.txt'
 "{s0.002}I will go to the:"
