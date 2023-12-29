@@ -1,0 +1,70 @@
+ [Background]: 'House'
+ [Show]: 'Dragon,CenterFadeIn,Normal'
+[Transform]:'Dragon,BigSize'
+[Transform]:'Dragon,DragonOffscreen'
+[Show]: 'Enchantress,Fourth,Normal'
+[Transform]: 'Enchantress,Flip'
+[Speaker]: 'None'
+"They exit the ravine and fast walk back up the basement stairs.
+Conwenna left it unlocked.
+Their guess was almost right: the woods were afire with purple, pulsating roots. The trees thrummed with terrible distortions.
+The sky crackled and shone with a fell light that made their hearts sink.
+Conwenna and the Dragon stood together on the lawn. The dragon, at full size, spread its wings in readiness.
+Skylan and Lena huddled together on the porch, feeling quite exposed.
+Then it came."
+[Transform]: 'Enchantress,Shake' 
+[Transform]: 'Dragon,Shake' 
+"The wind howled,
+the ground shook,
+and the sky rumbled,
+as purple waves tore through the forest with heavy ferocity.
+But they broke at the tree line, spreading round and drifting by the house.
+It was working - they were doing it!
+For a couple minutes, they sat there in the hideous storm, holding off the danger wave by wave.
+At once, Conwenna let out a beleaguered cry."
+[Speaker]: 'Enchantress' 
+[Image]: 'Enchantress,SadSpeak'
+"Lena!
+I need you!
+We can't hold on much longer - come up here!"
+[Speaker]: 'None' 
+[Show]: 'Lena,Half,Sad'
+[Transform]: 'Lena,FadeIn'
+[Image]: 'Enchantress,Normal'
+"Lena wobbled up to the field, and stood next to the Dragon and Conwenna. Not sure what to do, she held out her hands and immediately felt it."
+[Transform]: 'Lena,Shake' 
+"The terror - the overwhelming power slamming on her soul. She found herself locked in a leaning stance, already fighting hard to stay on her feet.
+It was scary, but she remembered the roots, and told herself hesitantly that there wasn't much of a difference.
+She clenched her teeth and fought. 
+The waves began to buckle, shift, and lessen.
+With all three of them, the Pulse was held at bay.
+At the end of it, Lena and Conwenna collapsed on the ground, alive but exhausted.
+They laid there on the ground for a while, but eventually came to."
+[Background]: 'Blank'
+[Transform]: 'Lena,Fade'
+[Transform]: 'Enchantress,Fade'
+[Transform]: 'Dragon,Fade'
+"With her eyes closed, drained of power, Lena gasped on the grass."
+[Speaker]: 'Lena'
+"We... We did it!"
+[Speaker]: 'Enchantress'
+"... Y- Yes.
+I wasn't sure if you would have enough power to help, but..
+I'm so glad you did.
+I won't forget this."
+[Speaker]: 'Lena'
+"Me neither."
+[Speaker]: 'None'
+"EPILOGUE
+ Lena meets with Conwenna on the weekends at the house.
+ Became pretty good at the tougher powers the more they spar.
+ Her enormous appetite for knowledge caused Lena to learn much on the fly.
+ Skylan still wanders the woods when safe to do so.
+ From Strand's Crossing if need be.
+ He visits Lena and their new friend regularly, being careful with his footing.
+ Conwenna - the Enchantress - spends her weekends training her new apprentice and making minor politics.
+ Selling potions and powers continued being the main business.
+ Her other goal of becoming a truly powerful sorceress will help her tap into the Arcane Pulse, studying and improving so much she may put the mages at Strand's Crossing to shame.
+ She misses her grandmother, however, no longer grieves."
+ "THE END"
+ [LoadScene]: 'MainMenu'

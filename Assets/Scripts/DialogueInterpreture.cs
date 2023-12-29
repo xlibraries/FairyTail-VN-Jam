@@ -5,8 +5,10 @@ using UnityEngine.UI;
 using System.IO;
 using System.Text.RegularExpressions;
 using TMPro;
+using UnityEngine.SceneManagement;
 using static Constants;
 using static AudioManager;
+
 
 public struct JugglePair
 {
@@ -173,8 +175,12 @@ public class DialogueInterpreture : MonoBehaviour
                 case MUSIC:
                     AudioManager.instance.PlayMusic(value);
                     break;
-                case "FadeTo":
+                case FADEINTO:
                     actorManager.FadeActorTo(value);
+                    break;
+                case SCENELOAD:
+                    Debug.Log("Trying to load that scene");
+                    SceneManager.LoadScene(value);
                     break;
             }
 

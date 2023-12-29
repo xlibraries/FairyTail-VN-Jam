@@ -85,13 +85,12 @@ public class Constants : MonoBehaviour
     public const string KILL = "Kill";
     public const string CHOICE = "Choice";
     public const string CHOICE_EXHAUSTIVE = "ChoiceExhaustive";
-
     public const string SPAM = "Spam";
     public const string UNSPAM = "UnSpam";
     public const string RESETSPAM = "ResetSpam";
-
-
     public const string MUSIC = "Music";
+     public const string FADEINTO = "FadeTo";
+      public const string SCENELOAD = "LoadScene";
     
     #endregion
     #region File Paths

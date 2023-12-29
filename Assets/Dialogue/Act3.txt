@@ -1,16 +1,16 @@
 [Background]: 'ArcaneDoor'
 [Show]: 'Lena,Center,Normal'
+ [Show]: 'Enchantress,RightCenterDown,NormalSpeak'
+[Transform]: 'Enchantress,Flip'
 [Transform]: 'Lena,ScaleDown'
 [Spam]: 'Lena,NormalSpeak,Normal'
+[Spam]: 'Enchantress,NormalSpeak,Normal'
 "At once, their shoes skittered down the hall and back down to the basement.
  The Arcane Door stood resolute - candlelight flicking on it as though it will burst open.
  Conwenna observed."
  [Speaker]: 'Enchantress'
- [Show]: 'Enchantress,RightCenterDown,NormalSpeak'
- [Transform]: 'Enchantress,Flip'
 "Listen carefully.
  Pun not intended."
-[Spam]: 'Enchantress,NormalSpeak,Normal'
 "Insert the lockpicks.
  Find the right angles.
  Then speak the unsealing charm, then rotate the tumblers.
@@ -39,10 +39,16 @@
 [Speaker]: 'None'
 "The enchantress glares.
 Four clicks - each lockpick moved counterclockwise - followed with a metallic twang.
- It did it! Lena shot to her feet wearing an anticipatory smile.
- And it opens with a dramatic whoosh."
+ It did it! Lena shot to her feet wearing an anticipatory smile."
  [Background]: 'Cave'
  [Show]: 'Dragon,CenterFadeIn,Hidden'
+ [Show]: 'Lena,Half,Normal'
+[Show]: 'Enchantress,Fourth,Normal'
+[Transform]: 'Lena,ScaleNormal'
+[Transform]: 'Enchantress,ScaleNormal'
+[Transform]: 'Enchantress,DragonRoomSize'
+[Transform]: 'Lena,DragonRoomSize'
+"And it opens with a dramatic whoosh."
  [Speaker]: 'Lena' 
 "Sorry.
  It worked!"
@@ -51,15 +57,8 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
  And who is - that?"
 [Speaker]: 'None'
 [Show]: 'Skylan,ThreeFourth,Normal'
-[Show]: 'Lena,Half,Normal'
-[Show]: 'Enchantress,Fourth,Normal'
-[Transform]: 'Lena,ScaleNormal'
-[Transform]: 'Enchantress,ScaleNormal'
 [Transform]: 'Skylan,ScaleNormal'
-[Transform]: 'Enchantress,DragonRoomSize'
-[Transform]: 'Lena,DragonRoomSize'
 [Transform]: 'Skylan,DragonRoomSize'
-[Transform]: 'Lena,Flip'
 "Hello?"
  "Lena blinks dumfounded: a bruised man leaning against a sloped dirt wall wearing a tan shirt.
  Skylan - he lives!"
@@ -74,7 +73,7 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
  "Skylans face morphs between surprise as well as relief."
  [Speaker]: 'Lena'
  [UnSpam]: 'Lena'
- [Transform]: 'Lena,ThreeFourth'
+ [Transform]: 'Lena,CaveHug'
  "Lena clamps herself around him like she won ten thousand gold coins."
  [Speaker]: 'Skylan' 
 "By the Guardians..."
@@ -181,51 +180,4 @@ She looks back at Lena and Skylan and calls out."
 "Skylan offers a dirty hand and grimaces with a smile."
  [Speaker]: 'Skylan' 
  "What she said."
-[Speaker]: 'None' 
-[Background]: 'Forest'
-"They exit the ravine and fast walk back up the basement stairs.
-Conwenna left it unlocked.
-Their guess was almost right: the woods were afire with purple, pulsating roots. The trees thrummed with terrible distortions.
-The sky crackled and shone with a fell light that made their hearts sink.
-Conwenna and the Dragon stood together on the lawn. The dragon, at full size, spread its wings in readiness.
-Skylan and Lena huddled together on the porch, feeling quite exposed.
-Then it came.
-The wind howled,
-the ground shook,
-and the sky rumbled,
-as purple waves tore through the forest with heavy ferocity.
-But they broke at the tree line, spreading round and drifting by the house.
-It was working - they were doing it!
-For a couple minutes, they sat there in the hideous storm, holding off the danger wave by wave.
-At once, Conwenna let out a beleaguered cry."
-[Speaker]: 'Enchantress' 
-"Lena!
-I need you!
-We can't hold on much longer - come up here!"
-[Speaker]: 'None' 
-"Lena wobbled up to the field, and stood next to the Dragon and Conwenna. Not sure what to do, she held out her hands and immediately felt it.
-The terror - the overwhelming power slamming on her soul. She found herself locked in a leaning stance, already fighting hard to stay on her feet.
-It was scary, but she remembered the roots, and told herself hesitantly that there wasn't much of a difference.
-She clenched her teeth and fought. 
-The waves began to buckle, shift, and lessen.
-With all three of them, the Pulse was held at bay.
-At the end of it, Lena and Conwenna collapsed on the ground, alive but exhausted."
-
-
-
-
-
- And their guess was almost right: every tree with purple pulsating roots around sounded with distortions.
- Her and the dragon, returned to normal size, stood tall in her lawn with its wings spread.
- Lena and Skylan huddled inside the cracked open door.
- Each time the Pulse hit it, it bounced off, to everyone's relief.
- EPILOGUE Lena meets with Conwenna on the weekends at the house.
- Became pretty good at the tougher powers the more they spar.
- Her enormous appetite for knowledge caused Lena to learn much on the fly.
- Skylan still wanders the woods when safe to do so.
- From Strand's Crossing if need be.
- He visits Lena and their new friend regularly, being careful with his footing.
- Conwenna - the Enchantress - spends her weekends training her new apprentice and making minor politics.
- Selling potions and powers continued being the main business.
- Her othe goal of becoming a truly powerful sorceress will help her tap into the Arcane Pulse, studying and improving so much she may put the mages at Strand's Crossing to shame.
- She misses her grandmother, however, no longer grieves.
+[Load]: 'Act3Conclusion.txt'

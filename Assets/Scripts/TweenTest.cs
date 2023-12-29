@@ -116,6 +116,33 @@ public class TweenTest : MonoBehaviour
       this.gameObject.GetComponent<Image>().TweenColor(Color.clear,0.2f);
     }
 
+
+    bool stopShaking = false;
+    public void TRShake()
+    {
+        ShakeLoop();
+        stopShaking = false;
+    }
+
+    public void TRShakeStop()
+    {
+        stopShaking = true;
+    }
+
+    public void ShakeLoop()
+    {
+        if(stopShaking) {return;}
+        Vector3 oldPosition = transform.position;
+        Vector3 offset = Random.onUnitSphere * 10;
+        transform.TweenPosition(oldPosition + new Vector3(offset.x,offset.y,0f),0.2f)
+        .OnComplete(()=>
+        {
+        transform.TweenPosition(oldPosition,0.2f).OnComplete(()=>{
+            ShakeLoop();
+        });
+        });
+    }
+
     public void TRFadeIn()
     {
       this.gameObject.GetComponent<Image>().color = Color.clear;
@@ -126,6 +153,17 @@ public class TweenTest : MonoBehaviour
     {
         Vector3 halfsize = transform.localScale * 0.5f;
         transform.TweenScale(halfsize,0.2f);
+    }
+
+    public void TRBigSize()
+    {
+        Vector3 nextsize = transform.localScale * 2.5f;
+        transform.TweenScale(nextsize,0.0f);
+    }
+
+    public void TRDragonOffscreen()
+    {
+        TRTeleportBasic(-0.6f,0.8f);
     }
 
     public void TRFourth()
@@ -140,6 +178,11 @@ public class TweenTest : MonoBehaviour
     public void TRThreeFourth()
     {
         TRBasic(0.75f,0.2f);
+    }
+
+     public void TRCaveHug()
+    {
+        TRBasic(0.68f,0.2f);
     }
 
     public void TRDragonRoomSize()
