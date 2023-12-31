@@ -1,5 +1,5 @@
- [Background]: 'House'
- [Show]: 'Dragon,CenterFadeIn,Normal'
+[Background]: 'House'
+[Show]: 'Dragon,CenterFadeIn,Normal'
 [Transform]:'Dragon,BigSize'
 [Transform]:'Dragon,DragonOffscreen'
 [Show]: 'Enchantress,Fourth,Normal'
