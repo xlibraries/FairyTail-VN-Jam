@@ -57,6 +57,7 @@ I won't forget this."
 [Speaker]: 'Lena'
 "Me neither."
 [Speaker]: 'None'
+[Music]: 'Grief'
 "EPILOGUE
  Lena meets with Conwenna on the weekends at the house.
  Became pretty good at the tougher powers the more they spar.

@@ -36,6 +36,9 @@ I don't understand what you're saying."
 [Speaker]: 'Lena'
 "Me as well. Sounds like Skylan."
 [Speaker]: 'Enchantress'
+[Transform]: 'Lena,Flip'
+[Juggle]: 'Lena,Bob,NormalSpeak,LeftCenterDown,Normal'
+[Juggle]: 'Enchantress,Bob,NormalSpeak,RightCenterDown,Normal'
 "It's like she left her ghost behind to warn me about something. 
 Or have a last laugh. Frightens me a bit."
 [Speaker]: 'Lena'
@@ -43,9 +46,6 @@ Or have a last laugh. Frightens me a bit."
 [Speaker]: 'Enchantress'
 "I'm actually being serious. "
 [Speaker]: 'Lena'
-[Transform]: 'Lena,Flip'
-[Juggle]: 'Lena,Bob,NormalSpeak,LeftCenterDown,Normal'
-[Juggle]: 'Enchantress,Bob,NormalSpeak,RightCenterDown,Normal'
 "(chuckles)
 I respectfully disagree that it's her. 
 It has to be my friend. 

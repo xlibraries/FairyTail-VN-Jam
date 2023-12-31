@@ -1,5 +1,7 @@
 [Background]: 'ArcaneDoor'
 [Speaker]: 'None'
+[Show]: 'Enchantress,RightCenterDown,Normal'
+[Show]: 'Lena,LeftCenterDown,Normal'
 ""
 "Skylan wouldn't die on her watch. 
 Shortly, the cover of Strand's Crossing will shield them.

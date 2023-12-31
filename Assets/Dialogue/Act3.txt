@@ -6,6 +6,7 @@
 [Spam]: 'Lena,NormalSpeak,Normal'
 [Spam]: 'Enchantress,NormalSpeak,Normal'
 [Speaker]: 'None'
+""
 "At once, their shoes skittered down the hall and back down to the basement.
  The Arcane Door stood resolute - candlelight flicking on it as though it will burst open.
  Conwenna observed."
@@ -84,7 +85,7 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
 "Yeah.
  No thanks to this.
  (Points to a massive, dark ravine) 
- And.. I didn't haves lockpicks.
+ And.. I didn't have lockpicks.
  Then there's my companion."
 [Speaker]: 'None' 
 "Conwenna's eyes redden up as her eyes scan the cave, looking for somebody who was never there. "
@@ -92,6 +93,7 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
 "Not - 
 Not a strange voice after all- 
 Grandmother.. didn't make it up!"
+[Juggle]: 'Enchantress,Bob,NormalSpeak,Fourth,Normal'
 [Speaker]: 'Skylan' 
 "I should, uh... mention.. that.." 
 [Speaker]: 'None' 

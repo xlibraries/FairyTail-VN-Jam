@@ -141,6 +141,8 @@ public class DialogueInterpreture : MonoBehaviour
                     break;
                 case SHOW:
                     actorManager.SpawnActor(value);
+                    spamTalkers.Remove(value);
+                    juggleData.Remove(value);
                     break;
                 case HIDE:
                     RemoveActor(value);
