@@ -186,8 +186,8 @@ She looks back at Lena and Skylan and calls out."
  [Speaker]: 'Skylan' 
  "What she said."
 [Background]: 'House'
+[Load]: 'Act3Fix.txt'
 [Hide]: 'Skylan'
 [Hide]: 'Lena'
 [Hide]: 'Dragon'
 [Hide]: 'Enchantress'
-[Load]: 'Act3Conclusion.txt'

@@ -6,7 +6,7 @@
 [Transform]: 'Enchantress,Flip'
 [Spam]: 'Lena,SadSpeak,Sad'
 [Spam]: 'Enchantress,NormalSpeak,Normal'
-"{s0.002}Skylan!"
+"Skylan!"
 [Background]: 'ArcaneDoor'
 [Speaker]: 'None'
 "Lena blinked several times, ran, and knocked hard on it. 
