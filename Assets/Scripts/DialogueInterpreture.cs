@@ -182,6 +182,9 @@ public class DialogueInterpreture : MonoBehaviour
                     Debug.Log("Trying to load that scene");
                     SceneManager.LoadScene(value);
                     break;
+                case "MoveBehind":
+                    actorManager.MoveBehind(value);
+                    break;
             }
 
         }

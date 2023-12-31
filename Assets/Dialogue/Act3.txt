@@ -6,7 +6,7 @@
 [Spam]: 'Lena,NormalSpeak,Normal'
 [Spam]: 'Enchantress,NormalSpeak,Normal'
 [Speaker]: 'None'
-"At once, their shoes skittered down the hall and back down to the basement.
+"{s0.002}At once, their shoes skittered down the hall and back down to the basement.
  The Arcane Door stood resolute - candlelight flicking on it as though it will burst open.
  Conwenna observed."
 [Speaker]: 'Enchantress'
@@ -59,7 +59,7 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
 [Transform]: 'Skylan,ScaleNormal'
 [Transform]: 'Skylan,DragonRoomSize'
 "Hello?"
- "Lena blinks dumfounded: a bruised man leaning against a sloped dirt wall wearing a tan shirt.
+ "Lena blinks dumfounded: a bruised man leaning against a sloped dirt wall wearing a blue shirt.
  Skylan - he lives!"
  [Speaker]: 'Lena' 
 "Skylan! 
@@ -73,6 +73,7 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
  "Skylans face morphs between surprise as well as relief."
  [Speaker]: 'Lena'
  [UnSpam]: 'Lena'
+ [MoveBehind]: 'Lena,Skylan'
  [Transform]: 'Lena,CaveHug'
  "Lena clamps herself around him like she won ten thousand gold coins."
  [Speaker]: 'Skylan' 
@@ -98,6 +99,7 @@ Grandmother.. didn't make it up!"
  Lena grips her dagger's hilt.
  Everyone gazes with shock as something huge lurches forward."
 [Image]: 'Dragon,Normal'
+[Transform]: 'Lena,Flip'
 [Music]: 'Dragon'
  "It's a dragon - a big one, towering over the adventurers.
  Leathery green blankets its body and its watchful eyes comb the cavern, clearly aware of their presence. 
@@ -183,6 +185,7 @@ She looks back at Lena and Skylan and calls out."
 "Skylan offers a dirty hand and grimaces with a smile."
  [Speaker]: 'Skylan' 
  "What she said."
+[Background]: 'House'
 [Hide]: 'Skylan'
 [Hide]: 'Lena'
 [Hide]: 'Dragon'

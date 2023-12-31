@@ -6,8 +6,9 @@
 [Transform]: 'Enchantress,Flip'
 [Speaker]: 'None'
 [Music]: 'Dragon'
-"They exit the ravine and fast walk back up the basement stairs.
-Conwenna left it unlocked.
+"They exit the ravine and fast walk back up the basement stairs."
+[Background]: 'House'
+"Conwenna left it unlocked.
 Their guess was almost right: the woods were afire with purple, pulsating roots. The trees thrummed with terrible distortions.
 The sky crackled and shone with a fell light that made their hearts sink.
 Conwenna and the Dragon stood together on the lawn. The dragon, at full size, spread its wings in readiness.

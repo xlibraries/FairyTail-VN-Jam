@@ -87,6 +87,15 @@ public class ActorManager : MonoBehaviour
         grabbedActor.GetComponent<TweenTest>().FadeImage(args[1]); 
     }
 
+    public void MoveBehind(string command)
+    {
+       string[] args = command.Split(COMMA);
+       Debug.Assert(args.Length > 1);
+       var actorA = actorDict[args[0]];
+       var actorB = actorDict[args[1]];
+       actorA.gameObject.transform.SetSiblingIndex(actorB.gameObject.transform.GetSiblingIndex()-1);
+    }
+
 
 
     public void DoTransform(string command)
