@@ -94,4 +94,5 @@ You can look for them in any order."
 [Background]: 'HouseMainHall'
 "Lena walked past the workshop on the way to the basement. 
 It may have additional tools than the charm to use. But the lockpicks were a core ingredient. "
+[Music]: 'Grief'
 [Load]: 'Act2/Act2ChoiceLoop.txt'

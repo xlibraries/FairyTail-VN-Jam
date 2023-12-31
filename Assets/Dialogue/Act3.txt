@@ -98,6 +98,7 @@ Grandmother.. didn't make it up!"
 "She grips her dagger's hilt.
  Everyone gazes with shock as something huge lurches forward."
 [Image]: 'Dragon,Normal'
+[Music]: 'Dragon'
  "It's a dragon - a big one, towering over the adventurers.
  Leathery green blankets its body and its watchful eyes comb the cavern, clearly aware of their presence. 
  The earth rumbles with its measured, predatory breath.
@@ -126,6 +127,7 @@ She opens her mouth and a barely controlled question rattles forth."
   There's nothing? 
   Not ^6^6 - Not even a ghost?"
 [Speaker]: 'Dragon'
+[Music]: 'Grief'
 "The way of the world sometimes demands... sacrifices, and your grandmother was an example of this.
 I am sorry.
 But, time is running short. The Arcane Pulse gathers, and you have a choice to make:
@@ -171,7 +173,7 @@ She looks back at Lena and Skylan and calls out."
 [Speaker]: 'None' 
 "The dragon nods its great green snout and rises.
  The Enchantress says a phrase, waves something Lena can't see.
- It shrinks to the size of a large dog.
+ It shrinks to the size of a dog.
  At the door, Lena looks her in the eye with a great smile."
  [Speaker]: 'Lena' 
 "You will be known by everyone who hears our story.

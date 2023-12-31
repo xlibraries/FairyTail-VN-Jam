@@ -250,6 +250,7 @@ It made the house look longer than it actually was.
 Boxes and household tools and a basin of water.
 Bits and bobs in boxes or wrapped in cloth."
 [Background]: 'ArcaneDoor' 
+[Music]: 'TheDoor'
 [Spam]: 'Lena,Sad,SadSpeak'
 At the back is a hefty wood door.
 Metal hinges wrap themselves along a side.

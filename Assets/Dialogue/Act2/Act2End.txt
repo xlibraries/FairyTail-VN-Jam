@@ -26,3 +26,4 @@ You have no idea how eager I am."
 "Oh, I do know.
 I know its you, Skylan, Lena thouught. The Enchantress has
 the wrong hunch. But, I guess we will see."
+[Load]: 'Act3.txt'

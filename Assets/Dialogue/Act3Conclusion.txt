@@ -5,6 +5,7 @@
 [Show]: 'Enchantress,Fourth,Normal'
 [Transform]: 'Enchantress,Flip'
 [Speaker]: 'None'
+[Music]: 'Dragon'
 "They exit the ravine and fast walk back up the basement stairs.
 Conwenna left it unlocked.
 Their guess was almost right: the woods were afire with purple, pulsating roots. The trees thrummed with terrible distortions.
