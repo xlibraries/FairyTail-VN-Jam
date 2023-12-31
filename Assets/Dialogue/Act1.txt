@@ -146,6 +146,7 @@ Nope.
 No sign of Skylan either.
 Lena approaches it cautiously with a hand on her dagger's handle."
 [Speaker]: 'Lena' 
+[Show]: 'Lena,LeftCenter,Normal'
 [Transform]: 'Lena,Flip'
 "(frowning) Is this a hideout?"
 [Background]: 'House' 
