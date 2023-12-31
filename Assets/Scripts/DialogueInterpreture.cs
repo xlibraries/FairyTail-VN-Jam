@@ -214,14 +214,16 @@ public class DialogueInterpreture : MonoBehaviour
     // Loads in a dialogue file
     public void LoadNewCRD(string name)
     {
-        StreamReader inputStream = new StreamReader(DIALOGUE_PATH + name);
-        string result = inputStream.ReadToEnd();
+        //StreamReader inputStream = new StreamReader(DIALOGUE_PATH + name);
+        //string result = inputStream.ReadToEnd();
+        //TextAsset newFile = (TextAsset)Resources.Load("Dialogue/" + name,typeof(TextAsset));
+        TextAsset newFile = Resources.Load<TextAsset>("Dialogue/" + name.Replace(".txt",""));
+        string result = newFile.text;
         Debug.Assert(result != null);
         pairedDialogueBox.curPut = NULL;
         dialogueChunks = result.Split("\"");
         dPos = 0;
         AskNext();
-        inputStream.Close();
 
     }
 

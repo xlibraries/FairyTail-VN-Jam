@@ -2,6 +2,8 @@
 [Speaker]: 'None'
 [Show]: 'Enchantress,RightCenterDown,Normal'
 [Show]: 'Lena,LeftCenterDown,Normal'
+[Transform]: 'Lena,Flip'
+[Transform]: 'Enchantress,Flip'
 ""
 "Skylan wouldn't die on her watch. 
 Shortly, the cover of Strand's Crossing will shield them.

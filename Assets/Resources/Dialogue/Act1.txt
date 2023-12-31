@@ -269,4 +269,5 @@ You did agree."
 "Ehh, I will take my chances at-"
 [Speaker]: 'None' 
 "A muffled voice sounds behind the door. Is that - is that him?!"
+[Speaker]: 'None'
 [Load]: 'Act2/Act2Start.txt'
