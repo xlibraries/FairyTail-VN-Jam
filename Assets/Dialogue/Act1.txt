@@ -135,7 +135,7 @@ Which-which way would he have gone? "
 [Speaker]: 'None' 
 "She picks a direction based on tiny orange leaves and follows."
 [Speaker]: 'Lena' 
-"Lets try this way.
+"Let's try this way.
 I knew I should have brought my Ithaka bullhorn."
 [Speaker]: 'None'
 "She sees something ahead.
@@ -146,6 +146,7 @@ Nope.
 No sign of Skylan either.
 Lena approaches it cautiously with a hand on her dagger's handle."
 [Speaker]: 'Lena' 
+[Transform]: 'Lena,Flip'
 "(frowning) Is this a hideout?"
 [Background]: 'House' 
 [Speaker]: 'None' 
@@ -174,7 +175,7 @@ Now, Lena decides to be formal about it."
 [Show]: 'Enchantress,RightCenterDown,Normal'
 [Transform]: 'Enchantress,Flip'
 [Transform]: 'Enchantress,FadeIn'
-[Juggle]: 'Enchantress,PushUp,Normal,RightCenterDown,NormalSpeak'
+[Juggle]: 'Enchantress,PushUp,NormalSpeak,RightCenterDown,Normal'
 [Speaker]: 'Enchantress' 
 "(Flinches. Looks around.) Who's that?"
 [Speaker]: 'Lena' 
@@ -252,13 +253,13 @@ Bits and bobs in boxes or wrapped in cloth."
 [Background]: 'ArcaneDoor' 
 [Music]: 'TheDoor'
 [Spam]: 'Lena,Sad,SadSpeak'
-At the back is a hefty wood door.
+"At the back is a hefty wood door.
 Metal hinges wrap themselves along a side.
 Candlelight mounted on a chandelier casted angular shadows.
 Just one narrow window let in light.
 Staring at the unassuming blank wood of the door made Lena aware of something.
-A pang in the back of her eyes, a crawling on the back of her neck.
-Something was...wrong with it."
+A pang in the back of her eyes.^2.^2. a crawling on the back of her neck.
+Something was...^6 wrong with it."
 [Speaker]: 'Lena' 
 "(eyes wide) Ummm- This looks like bad news."
 [Speaker]: 'Enchantress' 

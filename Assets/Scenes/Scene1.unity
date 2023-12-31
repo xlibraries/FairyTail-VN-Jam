@@ -1160,6 +1160,10 @@ MonoBehaviour:
     music: {fileID: 8300000, guid: 29816da6145bae9468ebb9a13eab3dd1, type: 3}
   - name: DangerParadise
     music: {fileID: 8300000, guid: 69c653b2582975946b15645697be83d8, type: 3}
+  - name: Dragon
+    music: {fileID: 8300000, guid: ee994d29fb2d5644ea0b6415c59ea6f6, type: 3}
+  - name: TheDoor
+    music: {fileID: 8300000, guid: fc2aba38457ab6c428766bc3b45afe71, type: 3}
   mainAudioSource: {fileID: 0}
 --- !u!114 &5018949962567014234
 MonoBehaviour:

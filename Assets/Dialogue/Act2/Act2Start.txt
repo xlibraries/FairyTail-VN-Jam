@@ -1,6 +1,9 @@
+[UnSpam]
+[UnJuggle]
 [Show]: 'Lena,Center,Sad'
 [Show]: 'Enchantress,ThreeFourth,Normal'
 [Transform]: 'Lena,ScaleDown'
+[Transform]: 'Enchantress,Flip'
 [Spam]: 'Lena,SadSpeak,Sad'
 [Spam]: 'Enchantress,NormalSpeak,Normal'
 "Skylan!"
