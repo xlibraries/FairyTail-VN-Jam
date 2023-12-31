@@ -6,7 +6,7 @@
 [Spam]: 'Lena,NormalSpeak,Normal'
 [Spam]: 'Enchantress,NormalSpeak,Normal'
 [Speaker]: 'None'
-"{s0.002}At once, their shoes skittered down the hall and back down to the basement.
+"At once, their shoes skittered down the hall and back down to the basement.
  The Arcane Door stood resolute - candlelight flicking on it as though it will burst open.
  Conwenna observed."
 [Speaker]: 'Enchantress'

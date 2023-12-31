@@ -8,7 +8,7 @@
 [Transform]: 'Enchantress,Flip'
 [Transform]: 'Lena,Flip'
 [ChoiceExhaustive]: 'Act2/Act2End.txt,Workshop.,Act2/Act2Workshop.txt,Library.,Act2/Act2Library.txt,Study.,Act2/Act2Study.txt'
-"{s0.002}I will go to the:"
+"I will go to the:"
 [Speaker]: 'None'
 "--"
 "--"
