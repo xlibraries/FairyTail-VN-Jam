@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda2e0bab33f6e042a3dc4ccd37dd75a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueFile: {fileID: 4900000, guid: 833aa0c1d343cc54bb881b9bac6340cc, type: 3}
+  dialogueFile: {fileID: 4900000, guid: 9b51dbadd5f105f4ba1772b3a5505638, type: 3}
   dialogueDestination: {fileID: 56011363}
   speakerIndicator: {fileID: 1194290649}
   choiceMenu: {fileID: 5018949962567014239}
