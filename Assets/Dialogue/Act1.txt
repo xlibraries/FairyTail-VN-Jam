@@ -8,7 +8,7 @@
 [Transform]: 'Skylan,FadeIn'
 [Transform]: 'Lena,FadeIn'
 [Music]: 'Grief'
-"Let me try again, Skylan.
+"{s0.0002}Let me try again, Skylan.
 I think I know why it didn't work that time.
 Then you take your turn."
 [Speaker]: 'Skylan'
@@ -146,7 +146,6 @@ Nope.
 No sign of Skylan either.
 Lena approaches it cautiously with a hand on her dagger's handle."
 [Speaker]: 'Lena' 
-[Show]: 'Lena,LeftCenter,Normal'
 [Transform]: 'Lena,Flip'
 "(frowning) Is this a hideout?"
 [Background]: 'House' 

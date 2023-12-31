@@ -1,15 +1,15 @@
-[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
 [Speaker]: 'Lena'
-"
-I want to go to the Library."
+""
+"I want to go to the Library."
 [Speaker]: 'The Enchantress'
 "(nods)
 Straight down from the front door, then up the stairs."
 [Speaker]: 'None'
 "She walks back down the hall determined to beat the Pulse.
-[OUTDATED SHOW STATEMENT]: 'Enchantress, direction, direction, neutral expression'
 [Transform]: 'Enchantress,Fade'
 [Transform]: 'Lena,Fade'
+[UnSpam]: 'Lena'
+[RemoveJuggle]: 'Lena'
 [Speaker]: 'The Enchantress'
 "(talking quickly, hollering)
 Just so you are aware, the Arcane Pulse is getting closer to going off."
@@ -22,7 +22,6 @@ All four walls with shelves, a couple full armor suits in corners, and a chandel
 Its rope was secured around a wall hook. But, only five shelves high was every wall stacked; every top one had tools. Magic tools? 
 And a few large scrolls set in corners of shelves.
 A stack of books lay on a table in the midst."
-[OUTDATED SHOW STATEMENT]: 'Lena, direction, direction, neutral expression'
 [Show]: 'Lena,CenterFadeIn,Normal'
 [Spam]: 'Lena,NormalSpeak,Normal'
 [Transform]: 'Lena,FixFlip'
@@ -58,6 +57,8 @@ Now I have it all. Let's return to her."
 [Transform]: 'Lena,FadeIn'
 [Transform]: 'Lena,Flip'
 [Transform]: 'Enchantress,Flip'
+[UnSpam]: 'Lena'
+[RemoveJuggle]: 'Lena'
 [Spam]: 'Enchantress,HappySpeak,Happy'
 [Speaker]: 'Enchantress'
 "Where to?"

@@ -5,6 +5,9 @@
 "First door by the porch."
 [Transform]: 'Enchantress,Fade'
 [Transform]: 'Lena,Fade'
+[UnJuggle]
+[RemoveJuggle]: 'Lena'
+[ResetSpam]
 [Background]: 'Workshop'
 [Speaker]: 'None'
 "Two wide glass windows let natural light beam in. It's easier to see in here than the office, which was musty with one window. Curls of carved wood litter a hand-powered lathe. A stack of branches by a table. And a mini forge with a crate of scrap metal in the corner. "
@@ -109,7 +112,8 @@ This house holds many mysteries, and Conwenna is all that remains of that legend
 "Lena carefully pinched the tongs on the stone. 
 It was the length of her whole hand. "
 [Speaker]: 'Lena'
-"Interesting.
+"Interesting."
+[Speaker]: 'None'
 She held it inside the blazing hot heat. The stone began quaking. 
 Lena grimaced with sweat beads on her forehead and her arms searing hot. 
 A few minutes past and it burst apart - a swirling orange sphere of power the size of a mango. 
@@ -127,4 +131,6 @@ And she yanked her arms out."
 [Transform]: 'Bottle,Fade'
 [Transform]: 'Lena,Fade'
 "Thank you so much! I'll be leaving now!"
+[UnSpam]: 'Lena'
+[RemoveJuggle]: 'Lena'
 [Load]: 'Act2/Act2ChoiceLoop.txt' 

@@ -201,6 +201,7 @@ public class DialogueInterpreture : MonoBehaviour
     {
         Debug.Log($"{actorName} removed from stage and unsubscribed from the Juggle System");
         juggleData.Remove(actorName);
+        spamTalkers.Remove(actorName);
         actorManager.KillActor(actorName);
     }
 

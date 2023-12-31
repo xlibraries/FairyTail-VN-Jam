@@ -203,6 +203,12 @@ public class TweenTest : MonoBehaviour
         transform.TweenScale(fullsize,0.2f);
     }
 
+      public void TRScaleReset()
+    {
+        Vector3 fullsize = new Vector3(1.0f,1.0f,1.0f);
+        transform.TweenScale(fullsize,0.2f);
+    }
+
 
      public void TRCenterFadeIn()
     {

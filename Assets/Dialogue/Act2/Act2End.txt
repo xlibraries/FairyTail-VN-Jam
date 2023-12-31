@@ -1,29 +1,27 @@
-[Background]: 'LivingRoom'
-"Skylan wouldn't die on her watch. Shortly, the cover of
-Strand's Crossing will shield them.
-Jogging to the living area, Lena extended the elements in
-her hands. "
+[Background]: 'ArcaneDoor'
+[Speaker]: 'None'
+""
+"Skylan wouldn't die on her watch. 
+Shortly, the cover of Strand's Crossing will shield them.
+Jogging to the living area, Lena extended the elements in her hands."
 [Speaker]: 'Lena'
 "All three pieces. Here you are."
 [Speaker]: 'Enchantress'
 "(nods approvingly)
 You did it. Was it difficult?"
 [Speaker]: 'Lena'
-"I missed a few details the first
-time."
+"I missed a few details the first time."
 [Speaker]: 'Enchantress'
-"You will need to be more aware as
-you learn."
+"You will need to be more aware as you learn."
 [Speaker]: 'Lena'
-"(rolls eyes)
-Yeah, I realize that. Skylan
-teaches me."
+"(rolls eyes) Yeah, I realize that. Skylan teaches me."
 [Speaker]: 'Enchantress'
-"That's good. Or I can. Let's
-unseal that door first.
-You have no idea how eager I am."
+"That's good... but I think you could learn more from me.
+Let's unseal that door first. You have no idea how eager I am."
 [Speaker]: 'Lena'
 "Oh, I do know.
-I know its you, Skylan, Lena thouught. The Enchantress has
-the wrong hunch. But, I guess we will see."
+(in thought) I know its you, Skylan.
+The Enchantress has the wrong hunch. 
+But, I guess we will see."
+[Hide]: 'Lena'
 [Load]: 'Act3.txt'

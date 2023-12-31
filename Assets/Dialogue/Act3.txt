@@ -1,18 +1,16 @@
 [Background]: 'ArcaneDoor'
 [Show]: 'Lena,Center,Normal'
- [Show]: 'Enchantress,RightCenterDown,NormalSpeak'
+[Show]: 'Enchantress,RightCenterDown,NormalSpeak'
 [Transform]: 'Enchantress,Flip'
 [Transform]: 'Lena,ScaleDown'
 [Spam]: 'Lena,NormalSpeak,Normal'
 [Spam]: 'Enchantress,NormalSpeak,Normal'
-"At once, their shoes skittered down the hall and back down to the basement.
+[Speaker]: 'None'
+"{s0.002}At once, their shoes skittered down the hall and back down to the basement.
  The Arcane Door stood resolute - candlelight flicking on it as though it will burst open.
  Conwenna observed."
- [Speaker]: 'Enchantress'
-"Listen carefully.
- Pun not intended."
-"Insert the lockpicks.
- Find the right angles.
+[Speaker]: 'Enchantress'
+"Listen carefully. Insert the lockpicks and find the right angles.
  Then speak the unsealing charm, then rotate the tumblers.
  Kind of envelop the amplifier charm over the picks when it's toughest."
 [Speaker]: 'None'
@@ -20,7 +18,7 @@
  Each lockpick slid in at different angles.
  And she leans in close to hear.
  Each little shift of the pick produced a tiny sound - if she managed to move them."
- [Speaker]: 'Lena' 
+[Speaker]: 'Lena' 
 "One.
  Or that is two?
  .......
@@ -57,6 +55,7 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
  And who is - that?"
 [Speaker]: 'None'
 [Show]: 'Skylan,ThreeFourth,Normal'
+[Transform]: 'Lena,Flip'
 [Transform]: 'Skylan,ScaleNormal'
 [Transform]: 'Skylan,DragonRoomSize'
 "Hello?"
@@ -66,6 +65,7 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
 "Skylan! 
  Are you alright?"
  [Speaker]: 'None'
+ [Spam]: 'Skylan,NormalSpeak,Normal'
 "Skylan looked a little beat up. A few cuts and bruises but nothing substantial."
 [Speaker]: 'Lena' 
  "How did you-? "
@@ -86,16 +86,16 @@ Four clicks - each lockpick moved counterclockwise - followed with a metallic tw
  And.. I didn't haves lockpicks.
  Then there's my companion."
 [Speaker]: 'None' 
-"Conwenna's eyes redden up at admitting the thought of not seeing her grandmother's ghost.
- However, she manages to  accept it. She stifles a sniffle."
+"Conwenna's eyes redden up as her eyes scan the cave, looking for somebody who was never there. "
  [Speaker]: 'Enchantress' 
 "Not - 
 Not a strange voice after all- 
 Grandmother.. didn't make it up!"
 [Speaker]: 'Skylan' 
-"Um, Him" 
+"I should, uh... mention.. that.." 
 [Speaker]: 'None' 
-"She grips her dagger's hilt.
+"Skylan points into the glittering dark.
+ Lena grips her dagger's hilt.
  Everyone gazes with shock as something huge lurches forward."
 [Image]: 'Dragon,Normal'
 [Music]: 'Dragon'
@@ -150,6 +150,7 @@ She looks back at Lena and Skylan and calls out."
  "Lena had let go of her dagger.
  Gears spun in her head."
  [Speaker]: 'Lena' 
+ [Spam]: 'Lena,NormalSpeak,Normal'
 "What is the chance of survival out there?"
 [Speaker]: 'Enchantress' 
 "One in six."
@@ -182,4 +183,8 @@ She looks back at Lena and Skylan and calls out."
 "Skylan offers a dirty hand and grimaces with a smile."
  [Speaker]: 'Skylan' 
  "What she said."
+[Hide]: 'Skylan'
+[Hide]: 'Lena'
+[Hide]: 'Dragon'
+[Hide]: 'Enchantress'
 [Load]: 'Act3Conclusion.txt'
